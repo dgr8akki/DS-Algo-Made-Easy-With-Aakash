@@ -67,14 +67,43 @@ public class SegmentTreeLazy {
     System.out.println(Arrays.toString(segTree));
   }
 
-  public int rmq(int[] segTree, int startingIndex, int endingIndex, int len) {
-    return 0;
+  public int rmqLazy(int[] segTree, int[] lazy, int startingIndex, int endingIndex, int len) {
+    return rangeMinimumQueryLazy(segTree, lazy, startingIndex, endingIndex, 0, len - 1, 0);
+  }
+
+  private int rangeMinimumQueryLazy(int[] segTree, int[] lazy, int startingIndex, int endingIndex, int start, int end, int currentIndex) {
+    if(start > end) return Integer.MAX_VALUE;
+
+    if(lazy[currentIndex] != 0) {
+      segTree[currentIndex] += lazy[currentIndex];
+
+      if(start != end) {
+        lazy[(2 * currentIndex) + 1] += lazy[currentIndex];
+        lazy[(2 * currentIndex) + 2] += lazy[currentIndex];
+      }
+
+      lazy[currentIndex] = 0;
+    }
+
+    if(endingIndex < start || startingIndex > end) return Integer.MAX_VALUE;
+
+    if(startingIndex <= start && endingIndex >= end) return segTree[currentIndex];
+
+    int mid = (start + end) / 2;
+
+    return Math.min(rangeMinimumQueryLazy(segTree, lazy, startingIndex, endingIndex, start, mid, (2 * currentIndex) + 1),
+            rangeMinimumQueryLazy(segTree, lazy, startingIndex, endingIndex, start, mid, (2 * currentIndex) + 1));
   }
 
   public static void main(String args[]) {
-    int[] arr = { 0, 3, -4, 2, 1, 6, -1 };
+    int[] arr = { -1,2,4,1,7,1,3,2 };
     SegmentTreeLazy segmentTree = new SegmentTreeLazy();
     int[] segArr = segmentTree.createTree(arr);
+    int lazy[] =  new int[segArr.length];
+
+    segmentTree.updateTreeRangeLazy(arr, segArr, lazy, 0, 3, 1);
+    segmentTree.updateTreeRangeLazy(arr, segArr, lazy, 0, 0, 2);
+    System.out.println(segmentTree.rmqLazy(segArr, lazy, 3, 5, arr.length));
     segmentTree.printTree(segArr);
   }
 }
