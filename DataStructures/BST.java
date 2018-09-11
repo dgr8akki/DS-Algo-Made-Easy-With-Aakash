@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class BST {
   public class Node {
     int value;
@@ -71,6 +73,52 @@ public class BST {
     System.out.print(head.value + " ");
   }
 
+  public void searchInBSTusingDFS(int key) {
+    dfs(this.root, key);
+  }
+
+  private void dfs(Node head, int k) {
+    if (head == null)
+      return;
+    Stack<Node> stack = new Stack<Node>();
+    java.util.Map<Node, Boolean> isVisited = new HashMap<>();
+    stack.push(head);
+    while (!stack.isEmpty()) {
+      Node currentNode = stack.pop();
+
+      if (!isVisited.containsKey(currentNode) && currentNode != null) {
+        isVisited.put(currentNode, true);
+        System.out.print(currentNode.value + " ");
+        // if (currentNode.value == k)
+          // return currentNode;
+        stack.push(currentNode.left);
+        stack.push(currentNode.right);
+      }
+    }
+  }
+
+  public void searchInBSTusingBFS(int key) {
+    bfs(this.root, key);
+  }
+
+  private void bfs(Node head, int k) {
+    if (head == null) return;
+    Queue<Node> queue = new LinkedList<Node>();
+    java.util.Map<Node, Boolean> isVisited = new HashMap<>();
+    queue.add(head);
+    while(!queue.isEmpty()) {
+      Node currentNode = queue.poll();
+
+      if(!isVisited.containsKey(currentNode) && currentNode != null) {
+        isVisited.put(currentNode, true);
+        System.out.print(currentNode.value + " > ");
+        // if(currentNode.value == k) return currentNode;
+        queue.add(currentNode.left);
+        queue.add(currentNode.right);
+      }
+    }
+  }
+
   public void searchInBST(int key) {
     if (search(this.root, key) == null) {
       System.out.println("NOT FOUND");
@@ -139,7 +187,13 @@ public class BST {
     System.out.println();
     bst.postorder();
     bst.searchInBST(-1);
-    bst.delete(12);
+    // bst.delete(12);
+    bst.searchInBSTusingBFS(-1);
     bst.preorder();
+    System.out.println();
+    System.out.println("BFS");
+    bst.searchInBSTusingBFS(-1);
+    System.out.println("DFS");
+    bst.searchInBSTusingDFS(-1);
   }
 }
