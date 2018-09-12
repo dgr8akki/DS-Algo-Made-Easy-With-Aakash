@@ -175,6 +175,28 @@ public class BST {
     this.root = delete(this.root, k);
   }
 
+  public void invertTree() {
+    this.root = invertTree(this.root);
+  }
+
+  public Node invertTree(Node head) {
+    if (head == null)
+      return head;
+
+    head = swapChildren(head);
+
+    head.left = invertTree(head.left);
+    head.right = invertTree(head.right);
+    return head;
+  }
+  private Node swapChildren(Node head) {
+    if (head.left == null && head.right == null) return head;
+    Node temp = head.left;
+    head.left = head.right;
+    head.right = temp;
+    return head;
+  }
+
   public static void main(String[] args) {
     BST bst = new BST();
     int[] input = { -1, 2, 3, 1, 4, 12, 21, 11 };
@@ -195,5 +217,12 @@ public class BST {
     bst.searchInBSTusingBFS(-1);
     System.out.println("DFS");
     bst.searchInBSTusingDFS(-1);
+    System.out.println();
+    System.out.println("BEFORE INVERT INORDER");
+    bst.inorder();
+    bst.invertTree();
+    System.out.println();
+    System.out.println("POST INVERT INORDER");
+    bst.inorder();
   }
 }
