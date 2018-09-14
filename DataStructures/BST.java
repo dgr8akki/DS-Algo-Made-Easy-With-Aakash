@@ -197,6 +197,21 @@ public class BST {
     return head;
   }
 
+  public void getNthHighestNodeFromTreeUsingList(int n) {
+    ArrayList<Node> inordereNodesList = new ArrayList<>();
+    this.root = reverseInorderTraversal(inordereNodesList, this.root);
+    System.out.println(inordereNodesList.get(n - 1).value);
+  }
+
+  private Node reverseInorderTraversal(ArrayList<Node> inordereNodesList, Node head) {
+    if (head == null)
+      return head;
+    head.right = reverseInorderTraversal(inordereNodesList, head.right);
+    inordereNodesList.add(head);
+    head.right = reverseInorderTraversal(inordereNodesList, head.left);
+    return head;
+  }
+
   public static void main(String[] args) {
     BST bst = new BST();
     int[] input = { -1, 2, 3, 1, 4, 12, 21, 11 };
@@ -209,7 +224,7 @@ public class BST {
     System.out.println();
     bst.postorder();
     bst.searchInBST(-1);
-    // bst.delete(12);
+    bst.delete(12);
     bst.searchInBSTusingBFS(-1);
     bst.preorder();
     System.out.println();
@@ -224,5 +239,6 @@ public class BST {
     System.out.println();
     System.out.println("POST INVERT INORDER");
     bst.inorder();
+    bst.getNthHighestNodeFromTreeUsingList(2);
   }
 }
