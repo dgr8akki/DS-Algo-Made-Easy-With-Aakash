@@ -89,8 +89,6 @@ public class BST {
       if (!isVisited.containsKey(currentNode) && currentNode != null) {
         isVisited.put(currentNode, true);
         System.out.print(currentNode.value + " ");
-        // if (currentNode.value == k)
-          // return currentNode;
         stack.push(currentNode.left);
         stack.push(currentNode.right);
       }
@@ -102,14 +100,15 @@ public class BST {
   }
 
   private void bfs(Node head, int k) {
-    if (head == null) return;
+    if (head == null)
+      return;
     Queue<Node> queue = new LinkedList<Node>();
     java.util.Map<Node, Boolean> isVisited = new HashMap<>();
     queue.add(head);
-    while(!queue.isEmpty()) {
+    while (!queue.isEmpty()) {
       Node currentNode = queue.poll();
 
-      if(!isVisited.containsKey(currentNode) && currentNode != null) {
+      if (!isVisited.containsKey(currentNode) && currentNode != null) {
         isVisited.put(currentNode, true);
         System.out.print(currentNode.value + " > ");
         // if(currentNode.value == k) return currentNode;
@@ -147,14 +146,16 @@ public class BST {
     else if (k > head.value)
       head.right = delete(head.right, k);
     else if (k == head.value) {
-      if (head.left == null && head.right == null) head = null;
+      if (head.left == null && head.right == null)
+        head = null;
       else if (head.left == null && head.right != null)
         head = head.right;
       else if (head.left != null && head.right == null)
         head = head.left;
       else if (head.left != null && head.right != null) {
         Node nextInorderedNode = getNextInorderedNode(head.right);
-        if (nextInorderedNode == null) head = head.left;
+        if (nextInorderedNode == null)
+          head = head.left;
         else {
           head.value = nextInorderedNode.value;
           head.right = delete(head.right, nextInorderedNode.value);
@@ -165,8 +166,10 @@ public class BST {
   }
 
   private Node getNextInorderedNode(Node head) {
-    if (head == null) return null;
-    if (head.right == null && head.left == null) return head;
+    if (head == null)
+      return null;
+    if (head.right == null && head.left == null)
+      return head;
     Node node = getNextInorderedNode(head.left);
     return node == null ? head : node;
   }
@@ -189,8 +192,10 @@ public class BST {
     head.right = invertTree(head.right);
     return head;
   }
+
   private Node swapChildren(Node head) {
-    if (head.left == null && head.right == null) return head;
+    if (head.left == null && head.right == null)
+      return head;
     Node temp = head.left;
     head.left = head.right;
     head.right = temp;
@@ -210,6 +215,21 @@ public class BST {
     inordereNodesList.add(head);
     head.right = reverseInorderTraversal(inordereNodesList, head.left);
     return head;
+  }
+
+  public void validateBST() {
+    if (isValidBSTUtil(this.root, Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY))
+      System.out.println("It's a valid BST");
+    else
+      System.out.println("Oops!!! Not a valid BST");
+  }
+
+  public boolean isValidBSTUtil(Node head, double min, double max) {
+    if (head == null)
+      return true;
+    if (head.value <= min || head.value >= max)
+      return false;
+    return (isValidBSTUtil(head.left, min, head.value) && isValidBSTUtil(head.right, head.value, max));
   }
 
   public static void main(String[] args) {
@@ -240,5 +260,6 @@ public class BST {
     System.out.println("POST INVERT INORDER");
     bst.inorder();
     bst.getNthHighestNodeFromTreeUsingList(2);
+    bst.validateBST();
   }
 }
