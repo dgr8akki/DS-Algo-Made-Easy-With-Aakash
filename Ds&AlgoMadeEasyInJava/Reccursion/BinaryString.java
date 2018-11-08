@@ -19,6 +19,6 @@ public class BinaryString {
   }
   public static void main(String[] args) {
     BinaryString binaryString = new BinaryString(3);
-    binaryString.printNBitString(3);
+    binaryString.printNBitString(2);
   }
 }
