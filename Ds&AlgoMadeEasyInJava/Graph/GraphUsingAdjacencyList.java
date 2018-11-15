@@ -1,0 +1,55 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+public class GraphUsingAdjacencyList {
+
+  private int vertices;
+  private LinkedList<LinkedList<Integer>> adjList;
+
+  GraphUsingAdjacencyList(int verticesCount) {
+    this.vertices = verticesCount;
+    this.adjList = new LinkedList<LinkedList<Integer>>();
+    for(int i = 0; i < verticesCount; i++) {
+      adjList.add(new LinkedList<>());
+    }
+  }
+
+  public void addEdge(int src, int dest) {
+    adjList.get(src).add(dest);
+    adjList.get(dest).add(src);
+  }
+
+  public void removeEdge(int src, int dest) {
+    adjList.get(src).remove((Object)dest);
+    adjList.get(dest).remove((Object)src);
+  }
+
+  public void print() {
+    for(int index = 0; index < adjList.size(); index++) {
+      for(int jindex = -1; jindex < adjList.get(index).size(); jindex++) {
+        if(jindex == -1) {
+          System.out.print(index + " => ");
+          continue;
+        }
+        if(jindex == 0) {
+          System.out.print(adjList.get(index).get(jindex));
+          continue;
+        }
+        System.out.print(" , " + adjList.get(index).get(jindex));
+      }
+      System.out.println();
+    }
+  }
+  public static void main(String[] args) {
+    GraphUsingAdjacencyList graph = new GraphUsingAdjacencyList(5);
+    graph.addEdge(1, 2);
+    graph.addEdge(1, 3);
+    graph.addEdge(1, 4);
+    graph.addEdge(3, 2);
+    graph.addEdge(4, 3);
+    graph.addEdge(2, 4);
+    graph.removeEdge(2, 4);
+    graph.print();
+  }
+}
