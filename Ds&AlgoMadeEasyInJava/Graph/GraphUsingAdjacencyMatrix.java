@@ -90,7 +90,7 @@ class GraphUsingAdjacencyMatrix {
     graph.addEdge(0, 3);
     graph.addEdge(1, 3);
     graph.addEdge(1, 4);
-    // graph.addEdge(3, 2);
+    graph.addEdge(3, 2);
     graph.addEdge(4, 3);
     graph.addEdge(0, 1);
     graph.print();

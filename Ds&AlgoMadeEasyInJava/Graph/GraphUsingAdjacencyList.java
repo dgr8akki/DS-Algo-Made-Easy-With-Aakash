@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Stack;
 
 public class GraphUsingAdjacencyList {
 
@@ -23,6 +24,23 @@ public class GraphUsingAdjacencyList {
   public void removeEdge(int src, int dest) {
     adjList.get(src).remove((Object)dest);
     adjList.get(dest).remove((Object)src);
+  }
+
+  public void dfs(int startNode) {
+    boolean isvisited[] = new boolean[vertices];
+    Stack<Integer> stack = new Stack<>();
+    stack.push(startNode);
+
+    while(!stack.isEmpty()) {
+      int currentNode = stack.pop();
+      if(!isvisited[currentNode]) {
+        System.out.print(currentNode + " => ");
+        isvisited[currentNode] = true;
+      }
+
+      for(int node : adjList.get(currentNode))
+        if(!isvisited[node]) stack.push(node);
+    }
   }
 
   public void print() {
@@ -51,5 +69,6 @@ public class GraphUsingAdjacencyList {
     graph.addEdge(2, 4);
     graph.removeEdge(2, 4);
     graph.print();
+    graph.dfs(1);
   }
 }
