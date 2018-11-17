@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class GraphUsingObjects {
@@ -58,6 +60,27 @@ public class GraphUsingObjects {
     }
   }
 
+  public void bfs(int data) {
+    System.out.println();
+    System.out.println("BFS");
+    Vertex startNode = getNodeVertex(data);
+    Queue<Vertex> queue = new LinkedList<>();
+    boolean[] isVisited = new boolean[verticesCount];
+    queue.add(startNode);
+
+    while(!queue.isEmpty()) {
+      Vertex currentNode = queue.remove();
+      if(!isVisited[currentNode.data]) {
+        System.out.print(currentNode.data + " => ");
+        isVisited[currentNode.data] = true;
+      }
+
+      for(Vertex node : currentNode.neighbours)
+        if(!isVisited[node.data])
+          queue.add(node);
+    }
+  }
+
   public void dfs(int data) {
     System.out.println();
     System.out.println("DFS");
@@ -108,5 +131,6 @@ public class GraphUsingObjects {
       graph.print();
       graph.dfs(1);
       graph.dfsRecursive(1);
+      graph.bfs(1);
   }
 }

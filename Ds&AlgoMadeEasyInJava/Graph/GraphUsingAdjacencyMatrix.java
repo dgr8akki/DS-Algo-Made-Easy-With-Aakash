@@ -1,5 +1,4 @@
-import java.util.Arrays;
-import java.util.Stack;
+import java.util.*;
 
 class GraphUsingAdjacencyMatrix {
   private int vertices;
@@ -56,6 +55,23 @@ class GraphUsingAdjacencyMatrix {
     }
   }
 
+  public void bfs (int startNode) {
+    Queue<Integer> queue = new LinkedList<>();
+    System.out.println();
+    System.out.println("BFS");
+    boolean isVisited[] = new boolean[vertices];
+    queue.add(startNode);
+
+    while(!queue.isEmpty()) {
+      int currentNode = queue.remove();
+      isVisited = processNode(currentNode, isVisited);
+      //Put currentNode's neighbour in stack
+      for(int i = 0; i < vertices; i++)
+        if(adjMatrix[currentNode][i] && !isVisited[i])
+          queue.add(i);
+    }
+  }
+
   public void dfsRecursive (int startNode) {
     boolean isVisited[] = new boolean[vertices];
     System.out.println();
@@ -101,7 +117,6 @@ class GraphUsingAdjacencyMatrix {
   }
   public static void main(String[] args) {
     GraphUsingAdjacencyMatrix graph = new GraphUsingAdjacencyMatrix(5);
-    graph.addEdge(1, 2);
     graph.addEdge(2, 3);
     graph.addEdge(0, 2);
     graph.addEdge(0, 3);
@@ -113,5 +128,6 @@ class GraphUsingAdjacencyMatrix {
     graph.print();
     graph.dfs(0);
     graph.dfsRecursive(0);
+    graph.bfs(0);
   }
 }

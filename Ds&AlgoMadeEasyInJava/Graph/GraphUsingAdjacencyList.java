@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 public class GraphUsingAdjacencyList {
 
@@ -76,9 +73,27 @@ public class GraphUsingAdjacencyList {
       System.out.println();
     }
   }
+
+  public void bfs(int startNode) {
+    boolean[] isVisited = new boolean[vertices];
+    Queue<Integer> queue = new LinkedList<>();
+    queue.add(startNode);
+    System.out.println();
+    System.out.println("BFS");
+    while(!queue.isEmpty()){
+      int currentNode = queue.remove();
+      if(!isVisited[currentNode]) {
+        System.out.print(currentNode + " ");
+        isVisited[currentNode] = true;
+      }
+      for(int node : adjList.get(currentNode))
+        if(!isVisited[node])
+          queue.add(node);
+    }
+  }
   public static void main(String[] args) {
     GraphUsingAdjacencyList graph = new GraphUsingAdjacencyList(5);
-    graph.addEdge(1, 2);
+    graph.addEdge(0, 2);
     graph.addEdge(1, 3);
     graph.addEdge(1, 4);
     graph.addEdge(3, 2);
@@ -88,5 +103,6 @@ public class GraphUsingAdjacencyList {
     graph.print();
     graph.dfs(1);
     graph.dfsRecursive(1);
+    graph.bfs(1);
   }
 }
