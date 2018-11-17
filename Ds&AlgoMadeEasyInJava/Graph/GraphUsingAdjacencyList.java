@@ -30,6 +30,8 @@ public class GraphUsingAdjacencyList {
     boolean isvisited[] = new boolean[vertices];
     Stack<Integer> stack = new Stack<>();
     stack.push(startNode);
+    System.out.println();
+    System.out.println("DFS");
 
     while(!stack.isEmpty()) {
       int currentNode = stack.pop();
@@ -41,6 +43,21 @@ public class GraphUsingAdjacencyList {
       for(int node : adjList.get(currentNode))
         if(!isvisited[node]) stack.push(node);
     }
+  }
+
+  public void dfsRecursive(int startNode) {
+    boolean[] isVisited = new boolean[vertices];
+    System.out.println();
+    System.out.println("Recursive DFS");
+    dfsUtils(startNode, isVisited);
+  }
+
+  private void dfsUtils(int currentNode, boolean[] isVisited) {
+    isVisited[currentNode] = true;
+    System.out.print(currentNode + " => ");
+    for(int node : adjList.get(currentNode))
+      if(!isVisited[node])
+        dfsUtils(node, isVisited);
   }
 
   public void print() {
@@ -70,5 +87,6 @@ public class GraphUsingAdjacencyList {
     graph.removeEdge(2, 4);
     graph.print();
     graph.dfs(1);
+    graph.dfsRecursive(1);
   }
 }

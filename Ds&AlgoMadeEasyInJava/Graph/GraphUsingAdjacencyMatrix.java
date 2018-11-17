@@ -41,6 +41,8 @@ class GraphUsingAdjacencyMatrix {
 
   public void dfs (int startNode) {
     Stack<Integer> stack = new Stack<>();
+    System.out.println();
+    System.out.println("DFS");
     boolean isVisited[] = new boolean[vertices];
     stack.push(startNode);
 
@@ -52,6 +54,21 @@ class GraphUsingAdjacencyMatrix {
         if(adjMatrix[currentNode][i] && !isVisited[i])
           stack.push(i);
     }
+  }
+
+  public void dfsRecursive (int startNode) {
+    boolean isVisited[] = new boolean[vertices];
+    System.out.println();
+    System.out.println("Recursive DFS");
+    dfsUtils(startNode, isVisited);
+  }
+
+  private void dfsUtils(int currentNode, boolean[] isVisited) {
+    System.out.print(currentNode + " => ");
+    isVisited[currentNode] = true;
+    for(int i = 0; i < vertices; i++)
+      if(adjMatrix[currentNode][i] && !isVisited[i])
+        dfsUtils(i, isVisited);
   }
 
   private boolean[] processNode(int node, boolean[] isVisited) {
@@ -95,5 +112,6 @@ class GraphUsingAdjacencyMatrix {
     graph.addEdge(0, 1);
     graph.print();
     graph.dfs(0);
+    graph.dfsRecursive(0);
   }
 }

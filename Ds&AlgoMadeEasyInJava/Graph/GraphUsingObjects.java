@@ -59,6 +59,8 @@ public class GraphUsingObjects {
   }
 
   public void dfs(int data) {
+    System.out.println();
+    System.out.println("DFS");
     Vertex startNode = getNodeVertex(data);
     Stack<Vertex> stack = new Stack<>();
     boolean[] isVisited = new boolean[verticesCount];
@@ -77,6 +79,23 @@ public class GraphUsingObjects {
       }
     }
   }
+
+  public void dfsRecursive (int data) {
+    Vertex startNode = getNodeVertex(data);
+    boolean[] isVisited = new boolean[verticesCount];
+    System.out.println();
+    System.out.println("Recursive DFS");
+    dfsUtils(startNode, isVisited);
+  }
+
+  private void dfsUtils(Vertex currentNode, boolean[] isVisited) {
+    System.out.print(currentNode.data + " => ");
+    isVisited[currentNode.data] = true;
+
+    for(Vertex node : currentNode.neighbours)
+        if(!isVisited[node.data])
+          dfsUtils(node, isVisited);
+  }
   public static void main(String[] args) {
     GraphUsingObjects graph = new GraphUsingObjects(5);
       graph.addEdge(1, 2);
@@ -88,5 +107,6 @@ public class GraphUsingObjects {
       graph.removeEdge(2, 4);
       graph.print();
       graph.dfs(1);
+      graph.dfsRecursive(1);
   }
 }
