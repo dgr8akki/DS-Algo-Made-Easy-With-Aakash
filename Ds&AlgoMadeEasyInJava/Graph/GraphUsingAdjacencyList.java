@@ -15,12 +15,12 @@ public class GraphUsingAdjacencyList {
 
   public void addEdge(int src, int dest) {
     adjList.get(src).add(dest);
-    adjList.get(dest).add(src);
+    // adjList.get(dest).add(src);
   }
 
   public void removeEdge(int src, int dest) {
     adjList.get(src).remove((Object)dest);
-    adjList.get(dest).remove((Object)src);
+    // adjList.get(dest).remove((Object)src);
   }
 
   public void dfs(int startNode) {
@@ -91,6 +91,28 @@ public class GraphUsingAdjacencyList {
           queue.add(node);
     }
   }
+
+  public void topologicalSort() {
+    boolean[] isVisited = new boolean[vertices];
+    Stack<Integer> stack = new Stack<>();
+    for(int currentVertex = 0; currentVertex < vertices; currentVertex++) {
+      if(isVisited[currentVertex]) continue;
+      topSortUtils(currentVertex, stack, isVisited);
+    }
+    System.out.println();
+    System.out.println("Topological Sort");
+    for (int v : stack)
+      System.out.print(v + " ");
+  }
+
+  private void topSortUtils(int vertex, Stack<Integer> stack, boolean[] isVisited) {
+    isVisited[vertex] = true;
+    for(int childVertex :  adjList.get(vertex)) {
+      if(isVisited[childVertex]) continue;
+      topSortUtils(childVertex, stack, isVisited);
+    }
+    stack.push(vertex);
+  }
   public static void main(String[] args) {
     GraphUsingAdjacencyList graph = new GraphUsingAdjacencyList(5);
     graph.addEdge(0, 2);
@@ -104,5 +126,6 @@ public class GraphUsingAdjacencyList {
     graph.dfs(1);
     graph.dfsRecursive(1);
     graph.bfs(1);
+    graph.topologicalSort();
   }
 }

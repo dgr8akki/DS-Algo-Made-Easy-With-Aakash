@@ -13,9 +13,9 @@ class GraphUsingAdjacencyMatrix {
   public void addEdge(int src, int dest) {
     if((src >= 0 && src < vertices)
       && (dest >= 0 && dest < vertices)) {
-      if (!adjMatrix[src][dest] || !adjMatrix[dest][src]) {
+      if (!adjMatrix[src][dest]) {
         adjMatrix[src][dest] = true;
-        adjMatrix[dest][src] = true;
+        // adjMatrix[dest][src] = true;
       }
     }
   }
@@ -23,9 +23,9 @@ class GraphUsingAdjacencyMatrix {
   public void removeEdge(int src, int dest) {
     if((src >= 0 && src < vertices)
       && (dest >= 0 && dest < vertices)) {
-      if (adjMatrix[src][dest] || adjMatrix[dest][src]) {
+      if (adjMatrix[src][dest]) {
         adjMatrix[src][dest] = false;
-        adjMatrix[dest][src] = false;
+        // adjMatrix[dest][src] = false;
       }
     }
   }
@@ -79,6 +79,33 @@ class GraphUsingAdjacencyMatrix {
     dfsUtils(startNode, isVisited);
   }
 
+  public void topologicalSort() {
+    boolean isVisited[] = new boolean[vertices];
+    Stack<Integer> stack = new Stack<>();
+
+    for(int vertex = 0; vertex < vertices; vertex++) {
+      if(isVisited[vertex]) continue;
+      topSortUtils(vertex, stack, isVisited);
+    }
+
+    System.out.println();
+    System.out.println("Topological Sort");
+    for (int v : stack)
+      System.out.print(v + " ");
+  }
+
+  private void topSortUtils(int vertex, Stack<Integer> stack, boolean isVisited[]) {
+    isVisited[vertex] = true;
+
+    for(int childVertex = 0; childVertex < vertices; childVertex++)
+      if(adjMatrix[vertex][childVertex]) {
+        if(isVisited[childVertex]) continue;
+        topSortUtils(childVertex, stack, isVisited);
+      }
+
+    stack.push(vertex);
+  }
+
   private void dfsUtils(int currentNode, boolean[] isVisited) {
     System.out.print(currentNode + " => ");
     isVisited[currentNode] = true;
@@ -129,5 +156,6 @@ class GraphUsingAdjacencyMatrix {
     graph.dfs(0);
     graph.dfsRecursive(0);
     graph.bfs(0);
+    graph.topologicalSort();
   }
 }
