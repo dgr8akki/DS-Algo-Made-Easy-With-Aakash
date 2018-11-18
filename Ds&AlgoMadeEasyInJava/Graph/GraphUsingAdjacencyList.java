@@ -113,6 +113,34 @@ public class GraphUsingAdjacencyList {
     }
     stack.push(vertex);
   }
+
+  public void unweightedShortestPath(int sourceNode) {
+    Queue<Integer> queue = new LinkedList<>();
+    int[] distance = new int[vertices];
+    int[] path = new int[vertices];
+
+    for(int i = 0; i < distance.length; i++)
+      distance[i] = -1;
+    distance[sourceNode] = 0;
+    queue.add(sourceNode);
+
+    while(!queue.isEmpty()) {
+      int currentNode = queue.remove();
+      for(int neighbour: adjList.get(currentNode)) {
+        if(distance[neighbour] == -1) {
+          distance[neighbour] = distance[currentNode] + 1;
+          path[neighbour] = currentNode;
+          queue.add(neighbour);
+        }
+      }
+    }
+
+    queue.clear();
+    System.out.println("Shortest distance from node " + sourceNode + " to all other nodes is :");
+    System.out.println(Arrays.toString(distance));
+    System.out.println("With the help of below vertices");
+    System.out.println(Arrays.toString(path));
+  }
   public static void main(String[] args) {
     GraphUsingAdjacencyList graph = new GraphUsingAdjacencyList(5);
     graph.addEdge(0, 2);
@@ -127,5 +155,6 @@ public class GraphUsingAdjacencyList {
     graph.dfsRecursive(1);
     graph.bfs(1);
     graph.topologicalSort();
+    graph.unweightedShortestPath(1);
   }
 }
