@@ -91,6 +91,40 @@ class Graph {
     System.out.println(Arrays.toString(parent));
   }
 
+  public void bellmanFord (int source) {
+    int[] distance = new int[vertices];
+    int[] parent = new int[vertices];
+    Queue<Integer> queue = new LinkedList<>();
+    for(int i = 0; i < vertices; i++)
+      distance[i] = Integer.MAX_VALUE;
+    distance[source] = 0;
+    parent[source] = -1;
+    queue.add(source);
+
+    while(!queue.isEmpty()) {
+      int currentNode = queue.poll();
+
+      for (int i = 0; i < vertices; i++) {
+        if (adjMatrix[currentNode][i] != 0) {
+          int newNeighbourDistance = distance[currentNode] + adjMatrix[currentNode][i];
+
+          if (newNeighbourDistance < distance[i]) {
+            distance[i] = newNeighbourDistance;
+            parent[i] = currentNode;
+            if(!queue.contains(i))
+              queue.add(i);
+          }
+        }
+      }
+    }
+
+    queue.clear();
+    System.out.println("Shortest distance from node " + source + " using BellmanFord, to all other nodes is :");
+    System.out.println(Arrays.toString(distance));
+    System.out.println("With the help of below vertices");
+    System.out.println(Arrays.toString(parent));
+  }
+
   public void print() {
     for(int i = -1; i < vertices; i++) {
       for(int j = -1; j < vertices; j++) {
@@ -111,6 +145,7 @@ class Graph {
       System.out.println();
     }
   }
+
   public static void main(String[] args) {
     Graph graph = new Graph(5);
     graph.addEdge(2, 3, 1);
@@ -123,5 +158,6 @@ class Graph {
     graph.addEdge(0, 1, 1);
     graph.print();
     graph.dijkstra(1);
+    graph.bellmanFord(1);
   }
 }
