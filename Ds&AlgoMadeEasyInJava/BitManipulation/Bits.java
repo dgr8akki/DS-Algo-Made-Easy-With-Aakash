@@ -180,6 +180,75 @@ public class Bits {
     System.out.println("--------------------------------------");
   }
 
+  public void isNumberAPowerOf2 (int number) {
+    printInBinary(number);
+    System.out.println("Is "+ number +"is a perfect power of 2?");
+    /**
+     * Checking number is a power of 2
+     *
+     * Algorithm:
+     * Step 1. AND actual number with actual number minus one
+     * Step 2. Check whether the result is 0
+     *
+     * Pseudo code:
+     * number & (number - 1) == 0
+     */
+    System.out.print("number & (number - 1) is : ");
+    printInBinary(number & (number - 1));
+    System.out.println((number & (number - 1)) == 0);
+    System.out.println("--------------------------------------");
+  }
+
+  public void multiplyNumberByPowerOf2 (int number, int k) {
+    printInBinary(number);
+    System.out.println("Multiplying 2, "+ k +" times with " + number + " results in:");
+    /**
+     * Multiplying a number with 2, k times
+     *
+     * Algorithm:
+     * Step 1. Left shift the number k times
+     *
+     * Pseudo code:
+     * number << k
+     */
+    printInBinary(number << k);
+    // System.out.println();
+    System.out.println("--------------------------------------");
+  }
+
+  public void divideANumberByPowerOf2 (int number, int k) {
+    printInBinary(number);
+    System.out.println("Dividing 2, "+ k +" times with " + number + " results in:");
+    /**
+     * Dividing a number with 2, k times
+     *
+     * Algorithm:
+     * Step 1. Right shift the number k times
+     *
+     * Pseudo code:
+     * number >> k
+     */
+    printInBinary(number >> k);
+    // System.out.println();
+    System.out.println("--------------------------------------");
+  }
+
+  public void moduloWhenSmallerNumberIsExactPowerOf2 (int number, int k) {
+    printInBinary(number);
+    System.out.println("Modulo " + number + " with " + k + " results in:");
+    /**
+     * Modulo a number k given that k is an exact power of 2
+     *
+     * Algorithm:
+     * Step 1. AND the number with (k - 1)
+     *
+     * Pseudo code :
+     * number & (k-1)
+     */
+
+    System.out.println((number) & (k - 1));
+    System.out.println("--------------------------------------");
+  }
   public static void main(String[] args) {
     Bits bits = new Bits();
     int first = 125;
@@ -202,5 +271,11 @@ public class Bits {
     bits.isolateRightmostOneBit(124);
     bits.isolateRightmostZeroBit(first);
     bits.isolateRightmostZeroBit(124);
+    bits.isNumberAPowerOf2(124);
+    bits.isNumberAPowerOf2(256);
+    bits.multiplyNumberByPowerOf2(first, k);
+    bits.divideANumberByPowerOf2(first, k);
+    bits.moduloWhenSmallerNumberIsExactPowerOf2(first, 8);
+    bits.moduloWhenSmallerNumberIsExactPowerOf2(152, 16);
   }
 }
