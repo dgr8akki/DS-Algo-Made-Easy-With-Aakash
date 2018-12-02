@@ -285,7 +285,7 @@ public class Bits {
     bits.isolateRightmostOneBit(first);
     bits.isolateRightmostOneBit(124);
     bits.isolateRightmostZeroBit(first);
-    bits.isolateRightmostZeroBit(124);
+    bits.isolateRightmostZeroBit(11);
     bits.isNumberAPowerOf2(124);
     bits.isNumberAPowerOf2(256);
     bits.multiplyNumberByPowerOf2(first, k);
