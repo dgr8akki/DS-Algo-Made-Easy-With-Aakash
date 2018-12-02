@@ -5,7 +5,7 @@ import java.util.Map;
 public class LRUCache {
   private int maxCapacity;
   private Map<Integer, Node> map = new HashMap<>();
-  private LinkedList<Node> list = new LinkedList<>();
+  private Node tail, head;
 
   private static class Node {
     private Node next, prev;
@@ -21,6 +21,23 @@ public class LRUCache {
   public LRUCache(int maxCapacity) {
     this.maxCapacity = maxCapacity;
   }
+
+  public String getValue(int key) {
+    Node node = map.get(key);
+
+    if(node == null) return null;
+
+    if(item != head) {
+      //Remove from list
+      //Insert at begin
+    }
+    return item.value;
+  }
+
+  private void removeNodeFromLList(Node node) {
+    // Yet to be impliment
+  }
+
   public static void main(String[] args) {
     LRUCache cache = new LRUCache(5);
   }
