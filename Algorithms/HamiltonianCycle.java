@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class HamiltonianCycle {
   int[][] graph;
   int[] hamiltonianPath;
@@ -8,29 +10,25 @@ public class HamiltonianCycle {
     totalVertex = g.length;
   }
   public void solve(int source) {
-    hamiltonianPath[0] = 0;
+    hamiltonianPath[0] = source;
     // hamiltonianPath[totalVertex] = 0;
 
     if(containsFeasibleSolutionFrom(1))
       printSolution();
     else
-      System.out.println("Given graph contains no Hamiltonian cycle");
+      System.out.println("Given graph contains no Hamiltonian cycle from source vertex as: " + source);
   }
 
   private boolean containsFeasibleSolutionFrom(int currentHamiltonianPathArrayIndex) {
-    if(currentHamiltonianPathArrayIndex == totalVertex) {
-      if(isEdge(hamiltonianPath[currentHamiltonianPathArrayIndex - 1], hamiltonianPath[0]))
-        return true;
-      else
-        return false;
-    }
+    if(currentHamiltonianPathArrayIndex == totalVertex)
+      return isEdge(hamiltonianPath[currentHamiltonianPathArrayIndex - 1], hamiltonianPath[0]);
 
     for(int vertex = 0; vertex < totalVertex; vertex++) {
       if(isFeasible(vertex, currentHamiltonianPathArrayIndex)) {
         hamiltonianPath[currentHamiltonianPathArrayIndex] = vertex;
-
-        if(containsFeasibleSolutionFrom(currentHamiltonianPathArrayIndex + 1))
+        if(containsFeasibleSolutionFrom(currentHamiltonianPathArrayIndex + 1)) {
           return true;
+        }
       }
     }
     return false;
@@ -41,8 +39,9 @@ public class HamiltonianCycle {
     if(!isEdge(hamiltonianPath[currentHamiltonianPathArrayIndex - 1], vertex)) return false;
 
     // Is current vertex already visited?
-    for(int vertexAlreadyInHamiltonianPath : hamiltonianPath)
-      if(vertexAlreadyInHamiltonianPath == vertex) return false;
+    for(int i = 0; i < currentHamiltonianPathArrayIndex; i++)
+      if(hamiltonianPath[i] == vertex)
+        return false;
     return true;
   }
 
@@ -53,8 +52,8 @@ public class HamiltonianCycle {
   private void printSolution() {
     System.out.println("One of the Hamiltonian Cycle is: ");
     for(int vertex: hamiltonianPath)
-      System.out.print(vertex + " => ");
-    System.out.print(hamiltonianPath[0]);
+      System.out.print((char)(vertex + 97) + " => ");
+    System.out.print((char)(hamiltonianPath[0] + 97) + "\n");
   }
   public static void main(String[] args) {
     int[][] graph = {
@@ -68,7 +67,7 @@ public class HamiltonianCycle {
     HamiltonianCycle cycle = new HamiltonianCycle(graph);
 
     cycle.solve(0);
-    // cycle.solve(1);
-    // cycle.solve(2);
+    cycle.solve(1);
+    cycle.solve(2);
   }
 }
