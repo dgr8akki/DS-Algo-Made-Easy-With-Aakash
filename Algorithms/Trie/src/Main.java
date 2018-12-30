@@ -6,8 +6,9 @@ public class Main {
     trie.insert("she");
     trie.insert("shell");
     trie.insert("sheshore");
-    trie.insert("he");
+//    trie.insert("he");
 
     System.out.println(trie.allWordsWithPrefix("sh"));
+    System.out.println(trie.getLongestCommonPrefix());
   }
 }

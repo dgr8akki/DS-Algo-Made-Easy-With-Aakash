@@ -3,6 +3,7 @@ import java.util.List;
 
 public class Trie {
   private Node root;
+  private int indexOfSingleChild;
 
   Trie() {
     this.root = new Node("");
@@ -43,6 +44,26 @@ public class Trie {
 
     collectWords(temp, prefix, wordList);
     return wordList;
+  }
+
+  String getLongestCommonPrefix() {
+    StringBuilder longestCommonPrefix = new StringBuilder();
+    Node temp = root;
+    while (getChildrenCount(temp) == 1 && !temp.isLeaf()) {
+      temp = temp.getChild(indexOfSingleChild);
+      longestCommonPrefix.append((char) (indexOfSingleChild + 'a'));
+    }
+    return longestCommonPrefix.toString();
+  }
+
+  private int getChildrenCount(Node node) {
+    int count = 0;
+    for(int index = 0; index < node.getChildren().length; index++)
+      if (node.getChild(index) != null) {
+        count++;
+        indexOfSingleChild = index;
+      }
+    return count;
   }
 
   private void collectWords(Node node, String prefix, List<String> wordList) {
