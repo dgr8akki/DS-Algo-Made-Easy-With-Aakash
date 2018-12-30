@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Trie {
   private Node root;
 
@@ -30,5 +33,27 @@ public class Trie {
         temp = temp.getChild(asciiIndex);
     }
     return true;
+  }
+
+  public List<String> allWordsWithPrefix(String prefix) {
+    List<String> wordList = new ArrayList<>();
+    Node temp = root;
+    for(char currentCharacterOfGivenPrefix : prefix.toLowerCase().toCharArray())
+      temp = temp.getChild(currentCharacterOfGivenPrefix - 'a');
+
+    collectWords(temp, prefix, wordList);
+    return wordList;
+  }
+
+  private void collectWords(Node node, String prefix, List<String> wordList) {
+    if (node == null) return;
+
+    if (node.isLeaf())
+      wordList.add(prefix);
+
+    for(Node child: node.getChildren()) {
+      if(child == null) continue;
+      collectWords(child, prefix + child.getCharacter(), wordList);
+    }
   }
 }
