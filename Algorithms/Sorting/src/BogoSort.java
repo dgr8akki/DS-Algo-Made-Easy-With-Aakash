@@ -18,12 +18,6 @@ public class BogoSort extends Sorter {
     printResult();
   }
 
-  private void swap(int[] arr, int i, int j) {
-    int temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
-  }
-
   private boolean isSorted(int[] arr) {
     int lastElement = Integer.MIN_VALUE;
     for (int element : arr)

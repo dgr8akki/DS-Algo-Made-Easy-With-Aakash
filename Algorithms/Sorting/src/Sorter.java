@@ -20,4 +20,10 @@ public abstract class Sorter {
   public void setArr(int[] arr) {
     this.arr = arr;
   }
+
+  void swap(int[] arr, int i, int j) {
+    int temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+  }
 }
