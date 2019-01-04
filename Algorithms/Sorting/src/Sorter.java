@@ -13,7 +13,7 @@ public abstract class Sorter {
     System.out.println(Arrays.toString(this.getArr()));
   }
 
-  public int[] getArr() {
+  int[] getArr() {
     return arr;
   }
 

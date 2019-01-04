@@ -7,5 +7,6 @@ public class Main {
     new BubbleSort(Arrays.copyOf(arr, arr.length)).sort();
     new SelectionSort(Arrays.copyOf(arr, arr.length)).sort();
     new InsertionSort(Arrays.copyOf(arr, arr.length)).sort();
+    new QuickSort(Arrays.copyOf(arr, arr.length)).sort();
   }
 }
