@@ -8,5 +8,6 @@ public class Main {
     new SelectionSort(Arrays.copyOf(arr, arr.length)).sort();
     new InsertionSort(Arrays.copyOf(arr, arr.length)).sort();
     new QuickSort(Arrays.copyOf(arr, arr.length)).sort();
+    new MergeSort(Arrays.copyOf(arr, arr.length)).sort();
   }
 }
