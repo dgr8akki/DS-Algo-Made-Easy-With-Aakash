@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class WeightedJobScheduling {
@@ -30,7 +31,31 @@ public class WeightedJobScheduling {
 	}
 
   private static long getMaxProfit(Job[] jobs, int n) {
-    return 0;
-  }
+    Arrays.sort(jobs);
+    long[] dp = new long[n];
+    dp[0] = jobs[0].profit;
+    for(int i = 1; i < n; i++) {
+      Job currentJob = jobs[i];
+      int lastNonConflictingJobIndex = -1;
+      long profitIfIncludingCurrentJob = currentJob.profit;
 
+      int start = 0, end = i - 1;
+      while(start <= end) {
+        int mid = (start + end) >> 1;
+        if(jobs[mid].end <= currentJob.start) {
+          lastNonConflictingJobIndex = mid;
+          start = mid + 1;
+        } else {
+          end = mid - 1;
+        }
+      }
+
+      if(lastNonConflictingJobIndex != -1) {
+        profitIfIncludingCurrentJob += dp[lastNonConflictingJobIndex];
+      }
+
+      dp[i] = Math.max(profitIfIncludingCurrentJob, dp[i - 1]);
+    }
+    return dp[n - 1];
+  }
 }
