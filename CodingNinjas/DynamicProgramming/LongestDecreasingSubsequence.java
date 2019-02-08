@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * LongestIncreasingSubsequence
  */
@@ -14,6 +16,7 @@ public class LongestDecreasingSubsequence {
         }
       }
     }
+    System.out.println(Arrays.toString(lds));
 
     int max = 0;
     for(int len : lds)
@@ -23,7 +26,7 @@ public class LongestDecreasingSubsequence {
   }
 
   public static void main(String[] args) {
-    int[] arr = {4,3,9,7,6,8,20};
+    int[] arr = {2,-1,4,3,5,-1,3,2};
     System.out.println(getLDSLength(arr, arr.length));
   }
 }

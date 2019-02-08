@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * LongestIncreasingSubsequence
  */
@@ -14,7 +16,7 @@ public class LongestIncreasingSubsequence {
         }
       }
     }
-
+    System.out.println(Arrays.toString(lis));
     int max = 0;
     for(int len : lis)
       if(len > max)
@@ -23,7 +25,7 @@ public class LongestIncreasingSubsequence {
   }
 
   public static void main(String[] args) {
-    int[] arr = {4,3,9,7,6,8,20};
+    int[] arr = {2,-1,4,3,5,-1,3,2};
     System.out.println(getLISLength(arr, arr.length));
   }
 }
