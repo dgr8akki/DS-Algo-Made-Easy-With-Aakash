@@ -14,7 +14,7 @@ public class MinimumCount {
         if((sqrtOfI * sqrtOfI) == i) dp[i] = 1;
         else {
           dp[i] = Integer.MAX_VALUE;
-          for(int j = 1; j <= (int) Math.floor(Math.sqrt(i)); j++)
+          for(int j = 1; j <= sqrtOfI; j++)
           	dp[i] = Math.min(dp[i], dp[j*j] + dp[i - (j * j)]);
         }
       }
