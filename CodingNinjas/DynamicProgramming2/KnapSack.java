@@ -5,8 +5,9 @@ public class KnapSack {
 
   public static int knapsack(int[] weight, int value[], int maxWeight) {
     // return knapsackRecursive(weight, value, maxWeight, 0);
-    int[][] dp = new int[weight.length + 1][maxWeight + 1];
-    return knapsackMemoized(weight, value, maxWeight, 0, dp);
+    // int[][] dp = new int[weight.length + 1][maxWeight + 1];
+    // return knapsackMemoized(weight, value, maxWeight, 0, dp);
+    return knapSackIterative(weight, value, maxWeight);
   }
 
   private static int knapsackRecursive(int[] weight, int value[], int maxWeight, int currentItemIdx) {
@@ -35,6 +36,14 @@ public class KnapSack {
     }
 
     return dp[currentItemIdx][maxWeight];
+  }
+
+  private static int knapSackIterative(int[] weight, int value[], int maxWeight) {
+    int[] dp = new int[maxWeight + 1];
+    for (int i = 0; i < value.length; i++)
+      for (int j = maxWeight; j >= weight[i]; j--)
+        dp[j] = Math.max(dp[j], value[i] + dp[j - weight[i]]);
+    return dp[maxWeight];
   }
 
   public static void main(String[] args) {
