@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -5,10 +6,10 @@ import java.util.Scanner;
  */
 public class MaximumSumSubarray {
   static class Node {
-    int maxSum = 0;
-    int sum = 0;
-    int prefixSum = 0;
-    int suffixSum = 0;
+    long maxSum = Integer.MIN_VALUE;
+    long sum =  Integer.MIN_VALUE;
+    long prefixSum = Integer.MIN_VALUE;
+    long suffixSum = Integer.MIN_VALUE;
   }
 
   int[] arr;
@@ -30,6 +31,7 @@ public class MaximumSumSubarray {
       return;
     }
     int mid = (start + end) / 2;
+
     buildTree(start, mid, 2 * treeNode);
     buildTree(mid + 1, end, (2 * treeNode) + 1);
     Node left = tree[2 * treeNode];
@@ -38,23 +40,16 @@ public class MaximumSumSubarray {
     tree[treeNode].sum = left.sum + right.sum;
     tree[treeNode].prefixSum = Math.max(left.prefixSum, left.sum + right.prefixSum);
     tree[treeNode].suffixSum = Math.max(right.suffixSum, left.suffixSum + right.sum);
-    tree[treeNode].maxSum = Math.max(
-      left.maxSum,
-      Math.max(
-        right.maxSum,
-        Math.max(
-          left.sum + right.prefixSum,
-          Math.max(
-            right.sum + left.suffixSum,
-            left.suffixSum + right.prefixSum
-          )
-        )
-      )
-    );
+    tree[treeNode].maxSum = getMax(left.maxSum, right.maxSum, left.sum + right.prefixSum, right.sum + left.suffixSum, left.suffixSum + right.prefixSum);
     return;
   }
 
-  public int query(int startingIndex, int endIndex) {
+  private long getMax(long... arr) {
+    Arrays.sort(arr);
+    return arr[arr.length - 1];
+  }
+
+  public long query(int startingIndex, int endIndex) {
     Node ans = query(0, this.arr.length - 1, 1, startingIndex - 1, endIndex - 1);
     return ans.maxSum;
   }
@@ -72,19 +67,7 @@ public class MaximumSumSubarray {
     ans.sum = left.sum + right.sum;
     ans.prefixSum = Math.max(left.prefixSum, left.sum + right.prefixSum);
     ans.suffixSum = Math.max(right.suffixSum, left.suffixSum + right.sum);
-    ans.maxSum = Math.max(
-      left.maxSum,
-      Math.max(
-        right.maxSum,
-        Math.max(
-          left.sum + right.prefixSum,
-          Math.max(
-            right.sum + left.suffixSum,
-            left.suffixSum + right.prefixSum
-          )
-        )
-      )
-    );
+    ans.maxSum = getMax(left.maxSum, right.maxSum, left.sum + right.prefixSum, right.sum + left.suffixSum, left.suffixSum + right.prefixSum);
     return ans;
   }
 
