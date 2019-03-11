@@ -1,4 +1,4 @@
-public class solution {
+public class LargestPiece {
   public int solve(int vertices, String cake[]) {
     int[] xOffset = { 0, 1, 0, -1 };
     int[] yOffset = { -1, 0, 1, 0 };
