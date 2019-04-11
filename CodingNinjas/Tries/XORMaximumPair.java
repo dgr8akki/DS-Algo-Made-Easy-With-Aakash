@@ -4,6 +4,7 @@
 public class XORMaximumPair {
   public static class TrieNode {
     TrieNode left, right;
+    int value = 0;
   }
 
   private static TrieNode root;
@@ -12,14 +13,14 @@ public class XORMaximumPair {
   XORMaximumPair(int[] arr) {
     this.arr = arr;
     this.root = new TrieNode();
+    for (int el : arr)
+      insert(el);
   }
 
   public static void insert(int val) {
-    System.out.println("Inserting: " + val);
     TrieNode current = root;
     for (int i = 31; i >= 0; i--) {
-      int bit = (val << i) & 1;
-
+      int bit = (val & (1 << i)) >= 1 ? 1 : 0;
       if (bit == 0) {
         if (current.left == null)
           current.left = new TrieNode();
@@ -38,22 +39,21 @@ public class XORMaximumPair {
       TrieNode current = root;
       int currentXOR = 0;
 
-      for (int i = 31; i >= 0; i++) {
+      for (int i = 31; i >= 0; i--) {
         int bit = (val << i) & 1;
-        if (current != null)
-          if (bit == 0) {
-            if (current.right != null) {
-              currentXOR += (1 << i);
-              current = current.right;
-            } else
-              current = current.left;
-          } else {
-            if (current.left != null) {
-              currentXOR += (1 << i);
-              current = current.left;
-            } else
-              current = current.right;
-          }
+        if (bit == 0) {
+          if (current.right != null) {
+            currentXOR += (1 << i);
+            current = current.right;
+          } else
+            current = current.left;
+        } else {
+          if (current.left != null) {
+            currentXOR += (1 << i);
+            current = current.left;
+          } else
+            current = current.right;
+        }
       }
 
       maxXOR = Math.max(maxXOR, currentXOR);
@@ -64,8 +64,6 @@ public class XORMaximumPair {
   public static void main(String[] args) {
     int[] arr = { 8, 1, 2, 15, 10, 5 };
     XORMaximumPair pair = new XORMaximumPair(arr);
-    for (int el : arr)
-      pair.insert(el);
     System.out.println(pair.getXORMaxPairValue());
   }
 }
