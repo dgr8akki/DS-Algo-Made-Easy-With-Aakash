@@ -4,7 +4,6 @@
 public class XORMaximumPair {
   public static class TrieNode {
     TrieNode left, right;
-    int value = 0;
   }
 
   private static TrieNode root;
