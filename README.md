@@ -1,4 +1,4 @@
-# Algorithms && Data Structures
+# Algorithms & Data Structures
 This repo will contain solution to the problems asked in the following portals:
 
 1. Hackerrank
@@ -8,3 +8,4 @@ This repo will contain solution to the problems asked in the following portals:
 5. Data structures and algorithms made easy in Java
 6. LeetCode
 7. Practice folder - This contains a separate file used for practising solved problems
+8. CodingNinjas
