@@ -1,8 +1,6 @@
-/**
- * Definition for a binary tree node. public class TreeNode { int val; TreeNode
- * left; TreeNode right; TreeNode(int x) { val = x; } }
- */
 class Solution {
+  Map<TreeNode, Integer> map = new HashMap<>();
+
   public boolean isBalanced(TreeNode root) {
     if (root == null)
       return true;
@@ -16,8 +14,12 @@ class Solution {
   public int maxDepth(TreeNode root) {
     if (root == null)
       return 0;
+    if (map.containsKey(root))
+      return map.get(root);
     if (root.left == null && root.right == null)
       return 1;
-    return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
+    int dep = Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
+    map.put(root, dep);
+    return dep;
   }
 }
