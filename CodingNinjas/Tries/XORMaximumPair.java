@@ -61,7 +61,7 @@ public class XORMaximumPair {
   }
 
   public static void main(String[] args) {
-    int[] arr = { 8, 1, 2, 15, 10, 5 };
+    int[] arr = { 3, 10, 5, 25, 2, 8 };
     XORMaximumPair pair = new XORMaximumPair(arr);
     System.out.println(pair.getXORMaxPairValue());
   }
