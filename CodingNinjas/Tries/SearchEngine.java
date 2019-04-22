@@ -45,7 +45,7 @@ public class SearchEngine {
       } else {
         current = current.childNodes[c - 'a'];
       }
-
+    }
     return current.w;
   }
 
