@@ -25,7 +25,7 @@ public class OrderSet {
         start = mid + 1;
     }
 
-    System.out.println(array[start]);
+    System.out.println(start);
   }
 
   private static void delete(int val) {
@@ -78,8 +78,7 @@ public class OrderSet {
     }
     in.close();
     for (Query cur : queries) {
-      if (cur.type == 'I')
-        set.add(cur.val);
+      set.add(cur.val);
     }
     int k = 0;
     array = new Integer[set.size()];
