@@ -1,20 +1,19 @@
 class Solution {
   public int countPrimes(int n) {
-    int count = 0;
-    boolean prime[] = new boolean[n + 1];
-    Arrays.fill(prime, true);
-    for (int p = 2; p < Math.sqrt(n); p++) {
-      if (prime[p] == true) {
-        for (int i = p * p; i <= n; i += p)
-          prime[i] = false;
-      }
-    }
+    if (n <= 2)
+      return 0;
 
-    for (int i = 2; i <= n; i++) {
-      if (prime[i] == true)
+    boolean[] isNotPrime = new boolean[n];
+
+    int count = 0;
+    for (int i = 2; i < n; i++)
+      if (isNotPrime[i] == false) {
         count++;
-    }
+        for (int j = 2; i * j < n; j++)
+          isNotPrime[i * j] = true;
+
+      }
+
     return count;
   }
-
 }
