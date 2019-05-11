@@ -11,7 +11,6 @@ class Solution {
         count++;
         for (int j = 2; i * j < n; j++)
           isNotPrime[i * j] = true;
-
       }
 
     return count;
