@@ -10,11 +10,9 @@ class Solution {
     lis[0] = 1;
     for (int i = 1; i < n; i++) {
       lis[i] = 1;
-      for (int j = i - 1; j >= 0; j--) {
-        if (arr[j] < arr[i]) {
+      for (int j = i - 1; j >= 0; j--)
+        if (arr[j] < arr[i])
           lis[i] = Math.max(lis[i], lis[j] + 1);
-        }
-      }
     }
     int max = 0;
     for (int len : lis)
