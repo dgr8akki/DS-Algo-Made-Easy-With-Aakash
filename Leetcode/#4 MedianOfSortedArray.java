@@ -1,9 +1,9 @@
 class Solution {
   public double findMedianSortedArrays(int[] A, int[] B) {
     int m = A.length, n = B.length;
-    int l = (m + n + 1) / 2;
-    int r = (m + n + 2) / 2;
-    return (getkth(A, 0, B, 0, l) + getkth(A, 0, B, 0, r)) / 2.0;
+    int leftIndex = (m + n + 1) / 2;
+    int rightIndex = (m + n + 2) / 2;
+    return (getkth(A, 0, B, 0, leftIndex) + getkth(A, 0, B, 0, rightIndex)) / 2.0;
   }
 
   public double getkth(int[] A, int aStart, int[] B, int bStart, int k) {
