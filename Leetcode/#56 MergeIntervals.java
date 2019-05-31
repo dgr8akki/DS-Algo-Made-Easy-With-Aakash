@@ -2,12 +2,8 @@ class Solution {
   public int[][] merge(int[][] intervals) {
     if (intervals.length == 0)
       return new int[0][0];
-    java.util.Arrays.sort(intervals, new java.util.Comparator<int[]>() {
-      public int compare(int[] a, int[] b) {
-        return Integer.compare(a[0], b[0]);
-      }
-    });
 
+    Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
     List<List<Integer>> temp = new ArrayList<>();
     int start = intervals[0][0];
     int end = intervals[0][1];
