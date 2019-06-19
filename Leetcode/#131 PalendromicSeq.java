@@ -11,7 +11,7 @@ public class Solution {
       res.add(new ArrayList<String>(list));
     else {
       for (int i = pos; i < s.length(); i++) {
-        if (isPal(s, pos, i)) {
+        if (isPalendromic(s, pos, i)) {
           list.add(s.substring(pos, i + 1));
           dfs(s, i + 1, list, res);
           list.remove(list.size() - 1);
@@ -20,7 +20,7 @@ public class Solution {
     }
   }
 
-  public boolean isPal(String s, int low, int high) {
+  public boolean isPalendromic(String s, int low, int high) {
     while (low < high)
       if (s.charAt(low++) != s.charAt(high--))
         return false;
