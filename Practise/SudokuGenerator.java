@@ -102,7 +102,7 @@ public class SudokuGenerator {
   public void removeKDigits() {
     int count = emptySpaces;
     while (count != 0) {
-      int cellId = randomGenerator(81);
+      int cellId = randomGenerator(80);
       int i = (cellId / 9);
       int j = cellId % 9;
       if (j != 0)
@@ -124,7 +124,7 @@ public class SudokuGenerator {
   }
 
   public static void main(String[] args) {
-    SudokuGenerator sudoku = new SudokuGenerator(10);
+    SudokuGenerator sudoku = new SudokuGenerator(40);
     sudoku.fillValues();
     sudoku.printSudoku();
   }
