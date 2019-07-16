@@ -15,6 +15,7 @@ class Foo {
 
   public void second(Runnable printSecond) throws InterruptedException {
     run2.acquire();
+
     printSecond.run();
     run3.release();
   }
