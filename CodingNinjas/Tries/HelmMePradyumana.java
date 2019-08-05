@@ -48,7 +48,6 @@ public class HelmMePradyumana {
       }
       currentNode = currentNode.children[index];
       currentNode.wordsUnderThisCharacter++;
-
     }
     currentNode.isEndOfWord = true;
   }
