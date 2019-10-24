@@ -9,8 +9,7 @@ class Solution {
     int max = 1;
     for (int i = 0; i < m; i++)
       for (int j = 0; j < n; j++)
-        int len = dfs(matrix, i, j, m, n, cache);
-        max = Math.max(max, len);
+        max = Math.max(max, dfs(matrix, i, j, m, n, cache));
 
     return max;
   }
