@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_448_NumbersDisapper {
   public List<Integer> findDisappearedNumbers(int[] nums) {
     List<Integer> ret = new ArrayList<Integer>();
 

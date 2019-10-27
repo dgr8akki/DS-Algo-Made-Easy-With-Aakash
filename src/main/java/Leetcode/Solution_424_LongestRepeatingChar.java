@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_424_LongestRepeatingChar {
   public int characterReplacement(String s, int k) {
     int len = s.length();
     int[] count = new int[26];

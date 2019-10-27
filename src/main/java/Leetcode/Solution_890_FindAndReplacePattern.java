@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_890_FindAndReplacePattern {
 
   private String hash(String s) {
     StringBuilder sb = new StringBuilder();

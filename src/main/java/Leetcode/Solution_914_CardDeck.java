@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_914_CardDeck {
   public boolean hasGroupsSizeX(int[] deck) {
     Map<Integer, Integer> count = new HashMap<>();
     int res = 0;

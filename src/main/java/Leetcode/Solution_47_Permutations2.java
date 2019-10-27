@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_47_Permutations2 {
   public List<List<Integer>> permuteUnique(int[] nums) {
     List<List<Integer>> list = new ArrayList<>();
     Arrays.sort(nums);

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_884_UncommonWords {
   public String[] uncommonFromSentences(String A, String B) {
     List<String> list = new ArrayList<>();
     String[] aWords = A.split(" ");

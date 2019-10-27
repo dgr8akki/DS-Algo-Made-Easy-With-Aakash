@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_140_WordBreak2 {
   public List<String> wordBreak(String s, List<String> wordDict) {
     TrieNode head = new TrieNode('$');
     preprocess(wordDict, head);

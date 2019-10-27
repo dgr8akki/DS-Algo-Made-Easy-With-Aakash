@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_84_MaxAreaInHistogram {
   public int largestRectangleArea(int[] input) {
     Deque<Integer> stack = new LinkedList<Integer>();
     int maxArea = 0;

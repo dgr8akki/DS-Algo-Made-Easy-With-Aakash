@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_69_Sqrt {
     public int mySqrt(int x) {
         long n = x;
         while( n * n > x)

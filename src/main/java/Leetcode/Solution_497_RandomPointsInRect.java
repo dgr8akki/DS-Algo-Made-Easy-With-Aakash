@@ -1,13 +1,16 @@
 package Leetcode;
 
-class Solution {
+import java.util.Random;
+import java.util.TreeMap;
 
-  TreeMap<Integer, Integer> treeMap;
-  Random rand;
-  int areaSum;
-  int[][] myRects;
+class Solution_497_RandomPointsInRect {
 
-  public Solution(int[][] rects) {
+  private TreeMap<Integer, Integer> treeMap;
+  private Random rand;
+  private int areaSum;
+  private int[][] myRects;
+
+  public Solution_497_RandomPointsInRect(int[][] rects) {
     treeMap = new TreeMap<>();
     rand = new Random();
     myRects = rects;
@@ -30,6 +33,6 @@ class Solution {
 
     int pointX = leftBound + rand.nextInt(rightBound - leftBound + 1);
     int pointY = bottomBound + rand.nextInt(topBound - bottomBound + 1);
-    return new int[] { pointX, pointY };
+    return new int[] {pointX, pointY};
   }
 }

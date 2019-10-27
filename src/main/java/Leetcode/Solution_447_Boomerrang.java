@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_447_Boomerrang {
   public int numberOfBoomerangs(int[][] points) {
     int res = 0;
     if (points.length < 3) {

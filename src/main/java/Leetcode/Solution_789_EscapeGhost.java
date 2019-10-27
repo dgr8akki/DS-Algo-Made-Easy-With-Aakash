@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_789_EscapeGhost {
   public boolean escapeGhosts(int[][] ghosts, int[] target) {
     int max = Math.abs(target[0]) + Math.abs(target[1]);
     for (int[] ghost : ghosts) {

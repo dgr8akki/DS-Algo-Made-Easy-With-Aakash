@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_623_AddRowToTree {
   public TreeNode addOneRow(TreeNode root, int v, int d) {
     if (d == 0 || d == 1) {
       TreeNode newroot = new TreeNode(v);

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_90_SubsetII {
   public List<List<Integer>> subsetsWithDup(int[] nums) {
     List<List<Integer>> list = new ArrayList<>();
     Arrays.sort(nums);

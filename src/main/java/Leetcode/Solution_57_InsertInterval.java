@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_57_InsertInterval {
   public int[][] insert(int[][] intervals, int[] newInterval) {
     int[][] newIntervals = new int[intervals.length + 1][2];
     for (int i = 0; i < intervals.length; i++)

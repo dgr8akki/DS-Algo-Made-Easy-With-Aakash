@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_547_FriendCircle {
   public int findCircleNum(int[][] M) {
     int n = M.length;
     List<List<Integer>> adjacencyList = new ArrayList<>();

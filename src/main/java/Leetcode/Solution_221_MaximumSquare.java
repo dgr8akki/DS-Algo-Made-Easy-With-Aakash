@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_221_MaximumSquare {
   public int maximalSquare(char[][] matrix) {
     if (matrix.length == 0)
       return 0;

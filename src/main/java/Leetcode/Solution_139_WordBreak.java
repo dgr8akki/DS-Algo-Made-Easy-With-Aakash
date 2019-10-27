@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_139_WordBreak {
   public boolean wordBreak(String s, List<String> words) {
     return wordBreak(s, 0, words, new HashSet<>());
   }

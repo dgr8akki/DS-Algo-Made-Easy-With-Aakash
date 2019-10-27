@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1123_LCADeepestNodes {
   int deepest = 0;
   TreeNode lca;
 

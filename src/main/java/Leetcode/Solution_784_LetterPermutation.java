@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_784_LetterPermutation {
   public List<String> letterCasePermutation(String S) {
     if (S == null || S.length() == 0)
       return new ArrayList<>();

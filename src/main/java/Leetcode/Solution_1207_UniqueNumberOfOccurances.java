@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1207_UniqueNumberOfOccurances {
   public boolean uniqueOccurrences(int[] arr) {
     int[] temp = new int[2003];
     for (int i : arr)

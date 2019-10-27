@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_744_SmallestGreaterThanTarget {
   public char nextGreatestLetter(char[] letters, char target) {
     int n = letters.length, start = 0, end = n - 1, mid = -1, res;
     while (start <= end) {

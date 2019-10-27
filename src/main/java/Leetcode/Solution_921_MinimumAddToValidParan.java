@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_921_MinimumAddToValidParan {
   public int minAddToMakeValid(String S) {
     Stack s = new Stack();
     char[] chs = S.toCharArray();

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_56_MergeIntervals {
   public int[][] merge(int[][] intervals) {
     if (intervals.length <= 1)
       return intervals;

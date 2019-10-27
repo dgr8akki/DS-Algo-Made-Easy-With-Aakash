@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_796_RotateString {
   public boolean rotateString(String A, String B) {
       StringBuilder sb = new StringBuilder(A);
       int count = 0;

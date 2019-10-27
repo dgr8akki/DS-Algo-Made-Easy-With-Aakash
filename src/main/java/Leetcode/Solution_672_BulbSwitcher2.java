@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_672_BulbSwitcher2 {
   public int flipLights(int n, int m) {
     if (m == 0)
       return 1;

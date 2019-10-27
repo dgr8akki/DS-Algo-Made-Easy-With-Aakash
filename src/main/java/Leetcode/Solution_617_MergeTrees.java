@@ -9,7 +9,7 @@ package Leetcode;
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class Solution_617_MergeTrees {
     public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
        if (t1 == null) return t2;
        if (t2 == null) return t1;

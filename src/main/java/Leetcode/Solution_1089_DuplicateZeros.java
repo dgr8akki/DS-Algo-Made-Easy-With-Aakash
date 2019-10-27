@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1089_DuplicateZeros {
   public void duplicateZeros(int[] A) {
     int n = A.length, i = 0, j = 0;
     for (i = 0; i < n; ++i, ++j)

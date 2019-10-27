@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_475_Heaters {
   public int findRadius(int[] houses, int[] heaters) {
       Arrays.sort(heaters);
       int result = Integer.MIN_VALUE;

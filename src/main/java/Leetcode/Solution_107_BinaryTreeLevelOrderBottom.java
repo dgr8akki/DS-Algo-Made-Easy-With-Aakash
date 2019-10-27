@@ -4,7 +4,7 @@ package Leetcode;
  * Definition for a binary tree node. public class TreeNode { int val; TreeNode
  * left; TreeNode right; TreeNode(int x) { val = x; } }
  */
-class Solution {
+class Solution_107_BinaryTreeLevelOrderBottom {
   public List<List<Integer>> levelOrderBottom(TreeNode root) {
     Queue<TreeNode> mainQueue = new LinkedList<>();
     Queue<TreeNode> tempQueue = new LinkedList<>();

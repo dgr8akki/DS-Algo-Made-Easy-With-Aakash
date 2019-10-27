@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_633_SumOfSquares {
   public boolean judgeSquareSum(int c) {
     if (c < 0)
       return false;

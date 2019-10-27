@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1111_MaxNestedParanthesis {
   public int[] maxDepthAfterSplit(String seq) {
     int n = seq.length(), res[] = new int[n];
     for (int i = 0; i < n; ++i)

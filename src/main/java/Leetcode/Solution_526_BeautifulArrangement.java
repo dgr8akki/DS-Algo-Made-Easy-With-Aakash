@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_526_BeautifulArrangement {
   int count = 0;
 
   public int countArrangement(int N) {

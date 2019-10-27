@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_421_MaximumXORPair {
   public int findMaximumXOR(int[] nums) {
     BitNode root = new BitNode();
     for (int num : nums)

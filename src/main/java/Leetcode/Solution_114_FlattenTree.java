@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_114_FlattenTree {
 
   private TreeNode prev;
 

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_868_BinaryGap {
   public int binaryGap(int N) {
     String bin = Integer.toBinaryString(N);
     int count = 0, maxCount = 0;

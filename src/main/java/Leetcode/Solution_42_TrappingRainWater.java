@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_42_TrappingRainWater {
   public int trap(int[] A) {
     if (A == null)
       return 0;

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_283_MoveZeros {
   public void moveZeroes(int[] nums) {
     if (nums == null || nums.length == 0)
       return;

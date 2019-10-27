@@ -1,7 +1,11 @@
 package Leetcode;
 
-class Solution {
-  public List<List<Integer>> minimumAbsDifference(int[] arr) {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+class Solution_1200_MinimumAbsoluteDifference {
+  public static List<List<Integer>> minimumAbsDifference(int[] arr) {
     Arrays.sort(arr);
     List<List<Integer>> result = new ArrayList<>();
     int minDiff = Math.abs(arr[0] - arr[1]);

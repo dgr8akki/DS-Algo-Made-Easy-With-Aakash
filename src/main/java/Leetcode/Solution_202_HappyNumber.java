@@ -2,7 +2,7 @@ package Leetcode;
 
 import java.util.*;
 
-class Solution {
+class Solution_202_HappyNumber {
   public static boolean isHappy(int n) {
     Set<Integer> set = new HashSet<>();
     return isHappyUtil(n, set);

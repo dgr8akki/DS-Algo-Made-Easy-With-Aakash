@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_76_MinWindow {
 
   private boolean stringContainsAllCharacters(String searchString, String t) {
     Map<Character, Integer> requiredCharacters = new HashMap<Character, Integer>();

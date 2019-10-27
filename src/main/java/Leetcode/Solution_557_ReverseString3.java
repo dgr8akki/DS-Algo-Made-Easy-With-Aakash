@@ -1,7 +1,7 @@
 package Leetcode;
 
-class Solution {
-  public String reverseWords(String s) {
+class Solution_557_ReverseString3 {
+  public static String reverseWords(String s) {
     String[] sar = s.split(" ");
     StringBuilder builder = new StringBuilder();
     String prefix = "";

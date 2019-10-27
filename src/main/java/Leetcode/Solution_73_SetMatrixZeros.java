@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_73_SetMatrixZeros {
   public void setZeroes(int[][] matrix) {
     if (matrix == null || matrix.length == 0 || matrix[0].length == 0)
       return;

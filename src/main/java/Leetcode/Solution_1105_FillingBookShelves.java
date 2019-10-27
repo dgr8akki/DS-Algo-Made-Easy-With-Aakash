@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1105_FillingBookShelves {
   public int minHeightShelves(int[][] books, int shelf_width) {
     int n = books.length;
     int[] dp = new int[n + 1];

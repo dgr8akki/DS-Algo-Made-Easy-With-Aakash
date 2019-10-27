@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_279_PerfectSquare {
   public int numSquares(int n) {
     int[] dp = new int[n + 1];
     Arrays.fill(dp, Integer.MAX_VALUE);

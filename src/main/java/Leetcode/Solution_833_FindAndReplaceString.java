@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_833_FindAndReplaceString {
   public String findReplaceString(String S, int[] indexes, String[] sources, String[] targets) {
     List<int[]> sorted = new ArrayList<>();
     for (int i = 0; i < indexes.length; i++)

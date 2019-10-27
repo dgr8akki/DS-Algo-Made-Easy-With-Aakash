@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_957_PrisonCell {
   public int[] prisonAfterNDays(int[] cells, int N) {
     for (N = (N - 1) % 14 + 1; N > 0; --N) {
       int[] cells2 = new int[8];

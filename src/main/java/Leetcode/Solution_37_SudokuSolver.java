@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_37_SudokuSolver {
   public class SudokuSolver {
     private int[][] sudoku;
     private char[][] sudo;

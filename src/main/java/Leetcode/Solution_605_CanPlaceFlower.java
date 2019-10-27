@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_605_CanPlaceFlower {
   public boolean canPlaceFlowers(int[] flowerbed, int n) {
     int count = 1;
     int result = 0;

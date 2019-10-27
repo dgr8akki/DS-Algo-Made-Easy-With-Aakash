@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_396_RotateFunction {
   public int maxRotateFunction(int[] A) {
     if (A.length == 0) {
       return 0;

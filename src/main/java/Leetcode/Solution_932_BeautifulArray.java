@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_932_BeautifulArray {
   public int[] beautifulArray(int N) {
     ArrayList<Integer> res = new ArrayList<>();
     res.add(1);

@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_92_ReverseLinkedList {
   public ListNode reverseBetween(ListNode head, int m, int n) {
     ListNode dummy = new ListNode(0);
     dummy.next = head;

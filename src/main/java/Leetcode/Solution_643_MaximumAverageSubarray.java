@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_643_MaximumAverageSubarray {
   public double findMaxAverage(int[] nums, int k) {
     double sum = 0, max = Integer.MIN_VALUE;
     int n = nums.length;

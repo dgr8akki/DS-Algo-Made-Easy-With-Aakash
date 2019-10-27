@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_503_NextGreaterNumber2 {
   public int[] nextGreaterElements(int[] nums) {
     int[] res = new int[nums.length];
     int max = Integer.MIN_VALUE;

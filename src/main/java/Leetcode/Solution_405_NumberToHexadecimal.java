@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_405_NumberToHexadecimal {
   public String toHex(int n) {
     char[] map = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f' };
     if (n == 0)

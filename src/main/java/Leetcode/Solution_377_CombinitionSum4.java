@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_377_CombinitionSum4 {
   Map<Integer, Integer> map = new HashMap<>();
 
   public int combinationSum4(int[] nums, int target) {

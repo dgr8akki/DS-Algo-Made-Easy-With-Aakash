@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_127_WordLadder {
   public int ladderLength(String beginWord, String endWord, List<String> wordList) {
     if (!wordList.contains(endWord))
       return 0;

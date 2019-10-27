@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_130_SurroundedRegions {
   static int directions[][] = { { 0, 1 }, { 0, -1 }, { 1, 0 }, { -1, 0 } };
   static boolean visited[][];
 

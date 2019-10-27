@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_290_WordPattern {
   public boolean wordPattern(String pattern, String str) {
     int pLen = pattern.length();
     String[] list = str.split(" ");

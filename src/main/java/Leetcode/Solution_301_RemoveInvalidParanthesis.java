@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_301_RemoveInvalidParanthesis {
   public List<String> removeInvalidParentheses(String s) {
     List<String> ans = new ArrayList<>();
     remove(s, ans, 0, 0, new char[] { '(', ')' });

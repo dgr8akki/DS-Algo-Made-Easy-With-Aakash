@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_187_RepeatedDNA {
   public List<String> findRepeatedDnaSequences(String s) {
     Set seen = new HashSet(), repeated = new HashSet();
     for (int i = 0; i + 9 < s.length(); i++) {

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1023_CamelCasing {
   public List<Boolean> camelMatch(String[] queries, String pattern) {
     List<Boolean> res = new ArrayList<>();
 

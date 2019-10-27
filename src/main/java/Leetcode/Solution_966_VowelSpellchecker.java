@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_966_VowelSpellchecker {
   public String[] spellchecker(String[] wordlist, String[] queries) {
     Map<String, String> wordMap = new HashMap<>();
     Map<String, String> wordPatternMap = new HashMap<>();

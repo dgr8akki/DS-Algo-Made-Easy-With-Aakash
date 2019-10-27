@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_667_BeautifulArrangements {
   public int[] constructArray(int n, int k) {
     int[] result = new int[n];
     int left = 1, right = n;

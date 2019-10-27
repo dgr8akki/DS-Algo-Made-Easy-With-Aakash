@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_414_ThirdLargest {
     public int thirdMax(int[] nums) {
         long firstMax = Long.MIN_VALUE;
         long secMax = Long.MIN_VALUE;

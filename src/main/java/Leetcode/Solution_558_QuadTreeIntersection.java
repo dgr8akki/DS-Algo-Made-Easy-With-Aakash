@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_558_QuadTreeIntersection {
   public Node intersect(Node quadTreeOne, Node quadTreeTwo) {
     if (quadTreeOne.isLeaf) {
       return quadTreeOne.val ? quadTreeOne : quadTreeTwo;

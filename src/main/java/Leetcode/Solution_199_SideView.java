@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_199_SideView {
   public List<Integer> rightSideView(TreeNode root) {
     List<Integer> result = new ArrayList<Integer>();
     rightView(root, result, 0);

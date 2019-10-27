@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_540_SingleElementInSortedList {
   public int singleNonDuplicate(int[] nums) {
     int low = 0;
     int high = nums.length - 1;
@@ -20,7 +20,7 @@ class Solution {
   }
 }
 
-class Solution1 {
+class Solution_540_SingleElementInSortedList1 {
   public int singleNonDuplicate(int[] nums) {
     int res = 0;
     for (int i : nums)

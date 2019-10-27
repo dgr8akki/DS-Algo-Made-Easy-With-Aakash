@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_394_StringDecode {
   public String decodeString(String str) {
     Stack<Character> s = new Stack<Character>();
     int index = 0;

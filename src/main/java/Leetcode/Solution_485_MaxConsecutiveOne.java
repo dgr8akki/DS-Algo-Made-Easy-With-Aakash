@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_485_MaxConsecutiveOne {
   public int findMaxConsecutiveOnes(int[] nums) {
     int count = 0, max = 0;
     for (int n : nums) {

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_179_LargestNumber {
   public String largestNumber(int[] num) {
     StringBuilder res = new StringBuilder();
     if (num == null || num.length == 0)

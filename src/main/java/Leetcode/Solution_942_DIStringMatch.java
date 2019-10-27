@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_942_DIStringMatch {
   public int[] diStringMatch(String S) {
 
     int n = S.length();

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1072_FlipCoinsForMaxRow {
   public int maxEqualRowsAfterFlips(int[][] matrix) {
     int ans = 0;
     int m = matrix.length, n = matrix[0].length;

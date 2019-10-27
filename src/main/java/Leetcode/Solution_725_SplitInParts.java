@@ -4,7 +4,7 @@ package Leetcode;
  * Definition for singly-linked list. public class ListNode { int val; ListNode
  * next; ListNode(int x) { val = x; } }
  */
-class Solution {
+class Solution_725_SplitInParts {
   public ListNode[] splitListToParts(ListNode root, int k) {
     int N = 0;
     for (ListNode cur = root; cur != null; cur = cur.next)

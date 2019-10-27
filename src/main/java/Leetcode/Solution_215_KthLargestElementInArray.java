@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_215_KthLargestElementInArray {
   public int findKthLargest(int[] arr, int k) {
     return select(arr.length - k, 0, arr.length - 1, arr);
   }

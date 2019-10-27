@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_324_WiggleSort2 {
   public void wiggleSort(int[] nums) {
     if (nums == null || nums.length <= 1)
       return;

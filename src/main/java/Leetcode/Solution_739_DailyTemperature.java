@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_739_DailyTemperature {
   public int[] dailyTemperatures(int[] temperatures) {
     Stack<Integer> stack = new Stack<>();
     int[] ret = new int[temperatures.length];

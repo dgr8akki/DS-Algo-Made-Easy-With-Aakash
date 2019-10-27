@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_599_MinimumIndex {
   public String[] findRestaurant(String[] list1, String[] list2) {
     Map<String, Integer> map = new HashMap<>();
     List<String> res = new ArrayList<>();

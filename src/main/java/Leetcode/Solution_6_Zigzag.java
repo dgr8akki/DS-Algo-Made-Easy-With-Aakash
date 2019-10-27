@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_6_Zigzag {
   public String convert(String s, int nRows) {
     char[] c = s.toCharArray();
     int len = c.length;

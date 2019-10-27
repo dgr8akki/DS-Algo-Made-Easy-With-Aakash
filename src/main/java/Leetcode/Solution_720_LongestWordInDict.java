@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_720_LongestWordInDict {
   public String longestWord(String[] words) {
     Arrays.sort(words);
     Set<String> built = new HashSet<String>();

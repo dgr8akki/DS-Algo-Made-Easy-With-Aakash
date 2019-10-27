@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_881_BoatsToSavePeople {
   public int numRescueBoats(int[] people, int limit) {
     Arrays.sort(people);
     int i, j;

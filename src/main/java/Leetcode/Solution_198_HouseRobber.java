@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_198_HouseRobber {
   public int rob(int[] nums) {
       int[] dp = new int[nums.length + 1];
       Arrays.fill(dp, -1);

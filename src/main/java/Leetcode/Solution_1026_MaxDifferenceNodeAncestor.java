@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1026_MaxDifferenceNodeAncestor {
   public int maxAncestorDiff(TreeNode root) {
     return dfs(root, root.val, root.val);
   }

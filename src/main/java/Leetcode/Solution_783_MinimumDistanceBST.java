@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_783_MinimumDistanceBST {
   int min = Integer.MAX_VALUE;
   int prev = -1;
 

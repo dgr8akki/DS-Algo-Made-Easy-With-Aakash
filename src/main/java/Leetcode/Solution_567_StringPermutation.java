@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_567_StringPermutation {
   public boolean checkInclusion(String s1, String s2) {
     int len1 = s1.length(), len2 = s2.length();
     if (len1 > len2)

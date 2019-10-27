@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_5_LongestPalindromicSubstring {
   public String longestPalindrome(String s) {
     return lps(s);
   }

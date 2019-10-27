@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_397_IntegerReplacement {
   public int min = Integer.MAX_VALUE;
 
   public int integerReplacement(int n) {

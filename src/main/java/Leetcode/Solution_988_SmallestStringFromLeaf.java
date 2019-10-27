@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_988_SmallestStringFromLeaf {
   public String smallestFromLeaf(TreeNode root) {
     return dfs(root, "");
   }

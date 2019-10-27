@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_16_ThreeSumClosest {
   public int threeSumClosest(int[] nums, int target) {
     Arrays.sort(nums);
     int dist = Integer.MAX_VALUE, minSum = 0;

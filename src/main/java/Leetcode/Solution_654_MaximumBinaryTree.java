@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_654_MaximumBinaryTree {
   public TreeNode constructMaximumBinaryTree(int[] nums) {
     if (nums == null)
       return null;

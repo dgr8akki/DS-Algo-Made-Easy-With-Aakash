@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_492_ConstructRectangle {
   public int[] constructRectangle(int area) {
     int width = (int) Math.sqrt(area);
     while (area % width != 0)

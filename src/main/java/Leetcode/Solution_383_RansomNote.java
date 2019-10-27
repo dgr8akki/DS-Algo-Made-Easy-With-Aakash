@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_383_RansomNote {
   public boolean canConstruct(String ransomNote, String magazine) {
       Map<Character, Integer> map = new HashMap<>();
       for(int i = 0; i < magazine.length(); i++) {

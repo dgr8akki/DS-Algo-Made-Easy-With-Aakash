@@ -12,7 +12,7 @@ class Employee {
     public List<Integer> subordinates;
 };
 */
-class Solution {
+class Solution_690_EmployeeImportance {
   int total = 0;
 
   public int getImportance(List<Employee> employees, int id) {

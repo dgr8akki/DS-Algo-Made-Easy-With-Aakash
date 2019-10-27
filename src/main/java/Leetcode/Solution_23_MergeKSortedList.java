@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_23_MergeKSortedList {
   public ListNode mergeKLists(ListNode[] lists) {
     if (lists == null || lists.length == 0)
       return null;

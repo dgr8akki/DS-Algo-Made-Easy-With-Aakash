@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_91_DecodeWays {
   final static int M = 1_000_000_000 + 7;
 
   public int numDecodings(String s) {

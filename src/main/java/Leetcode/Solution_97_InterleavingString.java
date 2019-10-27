@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_97_InterleavingString {
   public boolean isInterleave(String s1, String s2, String s3) {
     int m = s1.length(), n = s2.length();
     if (s3.length() != m + n) {

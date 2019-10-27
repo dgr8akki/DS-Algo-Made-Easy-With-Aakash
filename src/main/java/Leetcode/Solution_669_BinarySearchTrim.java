@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_669_BinarySearchTrim {
 
   public TreeNode trimBST(TreeNode root, int L, int R) {
     if (root == null)

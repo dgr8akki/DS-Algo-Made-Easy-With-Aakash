@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_831_MaskingPersonalInfo {
   String[] country = { "", "+*-", "+**-", "+***-" };
 
   public String maskPII(String S) {

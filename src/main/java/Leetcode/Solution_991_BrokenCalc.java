@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_991_BrokenCalc {
   public int brokenCalc(int X, int Y) {
     int minNumberOfOperations = 0;
     while (Y > X) {

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_395_LongestSubstring {
   public int longestSubstring(String s, int k) {
     int d = 0;
 

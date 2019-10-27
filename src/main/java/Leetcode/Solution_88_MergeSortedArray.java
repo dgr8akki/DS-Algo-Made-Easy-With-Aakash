@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_88_MergeSortedArray {
   public void merge(int[] nums1, int m, int[] nums2, int n) {
     int lPtr = m - 1, rPtr = n - 1, mPtr = m + n - 1;
     while (lPtr >= 0 && rPtr >= 0) {

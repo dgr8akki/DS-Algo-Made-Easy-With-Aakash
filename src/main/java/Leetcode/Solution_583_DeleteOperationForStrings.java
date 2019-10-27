@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_583_DeleteOperationForStrings {
   public int minDistance(String word1, String word2) {
     int dp[][] = new int[word1.length() + 1][word2.length() + 1];
     for (int i = 0; i <= word1.length(); i++)

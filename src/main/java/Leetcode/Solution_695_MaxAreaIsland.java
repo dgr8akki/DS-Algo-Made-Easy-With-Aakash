@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_695_MaxAreaIsland {
   public int maxAreaOfIsland(int[][] grid) {
     boolean[][] visited = new boolean[grid.length][grid[0].length];
     int max = 0;

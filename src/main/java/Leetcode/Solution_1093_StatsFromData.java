@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1093_StatsFromData {
   public double[] sampleStats(int[] count) {
     int total = 0, mode = 0;
     double median = 0, min = -1, max = 0, avg = 0, sum = 0;

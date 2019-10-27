@@ -9,7 +9,7 @@ package Leetcode;
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class Solution_897_IncreasingOrderSearch {
     public TreeNode increasingBST(TreeNode root) {
         return increasingBSTHelper(root, null);
     }

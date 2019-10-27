@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_553_OptimalDivision {
   public String optimalDivision(int[] nums) {
     int n = nums.length;
     String expr = "";

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_34_FirstAndLastPosOfElement {
 
   public int[] searchRange(int[] nums, int target) {
     int[] res = new int[2];

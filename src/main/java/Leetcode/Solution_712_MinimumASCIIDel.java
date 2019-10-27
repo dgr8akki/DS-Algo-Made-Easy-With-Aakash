@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_712_MinimumASCIIDel {
   public int minimumDeleteSum(String s1, String s2) {
     int m = s1.length(), n = s2.length(), MAX = Integer.MAX_VALUE;
     char[] a = s1.toCharArray(), b = s2.toCharArray();

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_17_LetterCombinationsOfPhone {
   public List<String> letterCombinations(String digits) {
     if (digits.length() == 0)
       return new ArrayList<String>();

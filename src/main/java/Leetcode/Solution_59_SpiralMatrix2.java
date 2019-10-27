@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_59_SpiralMatrix2 {
   public int[][] generateMatrix(int n) {
     int counter = 1;
     int[][] matrix = new int[n][n];

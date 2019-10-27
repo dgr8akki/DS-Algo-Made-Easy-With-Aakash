@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_813_LargestSumOfAverage {
   public double largestSumOfAverages(int[] A, int K) {
     int N = A.length;
     double[][] dp = new double[N + 1][N + 1];

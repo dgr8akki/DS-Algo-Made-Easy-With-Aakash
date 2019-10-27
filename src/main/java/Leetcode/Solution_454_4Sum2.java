@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_454_4Sum2 {
   public int fourSumCount(int[] A, int[] B, int[] C, int[] D) {
     Map<Integer, Integer> map = new HashMap<>();
     for (int i = 0; i < A.length; i++)

@@ -1,16 +1,20 @@
 package Leetcode;
 
-class Solution {
-  public int lengthOfLongestSubstring(String s) {
+import java.util.HashSet;
+import java.util.Set;
+
+class Solution_3_LongestSubstringWithoutRepeat {
+  public static int lengthOfLongestSubstring(String s) {
     int leftRunner = 0, rightRunner = 0, max = 0;
     Set<Character> set = new HashSet<>();
-    while (rightRunner < s.length())
-      if (set.contains(s.charAt(rightRunner)))
+    while (rightRunner < s.length()) {
+      if (set.contains(s.charAt(rightRunner))) {
         set.remove(s.charAt(leftRunner++));
-      else {
+      } else {
         set.add(s.charAt(rightRunner++));
         max = Math.max(max, set.size());
       }
+    }
     return max;
   }
 }

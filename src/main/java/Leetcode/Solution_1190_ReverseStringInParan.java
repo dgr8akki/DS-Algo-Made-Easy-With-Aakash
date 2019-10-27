@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1190_ReverseStringInParan {
   public String reverseParentheses(String s) {
     int n = s.length();
     Stack<Integer> opened = new Stack<>();

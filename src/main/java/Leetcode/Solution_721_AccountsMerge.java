@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_721_AccountsMerge {
   public List<List<String>> accountsMerge(List<List<String>> acts) {
     Map<String, String> owners = new HashMap<>();
     Map<String, String> parents = new HashMap<>();

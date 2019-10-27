@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_201_BiwiseANDofNumberRange {
   public int rangeBitwiseAnd(int m, int n) {
     int diffBits = 0;
     while (m != n) {

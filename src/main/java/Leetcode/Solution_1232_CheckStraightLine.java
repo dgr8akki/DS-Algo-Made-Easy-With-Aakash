@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1232_CheckStraightLine {
   public boolean checkStraightLine(int[][] co) {
     int p = co[0][0], q = co[0][1], u = co[1][0], v = co[1][1];
     for (int[] c : co)

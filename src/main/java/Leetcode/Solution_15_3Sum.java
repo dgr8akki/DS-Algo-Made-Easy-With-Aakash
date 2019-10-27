@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_15_3Sum {
   public List<List<Integer>> threeSum(int[] num) {
     Arrays.sort(num);
     List<List<Integer>> res = new LinkedList<>();

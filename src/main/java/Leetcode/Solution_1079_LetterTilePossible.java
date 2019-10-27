@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1079_LetterTilePossible {
   int count;
 
   public int numTilePossibilities(String tiles) {

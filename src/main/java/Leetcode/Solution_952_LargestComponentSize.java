@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_952_LargestComponentSize {
   class UF {
     int[] parent;
     int[] size;
@@ -64,7 +64,7 @@ class Solution {
   }
 }
 /*
- * class Solution { public int largestComponentSize(int[] A) { int n = A.length;
+ * class Solution_952_LargestComponentSize { public int largestComponentSize(int[] A) { int n = A.length;
  * List<List<Integer>> adjacencyList = new ArrayList<>(); for(int i = 0; i < n;
  * i++) adjacencyList.add(new ArrayList<>());
  * 

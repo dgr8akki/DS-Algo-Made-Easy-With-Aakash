@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_473_MatchsticksToSquare {
   public boolean makesquare(int[] nums) {
     if (nums == null || nums.length < 4)
       return false;

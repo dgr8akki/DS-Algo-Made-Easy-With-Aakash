@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1022_SumToRootBinary {
   public int sumRootToLeaf(TreeNode root) {
     if (root == null)
       return 0;

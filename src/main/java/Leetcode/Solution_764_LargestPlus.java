@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_764_LargestPlus {
   public int orderOfLargestPlusSign(int N, int[][] mines) {
     int[][] grid = new int[N][N];
 

@@ -18,7 +18,7 @@ class Node {
     }
 };
 */
-class Solution {
+class Solution_430_FlattenLinkedList {
   public Node flatten(Node head) {
     flattenTail(head);
     return head;

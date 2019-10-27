@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_874_WalkingDog {
   private static int[][] directions = { { -1, 0 }, { 0, 1 }, { 1, 0 }, { 0, -1 } };
 
   public int robotSim(int[] commands, int[][] obstacles) {

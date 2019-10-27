@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1027_LongestAP {
   public int longestArithSeqLength(int[] A) {
 
     int maxlen = 0;

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1222_QueensThatCanAttackKing {
   public List<List<Integer>> queensAttacktheKing(int[][] queens, int[] king) {
     List<List<Integer>> result = new ArrayList<>();
     int kx = king[0], ky = king[1], i = kx, j = ky;

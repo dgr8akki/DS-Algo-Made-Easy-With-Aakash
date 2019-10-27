@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_260_SingleNumber3 {
   public int[] singleNumber(int[] nums) {
     int aXORb = 0;
     for (int num : nums)

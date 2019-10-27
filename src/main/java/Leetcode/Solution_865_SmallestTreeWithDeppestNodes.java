@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_865_SmallestTreeWithDeppestNodes {
   public int depth(TreeNode root) {
     if (root == null)
       return 0;

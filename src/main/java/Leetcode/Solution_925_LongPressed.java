@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_925_LongPressed {
   public boolean isLongPressedName(String name, String typed) {
       int i = 0, m = name.length(), n = typed.length();
       for (int j = 0; j < n; ++j)

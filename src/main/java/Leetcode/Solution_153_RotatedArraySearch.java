@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_153_RotatedArraySearch {
   public int findMin(int[] A) {
     int start = 0, mid = -1, end = A.length - 1;
     while (start < end) {

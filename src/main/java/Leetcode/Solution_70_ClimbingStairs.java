@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_70_ClimbingStairs {
   public int climbStairs(int n) {
     if (n == 0 || n == 1)
       return 1;

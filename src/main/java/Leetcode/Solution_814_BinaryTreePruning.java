@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_814_BinaryTreePruning {
   public TreeNode pruneTree(TreeNode root) {
     if (root == null)
       return null;

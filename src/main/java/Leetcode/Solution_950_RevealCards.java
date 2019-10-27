@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_950_RevealCards {
   public int[] deckRevealedIncreasing(int[] deck) {
     int n = deck.length;
     Arrays.sort(deck);

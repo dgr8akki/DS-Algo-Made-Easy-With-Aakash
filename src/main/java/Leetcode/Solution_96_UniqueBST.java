@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_96_UniqueBST {
   private static int M = 1_000_000_007;
 
   public int numTrees(int n) {

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1170_CompareStringsByFrequency {
   public int[] numSmallerByFrequency(String[] queries, String[] words) {
     int fw[] = new int[words.length];
     int ans[] = new int[queries.length];

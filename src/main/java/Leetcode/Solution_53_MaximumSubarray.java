@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_53_MaximumSubarray {
   public int maxSubArray(int[] prices) {
     int globalMax = Integer.MIN_VALUE;
     int sum = 0;

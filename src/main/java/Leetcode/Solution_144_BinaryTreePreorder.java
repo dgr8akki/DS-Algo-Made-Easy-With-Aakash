@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_144_BinaryTreePreorder {
   public List<Integer> preorderTraversal(TreeNode root) {
     List<Integer> pre = new LinkedList<Integer>();
     if (root == null)

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_740_DeleteAndEarn {
   public int deleteAndEarn(int[] nums) {
     int n = 10001;
     int[] buckets = new int[n];

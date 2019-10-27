@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_22_GenerateParenthesis {
   public List<String> generateParenthesis(int n) {
     List<String> list = new ArrayList<String>();
     backtrack(list, "", 0, 0, n);

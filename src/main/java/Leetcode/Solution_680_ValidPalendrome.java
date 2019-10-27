@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_680_ValidPalendrome {
   public boolean validPalindrome(String s) {
     int l = -1, r = s.length();
     while (++l < --r)

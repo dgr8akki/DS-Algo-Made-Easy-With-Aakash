@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_560_SubarraySumK {
   public int subarraySum(int[] nums, int k) {
     int sum = 0, result = 0;
     Map<Integer, Integer> preSum = new HashMap<>();

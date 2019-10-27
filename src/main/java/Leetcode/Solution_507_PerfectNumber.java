@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_507_PerfectNumber {
   public boolean checkPerfectNumber(int num) {
     if (num == 1)
       return false;

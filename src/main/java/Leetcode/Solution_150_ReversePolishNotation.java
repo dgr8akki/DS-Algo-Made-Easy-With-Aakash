@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_150_ReversePolishNotation {
   public int evalRPN(String[] tokens) {
     int a, b;
     Stack<Integer> S = new Stack<Integer>();

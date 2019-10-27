@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_714_StockProblemWithFee {
   public int maxProfit(int[] prices, int fee) {
     if (prices == null || prices.length == 0)
       return 0;

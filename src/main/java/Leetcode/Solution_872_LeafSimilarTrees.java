@@ -9,7 +9,7 @@ package Leetcode;
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class Solution_872_LeafSimilarTrees {
     public boolean leafSimilar(TreeNode root1, TreeNode root2) {
         if(root1 == null && root2 == null) return true;
         List<Integer> tree1Nodes = getNodes(root1);

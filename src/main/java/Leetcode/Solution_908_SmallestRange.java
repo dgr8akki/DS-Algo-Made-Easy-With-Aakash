@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_908_SmallestRange {
   public int smallestRangeI(int[] A, int k) {
     int n = A.length;
     int min = A[0];

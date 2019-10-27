@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_941_ValidMountains {
   public boolean validMountainArray(int[] A) {
     int n = A.length, i = 0, j = n - 1;
     while (i + 1 < n && A[i] < A[i + 1])

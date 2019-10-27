@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1047_RemoveAdjacentDuplicates {
   public String removeDuplicates(String S) {
     StringBuilder builder = new StringBuilder();
     for (char c : S.toCharArray()) {

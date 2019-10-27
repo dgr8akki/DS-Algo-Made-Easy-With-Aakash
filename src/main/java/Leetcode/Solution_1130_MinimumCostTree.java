@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1130_MinimumCostTree {
   public int mctFromLeafValues(int[] A) {
     int res = 0, n = A.length;
     Stack<Integer> stack = new Stack<>();

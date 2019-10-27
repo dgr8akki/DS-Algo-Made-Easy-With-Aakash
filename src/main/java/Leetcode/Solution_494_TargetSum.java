@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_494_TargetSum {
   public int findTargetSumWays(int[] nums, int s) {
     int sum = 0;
     for (int i : nums)

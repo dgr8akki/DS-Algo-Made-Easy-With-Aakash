@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_44_WildCardMatching {
   public boolean isMatch(String s, String p) {
     if (s.length() == 0 && p.length() == 0)
       return true;

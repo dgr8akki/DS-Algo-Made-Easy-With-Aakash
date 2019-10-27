@@ -2,7 +2,7 @@ package Leetcode;
 
 import javafx.util.Pair;
 
-class Solution {
+class Solution_827_LargeIsland {
   public int N = 0;
 
   public int largestIsland(int[][] grid) {

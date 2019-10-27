@@ -4,7 +4,7 @@ package Leetcode;
  * Definition for a binary tree node. public class TreeNode { int val; TreeNode
  * left; TreeNode right; TreeNode(int x) { val = x; } }
  */
-class Solution {
+class Solution_655_BinaryTreePrinter {
   public List<List<String>> printTree(TreeNode root) {
     int height = height(root);
     int wide = wide(root);

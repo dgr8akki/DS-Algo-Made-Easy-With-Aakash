@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_268_MissingNumber {
     public int missingNumber(int[] nums) {
         int n = nums.length + 1;
         int sumOfFirstNNaturalNumber = (n * (n - 1)) / 2;

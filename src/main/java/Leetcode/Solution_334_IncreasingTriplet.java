@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_334_IncreasingTriplet {
   public boolean increasingTriplet(int[] nums) {
     int small = Integer.MAX_VALUE, big = Integer.MAX_VALUE;
     for (int n : nums)

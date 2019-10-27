@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_682_BaseballGame {
   public int calPoints(String[] ops) {
     Stack<Integer> st = new Stack<>();
     int sum = 0;

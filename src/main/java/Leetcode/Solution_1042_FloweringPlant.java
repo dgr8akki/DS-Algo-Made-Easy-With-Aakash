@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1042_FloweringPlant {
   public int[] gardenNoAdj(int N, int[][] paths) {
     Map<Integer, Set<Integer>> G = new HashMap<>();
     for (int i = 0; i < N; i++)

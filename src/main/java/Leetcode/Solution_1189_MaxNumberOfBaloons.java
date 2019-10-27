@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1189_MaxNumberOfBaloons {
   public int maxNumberOfBalloons(String text) {
     int[] chars = new int[26];
     for (char c : text.toCharArray())

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1011_CapacityToShip {
   public int shipWithinDays(int[] weights, int D) {
     int left = 0, right = 0;
     for (int w : weights) {

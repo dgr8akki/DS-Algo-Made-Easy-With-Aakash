@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_235_LCA {
   public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
     if (root == null)
       return null;

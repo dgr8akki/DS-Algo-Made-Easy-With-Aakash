@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_718_MaxLenRepeatedSubarray {
   public int findLength(int[] a, int[] b) {
     int m = a.length, n = b.length;
     if (m == 0 || n == 0)

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_945_MinimumIncrimntForUnique {
   public int minIncrementForUnique(int[] A) {
     Arrays.sort(A);
     int res = 0, need = 0;

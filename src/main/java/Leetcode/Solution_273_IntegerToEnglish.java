@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_273_IntegerToEnglish {
   private final String[] belowTen = new String[] { "", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight",
       "Nine" };
   private final String[] belowTwenty = new String[] { "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen",

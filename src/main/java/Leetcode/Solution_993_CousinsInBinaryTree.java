@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_993_CousinsInBinaryTree {
   private int depthX;
   private int depthY;
   private TreeNode parentX;

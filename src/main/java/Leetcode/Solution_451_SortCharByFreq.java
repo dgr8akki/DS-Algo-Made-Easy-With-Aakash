@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_451_SortCharByFreq {
   public String frequencySort(String s) {
     int[][] counts = new int[256][2];
     for (int i = 0; i < s.length(); i++) {

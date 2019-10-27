@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_947_MaxStoneRemoved {
   Map<Integer, Integer> f = new HashMap<>();
   int islands = 0;
 

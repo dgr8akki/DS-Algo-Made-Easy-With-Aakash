@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_10_RegexMatch {
   public boolean isMatch(String s, String p) {
     if (p.contains(".") || p.contains("*")) {
       if (p.length() == 1 || p.charAt(1) != '*')

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_926_FlipStringToMonotonicIncreasing {
   public int minFlipsMonoIncr(String S) {
     if (S == null || S.length() <= 0)
       return 0;

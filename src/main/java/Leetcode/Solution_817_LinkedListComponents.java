@@ -4,7 +4,7 @@ package Leetcode;
  * Definition for singly-linked list. public class ListNode { int val; ListNode
  * next; ListNode(int x) { val = x; } }
  */
-class Solution {
+class Solution_817_LinkedListComponents {
   public int numComponents(ListNode head, int[] G) {
     Set<Integer> setG = new HashSet<>();
     for (int i : G)

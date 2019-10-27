@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_152_MaximumProductSubarray {
   public int maxProduct(int[] nums) {
     int res = nums[0], max = nums[0], min = nums[0];
     for (int i = 1; i < nums.length; i++) {

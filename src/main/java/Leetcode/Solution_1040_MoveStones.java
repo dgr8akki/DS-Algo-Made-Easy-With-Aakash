@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1040_MoveStones {
   public int[] numMovesStonesII(int[] A) {
     Arrays.sort(A);
     int i = 0, n = A.length, low = n;

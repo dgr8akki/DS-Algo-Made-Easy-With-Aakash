@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_216_CombinationSum3 {
   public List<List<Integer>> combinationSum3(int k, int n) {
     int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
     List<List<Integer>> list = new ArrayList<>();

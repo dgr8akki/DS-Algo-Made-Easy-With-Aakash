@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_112_PathSum {
   public boolean hasPathSum(TreeNode root, int sum) {
     if (root == null)
       return false;

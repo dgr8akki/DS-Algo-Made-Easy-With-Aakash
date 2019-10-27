@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_998_MaxBinaryTree2 {
   public TreeNode insertIntoMaxTree(TreeNode n, int v) {
     if (n == null)
       return new TreeNode(v);

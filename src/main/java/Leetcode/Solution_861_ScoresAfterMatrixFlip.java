@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_861_ScoresAfterMatrixFlip {
   public int matrixScore(int[][] A) {
     int M = A.length, N = A[0].length, res = (1 << (N - 1)) * M;
     for (int j = 1; j < N; j++) {

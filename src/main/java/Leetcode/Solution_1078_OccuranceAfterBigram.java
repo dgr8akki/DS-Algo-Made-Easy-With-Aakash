@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1078_OccuranceAfterBigram {
   public String[] findOcurrences(String text, String first, String second) {
     String[] words = text.split(" ");
     List<String> list = new ArrayList<>();

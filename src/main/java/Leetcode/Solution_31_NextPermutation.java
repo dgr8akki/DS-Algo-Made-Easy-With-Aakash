@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_31_NextPermutation {
   public void nextPermutation(int[] nums) {
     if (nums == null || nums.length < 2)
       return;

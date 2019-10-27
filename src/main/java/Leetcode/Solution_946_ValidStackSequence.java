@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_946_ValidStackSequence {
   public boolean validateStackSequences(int[] pushed, int[] popped) {
     Stack<Integer> stk = new Stack<>();
     int i = 0;

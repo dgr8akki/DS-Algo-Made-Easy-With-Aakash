@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_806_LinesToWriteString {
   public int[] numberOfLines(int[] widths, String S) {
     int[] res = new int[2];
     int lineCount = 1;

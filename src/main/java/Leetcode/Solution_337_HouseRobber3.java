@@ -4,7 +4,7 @@ package Leetcode;
  * Definition for a binary tree node. public class TreeNode { int val; TreeNode
  * left; TreeNode right; TreeNode(int x) { val = x; } }
  */
-class Solution {
+class Solution_337_HouseRobber3 {
   private Map<TreeNode, Integer> map = new HashMap<>();
 
   public int rob(TreeNode root) {

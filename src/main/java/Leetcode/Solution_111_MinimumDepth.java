@@ -9,7 +9,7 @@ package Leetcode;
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class Solution_111_MinimumDepth {
     public int minDepth(TreeNode root) {
         if(root == null) return 0;
         if(root.left == null && root.right == null) return 1;

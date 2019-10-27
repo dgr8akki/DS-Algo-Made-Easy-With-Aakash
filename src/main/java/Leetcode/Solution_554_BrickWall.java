@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_554_BrickWall {
   public int leastBricks(List<List<Integer>> wall) {
     if (wall.size() == 0)
       return 0;

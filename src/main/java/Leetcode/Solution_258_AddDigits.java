@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_258_AddDigits {
   public int addDigits(int num) {
     if (num < 10)
       return num;

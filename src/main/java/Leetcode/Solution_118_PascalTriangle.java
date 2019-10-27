@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_118_PascalTriangle {
   public List<List<Integer>> generate(int numRows) {
     List<List<Integer>> res = new ArrayList<>();
     if (numRows == 0)

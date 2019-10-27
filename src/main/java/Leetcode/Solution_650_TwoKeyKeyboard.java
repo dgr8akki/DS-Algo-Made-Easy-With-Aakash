@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_650_TwoKeyKeyboard {
   public int minSteps(int n) {
     int[] dp = new int[n + 1];
 

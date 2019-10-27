@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_504_Base7 {
   public String convertToBase7(int num) {
     if (num < 0)
       return '-' + convertToBase7(-num);

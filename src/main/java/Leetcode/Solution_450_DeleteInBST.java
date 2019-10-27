@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_450_DeleteInBST {
   public TreeNode deleteNode(TreeNode root, int key) {
     if (root == null) {
       return null;

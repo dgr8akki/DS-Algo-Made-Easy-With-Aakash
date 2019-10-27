@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1186_MaxSubarraySumDelete {
   public int maximumSum(int[] a) {
     int n = a.length;
     int[] maxEndHere = new int[n], maxStartHere = new int[n];

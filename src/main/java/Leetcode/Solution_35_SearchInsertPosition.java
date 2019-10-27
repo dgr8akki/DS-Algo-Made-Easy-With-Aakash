@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_35_SearchInsertPosition {
   public int searchInsert(int[] nums, int target) {
     int expected = Arrays.binarySearch(nums, target);
     if (expected >= 0)

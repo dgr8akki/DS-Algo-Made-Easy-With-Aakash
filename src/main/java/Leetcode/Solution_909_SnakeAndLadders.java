@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_909_SnakeAndLadders {
   static class Node {
     int vertex;
     int distance;

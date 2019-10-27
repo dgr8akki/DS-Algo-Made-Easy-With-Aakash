@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_687_LongestUnivaluePath {
   int res = 0;
 
   public int longestUnivaluePath(TreeNode root) {

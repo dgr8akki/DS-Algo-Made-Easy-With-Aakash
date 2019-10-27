@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_171_ExcelShhetColumn {
     public int titleToNumber(String s) {
       int result = 0;
       for(int i = 0; i < s.length(); i++) {

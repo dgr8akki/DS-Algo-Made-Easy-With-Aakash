@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_951_FlipBinaryTree {
   public boolean flipEquiv(TreeNode root1, TreeNode root2) {
     if (root1 == null && root2 == null) {
       return true;

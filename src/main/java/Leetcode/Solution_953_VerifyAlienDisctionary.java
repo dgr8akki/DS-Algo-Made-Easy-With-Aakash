@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_953_VerifyAlienDisctionary {
   public boolean isAlienSorted(String[] words, String order) {
     int[] actualOrder = new int[26];
     for (int i = 0; i < 26; i++)

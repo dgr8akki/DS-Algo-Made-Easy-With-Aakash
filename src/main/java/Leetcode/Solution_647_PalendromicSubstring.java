@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_647_PalendromicSubstring {
   public int countSubstrings(String text) {
     int len = text.length(), maxCount = 0;
     for (int i = 0; i < len; i++) {

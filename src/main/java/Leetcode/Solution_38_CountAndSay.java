@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_38_CountAndSay {
   public String countAndSay(int n) {
     StringBuilder s = new StringBuilder("1");
     for (int i = 0; i < n - 1; ++i) {

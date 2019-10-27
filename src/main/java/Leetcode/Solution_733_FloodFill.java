@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_733_FloodFill {
   public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
     if (image[sr][sc] != newColor)
       dfs(image, sr, sc, image[sr][sc], newColor);

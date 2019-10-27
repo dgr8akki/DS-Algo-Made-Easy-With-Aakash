@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_688_KnightProbabInChess {
   int[][] direction = new int[][] { { 2, 1 }, { -2, 1 }, { 2, -1 }, { -2, -1 }, { 1, 2 }, { 1, -2 }, { -1, 2 },
       { -1, -2 } };
 

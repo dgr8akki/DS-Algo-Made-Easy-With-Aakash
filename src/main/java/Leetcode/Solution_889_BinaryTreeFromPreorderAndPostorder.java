@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_889_BinaryTreeFromPreorderAndPostorder {
   public TreeNode constructFromPrePost(int[] pre, int[] post) {
     int len = pre.length, nodes = 0;
     if (len == 0)

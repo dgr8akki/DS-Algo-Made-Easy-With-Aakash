@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_20_ValidParanthesis {
   public boolean isValid(String s) {
     Stack<Character> st = new Stack<>();
     if (s.length() == 0)

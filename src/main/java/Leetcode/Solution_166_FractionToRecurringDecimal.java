@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_166_FractionToRecurringDecimal {
   public String fractionToDecimal(int numerator, int denominator) {
     StringBuilder result = new StringBuilder();
     String sign = (numerator < 0 == denominator < 0 || numerator == 0) ? "" : "-";

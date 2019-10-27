@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_372_SuperPower {
   int ans = 1;
 
   public int superPow(int a, int[] b) {

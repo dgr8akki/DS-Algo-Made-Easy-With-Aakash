@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_516_LongestPalindromicSubsequence {
   public int longestPalindromeSubseq(String s) {
     int n = s.length();
     int[][] dp = new int[n + 1][n + 1];

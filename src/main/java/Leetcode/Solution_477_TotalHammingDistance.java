@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_477_TotalHammingDistance {
   public int totalHammingDistance(int[] nums) {
     int res = 0;
     for (int i = 0; i < nums.length; i++)

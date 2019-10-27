@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_999_CapturesForRook {
   public int numRookCaptures(char[][] board) {
     int posRow = -1;
     int posCol = -1;

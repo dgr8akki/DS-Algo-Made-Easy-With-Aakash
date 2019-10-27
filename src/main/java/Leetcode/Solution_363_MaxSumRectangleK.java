@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_363_MaxSumRectangleK {
   public int maxSumSubmatrix(int[][] matrix, int k) {
     int row = matrix.length;
     int col = matrix[0].length;

@@ -1,9 +1,13 @@
 package Leetcode;
 
-class Solution {
-  HashMap<Integer, List<Integer>> map;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
-  public Solution(int[] nums) {
+class Solution_398_RandomPickIndex {
+  private final HashMap<Integer, List<Integer>> map;
+
+  public Solution_398_RandomPickIndex(int[] nums) {
     map = new HashMap();
     for (int i = 0; i < nums.length; i++) {
       if (map.containsKey(nums[i])) {

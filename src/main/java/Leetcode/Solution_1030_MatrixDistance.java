@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1030_MatrixDistance {
   private class Pair {
     int x;
     int y;

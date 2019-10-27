@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_724_FindPivotIndex {
   public int pivotIndex(int[] A) {
     int lSum = 0, rSum = 0;
     for (int i : A)

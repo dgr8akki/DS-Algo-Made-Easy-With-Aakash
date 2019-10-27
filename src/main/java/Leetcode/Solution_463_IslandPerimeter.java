@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_463_IslandPerimeter {
   public int islandPerimeter(int[][] grid) {
     int islands = 0, neighbours = 0;
 

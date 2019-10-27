@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1043_PartitionArrayMaxSum {
   public int maxSumAfterPartitioning(int[] A, int K) {
     int N = A.length, dp[] = new int[N];
     for (int i = 0; i < N; ++i) {

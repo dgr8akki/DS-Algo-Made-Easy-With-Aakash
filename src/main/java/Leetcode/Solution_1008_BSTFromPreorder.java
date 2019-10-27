@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1008_BSTFromPreorder {
   public TreeNode bstFromPreorder(int[] preorder) {
     return bstFromPreorderUtil(preorder, 0, preorder.length - 1);
   }

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_11_ContainerWithMostWater {
   public int maxArea(int[] height) {
     int maxArea = 0;
     if (height == null || height.length == 1)

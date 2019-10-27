@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_518_CoinChange2 {
   private Map<String, Integer> map = new HashMap<>();
 
   public int change(int amount, int[] coins) {

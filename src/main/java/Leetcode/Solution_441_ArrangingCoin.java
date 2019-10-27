@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_441_ArrangingCoin {
     public int arrangeCoins(int n) {
         if(n == 1 || n == 0) return n;
         long start = 1;

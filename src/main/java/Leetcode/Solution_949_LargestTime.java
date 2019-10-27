@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_949_LargestTime {
   public String largestTimeFromDigits(int[] A) {
     String ans = "";
     for (int i = 0; i < 4; i++)

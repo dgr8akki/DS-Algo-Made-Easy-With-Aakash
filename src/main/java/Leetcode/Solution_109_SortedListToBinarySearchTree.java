@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_109_SortedListToBinarySearchTree {
   public TreeNode sortedListToBST(ListNode head) {
     if (head == null)
       return null;

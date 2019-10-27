@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_230_KthSmallestBST {
   public int kthSmallest(TreeNode root, int k) {
     int leftNodesCount = countNodes(root.left);
     if (k <= leftNodesCount)

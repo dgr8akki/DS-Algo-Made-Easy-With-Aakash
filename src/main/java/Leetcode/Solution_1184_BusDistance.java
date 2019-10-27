@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1184_BusDistance {
   public int distanceBetweenBusStops(int[] distance, int start, int destination) {
     int n = distance.length;
     int[] left = new int[n];

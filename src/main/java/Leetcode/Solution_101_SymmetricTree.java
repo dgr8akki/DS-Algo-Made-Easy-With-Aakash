@@ -9,7 +9,7 @@ package Leetcode;
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class Solution_101_SymmetricTree {
   public boolean isSymmetric(TreeNode root) {
     return root == null || isSymmetricHelp(root.left, root.right);
   }

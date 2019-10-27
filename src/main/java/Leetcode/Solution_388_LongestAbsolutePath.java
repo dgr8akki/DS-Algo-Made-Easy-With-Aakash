@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_388_LongestAbsolutePath {
   public int lengthLongestPath(String input) {
     String[] paths = input.split("\n");
     int[] stack = new int[paths.length + 1];

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_575_DistributeCandies {
   public int distributeCandies(int[] candies) {
     int mount = candies.length / 2;
     Set<Integer> candiesSet = new HashSet();

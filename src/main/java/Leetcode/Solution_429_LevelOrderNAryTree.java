@@ -14,7 +14,7 @@ class Node {
     }
 };
 */
-class Solution {
+class Solution_429_LevelOrderNAryTree {
   public List<List<Integer>> levelOrder(Node root) {
     Queue<Node> mainQueue = new LinkedList<>();
     Queue<Node> tempQueue = new LinkedList<>();

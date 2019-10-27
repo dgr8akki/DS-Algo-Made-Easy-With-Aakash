@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_481_MagicStrings {
   public int magicalString(int n) {
     List<Integer> nums = new ArrayList();
     nums.add(1);

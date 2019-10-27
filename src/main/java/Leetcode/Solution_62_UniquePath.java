@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_62_UniquePath {
   public int uniquePaths(int m, int n) {
     int dp[][] = new int[m][n];
 

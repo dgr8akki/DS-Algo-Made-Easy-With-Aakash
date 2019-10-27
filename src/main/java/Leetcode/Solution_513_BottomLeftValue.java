@@ -4,7 +4,7 @@ package Leetcode;
  * Definition for a binary tree node. public class TreeNode { int val; TreeNode
  * left; TreeNode right; TreeNode(int x) { val = x; } }
  */
-class Solution {
+class Solution_513_BottomLeftValue {
   public int findBottomLeftValue(TreeNode root) {
     Queue<TreeNode> mainQueue = new LinkedList<>();
     Queue<TreeNode> tempQueue = new LinkedList<>();

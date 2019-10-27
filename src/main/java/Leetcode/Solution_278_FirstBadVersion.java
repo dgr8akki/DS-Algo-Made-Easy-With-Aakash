@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_278_FirstBadVersion {
   public int firstBadVersion(int n) {
     int start = 1, end = n;
     while (start < end) {

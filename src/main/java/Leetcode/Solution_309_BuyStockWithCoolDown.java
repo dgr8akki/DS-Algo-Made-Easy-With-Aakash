@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_309_BuyStockWithCoolDown {
   public int maxProfit(int[] prices) {
     if (prices == null || prices.length <= 1)
       return 0;

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_100_SameTree {
   public boolean isSameTree(TreeNode p, TreeNode q) {
     if (p == null && q == null)
       return true;

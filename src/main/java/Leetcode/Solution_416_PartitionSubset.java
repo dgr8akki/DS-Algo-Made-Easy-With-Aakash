@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_416_PartitionSubset {
   public boolean canPartition(int[] nums) {
     int sum = 0;
     for (int num : nums)

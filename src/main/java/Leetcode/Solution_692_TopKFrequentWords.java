@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_692_TopKFrequentWords {
   public List<String> topKFrequent(String[] words, int k) {
 
     List<String> result = new LinkedList<>();

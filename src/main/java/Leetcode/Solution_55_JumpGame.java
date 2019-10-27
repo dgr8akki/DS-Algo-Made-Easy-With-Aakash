@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_55_JumpGame {
   public boolean canJump(int[] nums) {
     int max = 0;
     for (int idx = 0; idx < nums.length; idx++) {

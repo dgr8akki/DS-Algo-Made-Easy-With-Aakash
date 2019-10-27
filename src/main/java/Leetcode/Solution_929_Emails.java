@@ -3,7 +3,7 @@ package Leetcode;
 import java.util.Set;
 import java.util.HashSet;
 
-class Solution {
+class Solution_929_Emails {
     public int numUniqueEmails(String[] emails) {
         Set<String> emailSet = new HashSet<>();
         for(String email : emails) {

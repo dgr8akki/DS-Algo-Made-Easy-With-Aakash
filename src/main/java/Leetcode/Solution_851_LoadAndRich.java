@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_851_LoadAndRich {
   HashMap<Integer, List<Integer>> richer2 = new HashMap<>();
   int res[];
 

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_819_MostCommonWords {
   public static String mostCommonWord(String paragraph, String[] banned) {
     // Reconstruct paragraph
     paragraph = paragraph.toLowerCase();

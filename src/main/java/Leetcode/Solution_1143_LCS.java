@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1143_LCS {
   public int longestCommonSubsequence(String s1, String s2) {
     if (s1.length() == 0 || s2.length() == 0)
       return 0;

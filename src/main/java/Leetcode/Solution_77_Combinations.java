@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_77_Combinations {
   public static List<List<Integer>> combine(int n, int k) {
     List<List<Integer>> combs = new ArrayList<List<Integer>>();
     combine(combs, new ArrayList<Integer>(), 1, n, k);

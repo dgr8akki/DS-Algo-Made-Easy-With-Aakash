@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_389_FindTheDifference {
   public char findTheDifference(String s, String t) {
     int ans = 0;
     for (char c : t.toCharArray())
@@ -10,7 +10,7 @@ class Solution {
     return (char) ans;
   }
 }
-// class Solution1 {
+// class Solution_389_FindTheDifference1 {
 // public char findTheDifference(String s, String t) {
 // if(s.length() < t.length()) return findTheDifference(t, s);
 // StringBuilder builder = new StringBuilder(t);

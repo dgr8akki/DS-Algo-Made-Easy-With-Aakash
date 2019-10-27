@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_754_ReachANumber {
   public int reachNumber(int target) {
     target = Math.abs(target);
     int step = 0;

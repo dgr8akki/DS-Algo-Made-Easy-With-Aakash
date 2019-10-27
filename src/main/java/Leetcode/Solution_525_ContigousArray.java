@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_525_ContigousArray {
   public int findMaxLength(int[] nums) {
     for (int i = 0; i < nums.length; i++)
       if (nums[i] == 0)

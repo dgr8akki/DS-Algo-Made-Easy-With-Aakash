@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_315_SmallerNumberAfterSelf {
   int[] count;
 
   public List<Integer> countSmaller(int[] nums) {

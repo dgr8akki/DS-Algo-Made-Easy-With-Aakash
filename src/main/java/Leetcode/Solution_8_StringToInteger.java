@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_8_StringToInteger {
   public int myAtoi(String str) {
     double result = 0;
     int boundry = 1;

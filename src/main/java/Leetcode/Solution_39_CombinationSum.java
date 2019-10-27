@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_39_CombinationSum {
   public List<List<Integer>> combinationSum(int[] nums, int target) {
     List<List<Integer>> list = new ArrayList<>();
     Arrays.sort(nums);

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_652_DuplicateSubtree {
   public List<TreeNode> findDuplicateSubtrees(TreeNode root) {
     List<TreeNode> res = new LinkedList<>();
     postorder(root, new HashMap<>(), res);

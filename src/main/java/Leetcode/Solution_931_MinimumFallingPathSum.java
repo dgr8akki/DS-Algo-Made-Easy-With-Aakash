@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_931_MinimumFallingPathSum {
   public int minFallingPathSum(int[][] A) {
     for (int i = 1; i < A.length; ++i)
       for (int j = 0; j < A.length; ++j)

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_409_LongestPalendromic {
   public int longestPalindrome(String s) {
     int[] chars = new int[256];
     for (char c : s.toCharArray()) {

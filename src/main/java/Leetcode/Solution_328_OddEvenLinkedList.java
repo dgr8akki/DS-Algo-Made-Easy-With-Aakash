@@ -4,7 +4,7 @@ package Leetcode;
  * Definition for singly-linked list. public class ListNode { int val; ListNode
  * next; ListNode(int x) { val = x; } }
  */
-class Solution {
+class Solution_328_OddEvenLinkedList {
   public ListNode oddEvenList(ListNode head) {
     if (head == null)
       return null;

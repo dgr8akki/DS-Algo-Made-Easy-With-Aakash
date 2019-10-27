@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_423_ReconstructOriginalDigitFromEng {
   public String originalDigits(String s) {
     if (s == null || s.length() == 0)
       return "";

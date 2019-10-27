@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_12_IntegerToRoman {
   public static String intToRoman(int num) {
     String M[] = { "", "M", "MM", "MMM" };
     String C[] = { "", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM" };

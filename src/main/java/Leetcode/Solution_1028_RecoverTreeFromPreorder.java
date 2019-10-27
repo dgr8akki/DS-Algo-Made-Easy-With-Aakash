@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1028_RecoverTreeFromPreorder {
   int index = 0;
 
   public TreeNode recoverFromPreorder(String S) {

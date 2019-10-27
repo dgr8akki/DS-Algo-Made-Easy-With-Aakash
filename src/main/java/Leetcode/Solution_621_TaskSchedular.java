@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_621_TaskSchedular {
   public int leastInterval(char[] tasks, int n) {
     int[] taskCount = new int[26];
     int max = 0;

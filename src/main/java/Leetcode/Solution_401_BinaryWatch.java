@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_401_BinaryWatch {
   public List<String> readBinaryWatch(int num) {
     List<String> res = new ArrayList<>();
     for (int h = 0; h < 12; h++) {

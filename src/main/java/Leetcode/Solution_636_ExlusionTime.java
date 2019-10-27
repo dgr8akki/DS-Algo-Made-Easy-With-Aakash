@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_636_ExlusionTime {
   public int[] exclusiveTime(int n, List<String> logs) {
     int[] res = new int[n];
     Stack<Integer> stack = new Stack<>();

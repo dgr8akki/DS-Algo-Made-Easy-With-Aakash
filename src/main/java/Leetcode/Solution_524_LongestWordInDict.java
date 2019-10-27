@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_524_LongestWordInDict {
   public String findLongestWord(String s, List<String> d) {
     Collections.sort(d, (a, b) -> a.length() != b.length() ? -Integer.compare(a.length(), b.length()) : a.compareTo(b));
     for (String dictWord : d) {

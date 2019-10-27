@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1018_BinaryPrefixModFive {
   public List<Boolean> prefixesDivBy5(int[] A) {
     List<Boolean> res = new ArrayList<>();
     int num = 0;

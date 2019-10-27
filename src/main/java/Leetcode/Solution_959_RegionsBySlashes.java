@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_959_RegionsBySlashes {
   int count, n;
   int[] f;
 

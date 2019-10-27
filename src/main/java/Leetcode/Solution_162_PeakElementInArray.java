@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_162_PeakElementInArray {
   public int findPeakElement(int[] num) {
     int low = 0;
     int high = num.length - 1;

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_102_BinaryTreeLevelOrder {
   public List<List<Integer>> levelOrder(TreeNode root) {
     Queue<TreeNode> mainQueue = new LinkedList<>();
     Queue<TreeNode> tempQueue = new LinkedList<>();

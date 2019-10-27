@@ -1,10 +1,13 @@
 package Leetcode;
 
-class Solution {
+import java.util.ArrayList;
+import java.util.Random;
 
-  int[] nums;
+class Solution_384_ShuffleArray {
 
-  public Solution(int[] nums) {
+  private int[] nums;
+
+  public Solution_384_ShuffleArray(int[] nums) {
     this.nums = nums;
   }
 

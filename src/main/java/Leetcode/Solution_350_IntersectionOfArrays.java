@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_350_IntersectionOfArrays {
   public int[] intersect(int[] nums1, int[] nums2) {
     List<Integer> list = new ArrayList<>();
     Map<Integer, Integer> map = new HashMap<>();

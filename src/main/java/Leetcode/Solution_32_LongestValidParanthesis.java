@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_32_LongestValidParanthesis {
   public int longestValidParentheses(String s) {
     Stack<Integer> stack = new Stack<Integer>();
     int max = 0;

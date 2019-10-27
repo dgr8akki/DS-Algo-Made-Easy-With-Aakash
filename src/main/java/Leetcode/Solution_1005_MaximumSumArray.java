@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1005_MaximumSumArray {
   public int largestSumAfterKNegations(int[] A, int K) {
     Arrays.sort(A);
     for (int i = 0; K > 0 && i < A.length && A[i] < 0; ++i, --K)

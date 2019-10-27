@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_539_MinimumTimeDiff {
   public int findMinDifference(List<String> timePoints) {
     PriorityQueue<Integer> pq = new PriorityQueue<>();
     for (String time : timePoints) {

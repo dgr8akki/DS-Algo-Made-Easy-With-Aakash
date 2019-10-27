@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_79_WordSearch {
   static boolean[][] visited;
 
   public boolean exist(char[][] board, String word) {

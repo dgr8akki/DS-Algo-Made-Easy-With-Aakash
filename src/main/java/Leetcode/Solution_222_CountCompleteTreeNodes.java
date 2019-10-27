@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_222_CountCompleteTreeNodes {
   public int countNodes(TreeNode root) {
 
     int leftDepth = leftDepth(root);

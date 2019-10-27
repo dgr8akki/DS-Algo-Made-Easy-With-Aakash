@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_593_ValidSquare {
   public boolean validSquare(int[] p1, int[] p2, int[] p3, int[] p4) {
     int count = 0;
     double lineADistance = getLineDistance(p1, p2);
@@ -32,7 +32,7 @@ class Solution {
   }
 }
 
-class Solution1 {
+class Solution_593_ValidSquare1 {
   public boolean validSquare(int[] p1, int[] p2, int[] p3, int[] p4) {
     int count = 0;
     Double d1 = Math.pow((p1[0] - p2[0]), 2) + Math.pow((p1[1] - p2[1]), 2);

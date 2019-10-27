@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1029_TwoCitiesScheduling {
   public int twoCitySchedCost(int[][] costs) {
     int len = costs.length;
     Arrays.sort(costs, (a, b) -> {

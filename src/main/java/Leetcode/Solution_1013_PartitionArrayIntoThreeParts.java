@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1013_PartitionArrayIntoThreeParts {
   public boolean canThreePartsEqualSum(int[] A) {
     int sum = 0, count = 0;
     for (int i : A)

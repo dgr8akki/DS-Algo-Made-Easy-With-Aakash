@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_852_Peak {
     public int peakIndexInMountainArray(int[] A) {
         int start = 0;
         int end = A.length - 1;

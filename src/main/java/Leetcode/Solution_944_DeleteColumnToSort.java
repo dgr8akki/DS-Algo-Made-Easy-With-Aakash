@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_944_DeleteColumnToSort {
   public int minDeletionSize(String[] A) {
     if (A.length <= 1 || A[0].length() <= 1)
       return 0;

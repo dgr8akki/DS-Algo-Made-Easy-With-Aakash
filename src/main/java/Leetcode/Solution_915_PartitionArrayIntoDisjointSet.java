@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_915_PartitionArrayIntoDisjointSet {
   public int partitionDisjoint(int[] A) {
     int globalMax = A[0];
     int leftMax = A[0];

@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_227_BasicCalc2 {
   public int calculate(String s) {
     int len;
     if (s == null || (len = s.length()) == 0)

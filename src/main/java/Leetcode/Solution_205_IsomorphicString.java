@@ -2,7 +2,7 @@ package Leetcode;
 
 import java.util.HashMap;
 
-class Solution {
+class Solution_205_IsomorphicString {
   public static boolean isIsomorphic(String s, String t) {
     HashMap map = new HashMap();
     if (s.length() != t.length()) {

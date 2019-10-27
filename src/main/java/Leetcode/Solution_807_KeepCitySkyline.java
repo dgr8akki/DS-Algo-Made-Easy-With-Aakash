@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_807_KeepCitySkyline {
   public int maxIncreaseKeepingSkyline(int[][] grid) {
     int n = grid.length;
     int[] col = new int[n], row = new int[n];

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_125_ValidPalendrome {
   public boolean isPalindrome(String s) {
     StringBuilder builder = new StringBuilder();
     for (int i = 0; i < s.length(); i++) {

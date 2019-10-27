@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_809_ExpressiveWords {
   public int expressiveWords(String S, String[] words) {
     int res = 0;
     for (String W : words)

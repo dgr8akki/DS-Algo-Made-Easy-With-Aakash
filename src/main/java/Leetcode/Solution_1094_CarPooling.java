@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1094_CarPooling {
   public boolean carPooling(int[][] trips, int capacity) {
     int stops[] = new int[1001];
     for (int t[] : trips) {

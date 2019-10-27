@@ -4,7 +4,7 @@ package Leetcode;
  * Definition for a binary tree node. public class TreeNode { int val; TreeNode
  * left; TreeNode right; TreeNode(int x) { val = x; } }
  */
-class Solution {
+class Solution_894_AllPossibleFullTree {
   public List<TreeNode> allPossibleFBT(int k) {
     List<TreeNode> list = new ArrayList<>();
     if (k % 2 == 0)

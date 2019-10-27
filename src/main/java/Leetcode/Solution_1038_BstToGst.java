@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1038_BstToGst {
   int sum = 0;
 
   public TreeNode bstToGst(TreeNode root) {

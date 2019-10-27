@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_896_IsMonotonic {
   public boolean isMonotonic(int[] A) {
     // System.out.println("isMonotonicIncreasing: " + isMonotonicIncreasing(A));
     // System.out.println("isMonotonicDecreasing: " + isMonotonicIncreasing(A));

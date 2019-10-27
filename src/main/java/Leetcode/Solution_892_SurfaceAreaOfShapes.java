@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_892_SurfaceAreaOfShapes {
   public int surfaceArea(int[][] grid) {
     int res = 0, n = grid.length;
     for (int i = 0; i < n; ++i) {

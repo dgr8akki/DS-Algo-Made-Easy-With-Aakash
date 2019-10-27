@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_89_GrayCode {
   public List<Integer> grayCode(int n) {
     List<Integer> resultList = new ArrayList<Integer>();
     resultList.add(0);

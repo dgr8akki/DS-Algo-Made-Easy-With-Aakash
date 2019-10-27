@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_287_FindDuplicates {
   public int findDuplicate(int[] nums) {
     if (nums == null || nums.length == 0)
       return 0;

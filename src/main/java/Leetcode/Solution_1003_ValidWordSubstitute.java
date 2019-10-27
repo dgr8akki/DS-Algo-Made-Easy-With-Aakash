@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1003_ValidWordSubstitute {
   public boolean isValid(String S) {
     Stack<Character> stack = new Stack<>();
     for (char c : S.toCharArray()) {

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1002_FindCommonCharacters {
   public List<String> commonChars(String[] A) {
     List<String> list = new ArrayList<>();
     int[] min = new int[26];

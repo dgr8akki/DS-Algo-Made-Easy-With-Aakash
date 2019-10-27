@@ -16,7 +16,7 @@ class Node {
     }
 };
 */
-class Solution {
+class Solution_138_CopyList {
   public Node copyRandomList(Node head) {
     if (head == null)
       return null;

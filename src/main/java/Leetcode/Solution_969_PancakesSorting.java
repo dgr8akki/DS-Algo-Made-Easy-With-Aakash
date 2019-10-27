@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_969_PancakesSorting {
   public List<Integer> pancakeSort(int[] A) {
     List<Integer> res = new ArrayList<>();
     for (int x = A.length, i; x > 0; --x) {

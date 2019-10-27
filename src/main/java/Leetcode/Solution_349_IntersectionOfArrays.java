@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_349_IntersectionOfArrays {
     public int[] intersection(int[] nums1, int[] nums2) {
         if(nums2.length < nums1.length) return intersection(nums2, nums1);
         Set<Integer> list = new HashSet<>();

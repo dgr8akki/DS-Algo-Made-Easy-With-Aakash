@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_885_SpiralMatrix {
   public int[][] spiralMatrixIII(int R, int C, int r, int c) {
     int[][] res = new int[R * C][2];
     res[0] = new int[] { r, c };

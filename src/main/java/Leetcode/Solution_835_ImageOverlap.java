@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_835_ImageOverlap {
   public int largestOverlap(int[][] A, int[][] B) {
     int ans = 0;
     for (int row = -A.length; row < A.length; row++)

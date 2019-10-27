@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_983_MinimumCostOfTicket {
   public int mincostTickets(int[] days, int[] costs) {
     boolean[] dayIncluded = new boolean[366];
     for (int day : days)

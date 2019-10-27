@@ -1,11 +1,14 @@
 package Leetcode;
 
-class Solution {
-  int cnt = 0;
-  TreeMap<Integer, Integer> map = new TreeMap<>();
-  Random rnd = new Random();
+import java.util.Random;
+import java.util.TreeMap;
 
-  public Solution(int[] w) {
+class Solution_528_RandomPick {
+  private int cnt = 0;
+  private final TreeMap<Integer, Integer> map = new TreeMap<>();
+  private final Random rnd = new Random();
+
+  public Solution_528_RandomPick(int[] w) {
     for (int idx = 0; idx < w.length; idx++) {
       cnt += w[idx];
       map.put(cnt, idx);

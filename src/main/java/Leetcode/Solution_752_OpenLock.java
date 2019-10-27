@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_752_OpenLock {
   public int openLock(String[] deadends, String target) {
     Queue<String> q = new LinkedList<>();
     Set<String> deads = new HashSet<>(Arrays.asList(deadends));

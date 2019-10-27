@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_970_PowerfulIntegers {
   public List<Integer> powerfulIntegers(int x, int y, int bound) {
     Set<Integer> result = new HashSet<>();
     for (int a = 1; a < bound; a *= x) {

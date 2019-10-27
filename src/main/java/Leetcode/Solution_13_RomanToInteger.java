@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_13_RomanToInteger {
   public int romanToInt(String s) {
     int count = 0;
 

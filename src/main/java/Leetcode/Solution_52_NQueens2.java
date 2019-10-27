@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_52_NQueens2 {
   public int totalNQueens(int n) {
     if (n == 1)
       return 1;

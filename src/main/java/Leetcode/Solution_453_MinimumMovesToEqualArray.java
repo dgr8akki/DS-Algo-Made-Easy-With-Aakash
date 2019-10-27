@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_453_MinimumMovesToEqualArray {
   public int minMoves(int[] nums) {
     int n = nums.length;
     int minimum = Integer.MAX_VALUE;

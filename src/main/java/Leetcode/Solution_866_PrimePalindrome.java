@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_866_PrimePalindrome {
   public int primePalindrome(int N) {
     if (8 <= N && N <= 11)
       return 11;

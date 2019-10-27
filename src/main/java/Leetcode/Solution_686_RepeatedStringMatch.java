@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_686_RepeatedStringMatch {
   public int repeatedStringMatch(String A, String B) {
     if (A == null || B == null)
       return -1;

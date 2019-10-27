@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_116_PopulatingNextPointer {
   public Node connect(Node root) {
     if (root == null)
       return root;

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_563_BinaryTreeTilt {
   int res = 0;
 
   public int findTilt(TreeNode root) {

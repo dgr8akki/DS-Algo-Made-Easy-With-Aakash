@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1041_RobotInCircle {
   public boolean isRobotBounded(String ins) {
     int x = 0, y = 0, i = 0, d[][] = { { 0, 1 }, { 1, 0 }, { 0, -1 }, { -1, 0 } };
     for (int j = 0; j < ins.length(); ++j)

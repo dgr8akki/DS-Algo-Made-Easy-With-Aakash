@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_217_ContainsDuplicate {
   Set<Integer> set = new HashSet<>();
 
   public boolean containsDuplicate(int[] nums) {

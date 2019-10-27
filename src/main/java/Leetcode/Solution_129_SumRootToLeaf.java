@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_129_SumRootToLeaf {
   public int sumNumbers(TreeNode root) {
     return sumRootToLeaf(root, 0);
   }

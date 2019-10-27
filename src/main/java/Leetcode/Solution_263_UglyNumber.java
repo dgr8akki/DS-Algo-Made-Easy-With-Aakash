@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_263_UglyNumber {
     public boolean isUgly(int num) {
         if(num == 0) return false;
         int temp = num;

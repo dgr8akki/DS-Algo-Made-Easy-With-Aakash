@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_747_LargestNumberTwiceOthers {
   public int dominantIndex(int[] nums) {
     int firstLargest = Integer.MIN_VALUE, secondLargest = Integer.MIN_VALUE;
     int idx = 0, res = -1;

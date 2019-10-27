@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_66_PlusOne {
   public int[] plusOne(int[] digits) {
 
     int n = digits.length;

@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_241_DiffWaysParanthesis {
   public List<Integer> diffWaysToCompute(String input) {
     return dfs(input, new HashMap<String, List<Integer>>());
   }

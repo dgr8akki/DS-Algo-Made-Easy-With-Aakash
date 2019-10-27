@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_989_AddToArrayForm {
   public List<Integer> addToArrayForm(int[] digits, int k) {
 
     int n = digits.length;

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1110_DeleteNodeAndReturnForest {
   Set<Integer> toDeleteSet;
   List<TreeNode> res = new ArrayList<>();
 

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_482_LicenceKeyFormatting {
   public String licenseKeyFormatting(String S, int K) {
     int strLen = 0, i = 0, n = S.length();
 

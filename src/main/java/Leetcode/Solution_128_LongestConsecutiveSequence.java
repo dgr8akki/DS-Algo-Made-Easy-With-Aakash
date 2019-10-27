@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_128_LongestConsecutiveSequence {
   public int longestConsecutive(int[] num) {
     int res = 0;
     Map<Integer, Integer> map = new HashMap<Integer, Integer>();

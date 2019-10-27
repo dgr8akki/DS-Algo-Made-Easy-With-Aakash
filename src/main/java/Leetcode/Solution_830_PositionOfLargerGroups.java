@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_830_PositionOfLargerGroups {
   public List<List<Integer>> largeGroupPositions(String S) {
     S += "0";
     List<List<Integer>> res = new ArrayList<>();

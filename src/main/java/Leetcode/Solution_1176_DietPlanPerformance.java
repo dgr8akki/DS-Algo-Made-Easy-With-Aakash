@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1176_DietPlanPerformance {
   public static int dietPlanPerformance(int[] calories, int k, int lower, int upper) {
     int score = 0;
     for (int i = 0; i < calories.length - k + 1; i++) {

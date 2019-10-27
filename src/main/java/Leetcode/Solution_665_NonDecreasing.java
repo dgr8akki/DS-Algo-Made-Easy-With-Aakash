@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_665_NonDecreasing {
   public boolean checkPossibility(int[] nums) {
     boolean once = false;
     for (int i = 1; i < nums.length; i++) {

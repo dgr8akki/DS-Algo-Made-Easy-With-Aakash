@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_873_LongestFib {
   public int lenLongestFibSubseq(int[] A) {
     Set<Integer> set = new HashSet<>();
     for (int num : A)

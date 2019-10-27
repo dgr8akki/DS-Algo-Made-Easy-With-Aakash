@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1131_MaxDistanceAbsolute {
   public int maxAbsValExpr(int[] x, int[] y) {
     int res = 0, n = x.length, P[] = { -1, 1 };
     for (int p : P)

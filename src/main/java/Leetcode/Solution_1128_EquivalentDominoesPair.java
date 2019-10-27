@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1128_EquivalentDominoesPair {
   public int numEquivDominoPairs(int[][] dominoes) {
     Map<Integer, Integer> count = new HashMap<>();
     int res = 0;

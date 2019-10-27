@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_438_AnagramsInString {
   public List<Integer> findAnagrams(String s, String p) {
     List<Integer> list = new ArrayList<>();
     if (s == null || s.length() == 0 || p == null || p.length() == 0)

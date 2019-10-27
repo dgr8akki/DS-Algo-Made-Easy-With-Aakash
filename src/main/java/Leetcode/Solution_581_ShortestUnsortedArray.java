@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_581_ShortestUnsortedArray {
   public int findUnsortedSubarray(int[] A) {
     int n = A.length, beg = -1, end = -2, min = A[n - 1], max = A[0];
     for (int i = 1; i < n; i++) {

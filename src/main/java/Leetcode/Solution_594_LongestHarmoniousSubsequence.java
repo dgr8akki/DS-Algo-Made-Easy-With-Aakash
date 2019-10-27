@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_594_LongestHarmoniousSubsequence {
   public int findLHS(int[] nums) {
     Map<Long, Integer> map = new HashMap<>();
     for (long num : nums)

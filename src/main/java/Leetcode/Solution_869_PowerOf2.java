@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_869_PowerOf2 {
   public boolean reorderedPowerOf2(int N) {
     long c = counter(N);
     for (int i = 0; i < 32; i++)

@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_609_DuplicateInFiles {
   public List<List<String>> findDuplicate(String[] paths) {
     List<List<String>> result = new ArrayList<List<String>>();
     int n = paths.length;

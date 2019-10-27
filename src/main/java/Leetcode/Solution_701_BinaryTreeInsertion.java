@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_701_BinaryTreeInsertion {
 
   public TreeNode insertIntoBST(TreeNode root, int val) {
     if (root == null)

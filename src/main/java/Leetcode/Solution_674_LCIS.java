@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_674_LCIS {
   public int findLengthOfLCIS(int[] A) {
     if (A.length == 0)
       return 0;

@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_498_DiagonalTraverseMatrix {
   public int[] findDiagonalOrder(int[][] matrix) {
     if (matrix == null || matrix.length == 0)
       return new int[0];

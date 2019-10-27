@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_541_ReverseString {
   public String reverseStr(String s, int k) {
     StringBuilder sb = new StringBuilder();
 

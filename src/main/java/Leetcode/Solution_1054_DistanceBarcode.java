@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1054_DistanceBarcode {
   public int[] rearrangeBarcodes(int[] barcodes) {
     Map<Integer, Integer> m = new HashMap<>();
     for (int c : barcodes) {

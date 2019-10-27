@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_1201_UglyNumber3 {
   int MAX_ANS = 2 * 1000000000;
 
   long gcd(long a, long b) {

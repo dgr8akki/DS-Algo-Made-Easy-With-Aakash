@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_820_ShortEncodingOfStrings {
   public int minimumLengthEncoding(String[] words) {
     Set<String> s = new HashSet<>(Arrays.asList(words));
     for (String w : words)

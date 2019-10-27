@@ -8,7 +8,7 @@ package Leetcode;
  *     ListNode(int x) { val = x; }
  * }
  */
-class Solution {
+class Solution_1019_NextGreaterNode {
     public int[] nextLargerNodes(ListNode head) {
       if(head == null) return new int[0];
       Map<ListNode, Integer> map = new HashMap<>();

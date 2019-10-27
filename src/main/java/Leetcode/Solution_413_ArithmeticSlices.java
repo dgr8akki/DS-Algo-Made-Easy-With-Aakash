@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_413_ArithmeticSlices {
   public int numberOfArithmeticSlices(int[] A) {
     int curr = 0, sum = 0;
     for (int i = 2; i < A.length; i++)

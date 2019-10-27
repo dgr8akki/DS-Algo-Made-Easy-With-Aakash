@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_565_ArrayNesting {
   public int arrayNesting(int[] a) {
     int maxsize = 0;
     for (int i = 0; i < a.length; i++) {

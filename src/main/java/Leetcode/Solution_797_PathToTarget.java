@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_797_PathToTarget {
   public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
     List<List<Integer>> paths = new ArrayList<>();
     List<Integer> path = new ArrayList<>(Arrays.asList(0));

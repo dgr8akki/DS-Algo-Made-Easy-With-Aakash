@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_978_LongestTurbulentArray {
   public int maxTurbulenceSize(int[] A) {
     int pre = 0, cur = 0, len = 1, res = 1;
     for (int i = 1; i < A.length; i++) {

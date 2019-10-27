@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_653_TwoSum4 {
   public boolean findTarget(TreeNode root, int k) {
     return dfs(root, root, k);
   }

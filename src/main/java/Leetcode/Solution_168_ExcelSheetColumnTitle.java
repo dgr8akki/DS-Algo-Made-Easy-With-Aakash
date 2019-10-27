@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_168_ExcelSheetColumnTitle {
   public String convertToTitle(int n) {
     StringBuilder builder = new StringBuilder();
     while (n > 0) {

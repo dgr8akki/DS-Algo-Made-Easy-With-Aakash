@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_93_RestoreIPAddress {
   public List<String> restoreIpAddresses(String s) {
     List<String> res = new ArrayList<String>();
     int len = s.length();

@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_131_PalendromicSeq {
   public List<List<String>> partition(String s) {
     List<List<String>> res = new ArrayList<List<String>>();
     List<String> list = new ArrayList<String>();

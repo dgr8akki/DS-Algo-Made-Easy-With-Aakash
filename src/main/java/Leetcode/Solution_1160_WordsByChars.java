@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1160_WordsByChars {
   public static int countCharacters(String[] words, String chars) {
     int count = 0;
     int[] seen = new int[26];

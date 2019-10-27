@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1031_MaximumSumSubarray {
   public int maxSumTwoNoOverlap(int[] A, int L, int M) {
     for (int i = 1; i < A.length; ++i)
       A[i] += A[i - 1];

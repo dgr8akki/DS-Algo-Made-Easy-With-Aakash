@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_812_LargestTriangle {
   public double largestTriangleArea(int[][] points) {
     double area = 0;
 

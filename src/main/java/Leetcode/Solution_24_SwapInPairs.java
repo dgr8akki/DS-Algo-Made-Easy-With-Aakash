@@ -4,7 +4,7 @@ package Leetcode;
  * Definition for singly-linked list. public class ListNode { int val; ListNode
  * next; ListNode(int x) { val = x; } }
  */
-class Solution {
+class Solution_24_SwapInPairs {
   public ListNode swapPairs(ListNode head) {
     ListNode dummy = new ListNode(0);
     dummy.next = head;

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_345_ReverseVowel {
   public String reverseVowels(String s) {
     List<Character> vowels = new ArrayList<>();
     vowels.add('a');

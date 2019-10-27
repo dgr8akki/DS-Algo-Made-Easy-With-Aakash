@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_962_MaximumWidthRamp {
   // O(n^2)
   public int maxWidthRamp2(int[] A) {
     int max = 0;

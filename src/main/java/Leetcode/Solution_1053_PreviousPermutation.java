@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1053_PreviousPermutation {
   public int[] prevPermOpt1(int[] A) {
     int n = A.length, left = n - 2, right = n - 1, tmp;
     while (left >= 0 && A[left] <= A[left + 1])

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_476_NumberCompliment {
   public int findComplement(int num) {
     String binary = Integer.toBinaryString(num);
     StringBuilder builder = new StringBuilder();

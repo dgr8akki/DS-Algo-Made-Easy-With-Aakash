@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_937_ReorderFile {
   public String[] reorderLogFiles(String[] logs) {
     Arrays.sort(logs, (a, b) -> {
       String[] splitA = a.split(" ", 2);

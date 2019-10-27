@@ -1,7 +1,9 @@
 package Leetcode;
 
-class Solution {
-  ListNode head;
+import java.util.Stack;
+
+class Solution_445_AddTwoNumbers {
+  private ListNode head;
 
   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     Stack<Integer> s1 = new Stack<>();
@@ -25,18 +27,19 @@ class Solution {
       carry = (val1 + val2 + carry) / 10;
       addAtHead(v);
     }
-    if (carry > 0)
+    if (carry > 0) {
       addAtHead(carry);
+    }
 
     return head;
   }
 
-  public void addAtHead(int val) {
+  private void addAtHead(int val) {
     ListNode nodeAtIndex = head;
     ListNode node = new ListNode(val);
-    if (nodeAtIndex == null)
+    if (nodeAtIndex == null) {
       head = node;
-    else {
+    } else {
       node.next = head;
       head = node;
     }

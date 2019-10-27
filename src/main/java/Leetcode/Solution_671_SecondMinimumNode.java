@@ -9,7 +9,7 @@ package Leetcode;
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class Solution_671_SecondMinimumNode {
     public int findSecondMinimumValue(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         getNodes(root, list);

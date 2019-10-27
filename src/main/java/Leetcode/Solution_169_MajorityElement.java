@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_169_MajorityElement {
   public int majorityElement(int[] nums) {
     int maj = nums[0];
     int count = 1;

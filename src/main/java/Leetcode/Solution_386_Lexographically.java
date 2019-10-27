@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_386_Lexographically {
   public List<Integer> lexicalOrder(int n) {
     List<Integer> res = new ArrayList<>();
     for (int i = 1; i < 10; i++)

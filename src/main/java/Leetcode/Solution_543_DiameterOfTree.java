@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_543_DiameterOfTree {
   public int diameterOfBinaryTree(TreeNode root) {
     if (root == null)
       return 0;

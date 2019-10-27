@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_80_RemoveDuplicates {
   public int removeDuplicates(int[] nums) {
     if (nums == null || nums.length == 0) {
       return 0;

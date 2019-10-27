@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1161_MaximumSumTree {
   public int maxLevelSum(TreeNode root) {
     int level = 1, max = Integer.MIN_VALUE, maxLevel = 1;
     Queue<TreeNode> q = new LinkedList<>();

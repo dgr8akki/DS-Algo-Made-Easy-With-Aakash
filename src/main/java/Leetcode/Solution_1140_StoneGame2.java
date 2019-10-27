@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1140_StoneGame2 {
   public int stoneGameII(int[] piles) {
     Integer[][] dp = new Integer[piles.length][piles.length + 1];
     int[] prefixSum = new int[piles.length + 1];

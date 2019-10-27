@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_501_ModeOfTree {
   Integer prev = null;
   int count = 1;
   int max = 0;

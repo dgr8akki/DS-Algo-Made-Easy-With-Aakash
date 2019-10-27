@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_457_CircularArrayLoop {
   public boolean circularArrayLoop(int[] nums) {
     boolean found = false;
 

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_299_BullsAndCows {
   public String getHint(String secret, String guess) {
     int[] count = new int[10];
     int bull = 0, cow = 0;

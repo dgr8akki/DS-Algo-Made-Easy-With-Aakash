@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_860_LemonadeChallenge {
   public boolean lemonadeChange(int[] bills) {
     int five = 0, ten = 0;
     for (int i : bills) {

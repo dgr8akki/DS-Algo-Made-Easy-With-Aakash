@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_36_SudokuValidator {
   public boolean isValidSudoku(char[][] board) {
     Set seen = new HashSet();
     for (int i = 0; i < 9; ++i) {

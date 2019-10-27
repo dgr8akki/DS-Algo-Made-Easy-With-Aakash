@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_145_BinaryTreePostorder {
   public List<Integer> postorderTraversal(TreeNode root) {
     List<Integer> result = new LinkedList<>();
     Deque<TreeNode> stack = new ArrayDeque<>();

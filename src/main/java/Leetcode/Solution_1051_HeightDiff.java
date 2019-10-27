@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1051_HeightDiff {
   public int heightChecker(int[] heights) {
     int count = 0;
     int[] copiedArray = heights.clone();

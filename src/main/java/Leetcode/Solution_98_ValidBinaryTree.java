@@ -4,7 +4,7 @@ package Leetcode;
  * Definition for a binary tree node. public class TreeNode { int val; TreeNode
  * left; TreeNode right; TreeNode(int x) { val = x; } }
  */
-class Solution {
+class Solution_98_ValidBinaryTree {
   public boolean isValidBST(TreeNode root) {
     return isValidBSTUtil(root, Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY);
   }

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_811_SubdomainCount {
   public List<String> subdomainVisits(String[] cpdomains) {
     Map<String, Integer> map = new HashMap();
     for (String cd : cpdomains) {

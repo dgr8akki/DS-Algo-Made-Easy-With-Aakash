@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_415_AddStrings {
   public String addStrings(String num1, String num2) {
     int carry = 0;
     int val = 0;

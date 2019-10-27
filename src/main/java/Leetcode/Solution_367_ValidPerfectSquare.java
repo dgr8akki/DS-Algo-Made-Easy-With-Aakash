@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_367_ValidPerfectSquare {
     public boolean isPerfectSquare(int num) {
         long x = num;
         while (x * x > num) {

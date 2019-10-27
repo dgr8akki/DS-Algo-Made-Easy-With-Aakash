@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1090_LargestValueLabel {
   public int largestValsFromLabels(int[] values, int[] labels, int num_wanted, int use_limit) {
     List<int[]> pairs = new ArrayList<>();
     Map<Integer, Integer> limits = new HashMap<>();

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_28_ImplimentStrStr {
   public int strStr(String haystack, String needle) {
     if (haystack == null || needle == null)
       return -1;

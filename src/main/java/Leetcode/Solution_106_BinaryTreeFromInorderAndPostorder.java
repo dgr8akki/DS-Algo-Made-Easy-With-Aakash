@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_106_BinaryTreeFromInorderAndPostorder {
   int postOrderIndex;
 
   public TreeNode buildTree(int[] inorder, int[] postorder) {

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_763_PartitionLabels {
   public List<Integer> partitionLabels(String S) {
     List<Integer> list = new ArrayList<Integer>();
 

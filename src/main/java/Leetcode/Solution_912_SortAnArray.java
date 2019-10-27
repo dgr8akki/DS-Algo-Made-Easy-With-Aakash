@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_912_SortAnArray {
   public int[] sortArray(int[] input) {
     sort(input, 0, input.length - 1);
     return input;

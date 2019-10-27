@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1175_PrimeArrangements {
   public int numPrimeArrangements(int n) {
     int m = countPrimes(n + 1), M = 1000000007;
     long count = 1;

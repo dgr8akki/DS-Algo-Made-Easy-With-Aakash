@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_976_LargestParameter {
   public int largestPerimeter(int[] A) {
     Arrays.sort(A);
     int i = A.length - 3;

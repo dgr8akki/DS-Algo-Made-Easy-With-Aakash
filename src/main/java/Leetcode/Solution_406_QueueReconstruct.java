@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_406_QueueReconstruct {
   public int[][] reconstructQueue(int[][] people) {
     if (people == null || people.length == 0 || people[0].length == 0)
       return new int[0][0];

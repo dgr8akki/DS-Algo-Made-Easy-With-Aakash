@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_53_SpiralMatrix {
   public List<Integer> spiralOrder(int[][] matrix) {
 
     List<Integer> res = new ArrayList<Integer>();

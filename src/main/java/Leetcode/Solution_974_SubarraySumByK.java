@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_974_SubarraySumByK {
   public int subarraysDivByK(int[] A, int K) {
     Map<Integer, Integer> map = new HashMap<>();
     map.put(0, 1);

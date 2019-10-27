@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_791_CustomSortString {
   public String customSortString(String S, String T) {
     int[] tt = new int[26];
     for (int i = 0; i < T.length(); i++) {

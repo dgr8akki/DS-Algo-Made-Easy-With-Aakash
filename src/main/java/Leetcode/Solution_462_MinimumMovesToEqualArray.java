@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_462_MinimumMovesToEqualArray {
   public int minMoves2(int[] nums) {
     Arrays.sort(nums);
     int i = 0, j = nums.length - 1;

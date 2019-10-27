@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_985_SumOfEvenNumbers {
   public int[] sumEvenAfterQueries(int[] A, int[][] queries) {
     int[] result = new int[queries.length];
     int sum = 0;

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_856_ParanthesisScore {
   public int scoreOfParentheses(String S) {
     Stack<Integer> stack = new Stack<>();
     int cur = 0;

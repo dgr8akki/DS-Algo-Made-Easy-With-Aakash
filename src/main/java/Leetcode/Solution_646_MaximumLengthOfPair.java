@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_646_MaximumLengthOfPair {
   public int findLongestChain(int[][] pairs) {
     Arrays.sort(pairs, (a, b) -> a[1] - b[1]);
     int sum = 0, n = pairs.length, i = -1;

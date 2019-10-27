@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_572_SubtreeOfTree {
   public boolean isSubtree(TreeNode s, TreeNode t) {
     boolean result = false;
     if (s != null && t != null) {

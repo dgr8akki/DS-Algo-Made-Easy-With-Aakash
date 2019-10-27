@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_110_BalanceBinaryTree {
   Map<TreeNode, Integer> map = new HashMap<>();
 
   public boolean isBalanced(TreeNode root) {

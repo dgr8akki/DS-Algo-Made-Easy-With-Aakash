@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_154_FindMinimumInRotatedArray {
   public int findMin(int[] nums) {
     int lo = 0, hi = nums.length - 1;
     while (lo < hi) {

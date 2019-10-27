@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_238_ProductOfArrayExceptSelf {
   public int[] productExceptSelf(int[] nums) {
     int n = nums.length;
     int[] res = new int[n];

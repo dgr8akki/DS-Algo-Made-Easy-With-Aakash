@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_495_TeemoAttacking {
   public int findPoisonedDuration(int[] timeSeries, int duration) {
     if (timeSeries.length == 0 || duration == 0)
       return 0;

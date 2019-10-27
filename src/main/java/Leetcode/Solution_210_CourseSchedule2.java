@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_210_CourseSchedule2 {
   public int[] findOrder(int numCourses, int[][] prerequisites) {
     if (numCourses == 0)
       return null;

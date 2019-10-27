@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_300_LIS {
   public int lengthOfLIS(int[] arr) {
     return getLISLength(arr, arr.length);
   }

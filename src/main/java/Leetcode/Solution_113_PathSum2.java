@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_113_PathSum2 {
   public List<List<Integer>> pathSum(TreeNode root, int sum) {
     List<List<Integer>> res = new ArrayList<>();
     List<Integer> path = new ArrayList<>();

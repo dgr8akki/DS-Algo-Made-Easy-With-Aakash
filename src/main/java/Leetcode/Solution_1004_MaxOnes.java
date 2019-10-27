@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1004_MaxOnes {
   public int longestOnes(int[] A, int K) {
     int i = 0, j = 0;
     for (; j < A.length; ++j) {

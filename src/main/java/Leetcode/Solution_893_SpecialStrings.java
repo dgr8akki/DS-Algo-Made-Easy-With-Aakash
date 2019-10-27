@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_893_SpecialStrings {
   public int numSpecialEquivGroups(String[] A) {
     Set<String> set = new HashSet<>();
     for (String s : A) {

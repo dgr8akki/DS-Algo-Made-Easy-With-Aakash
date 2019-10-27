@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_784_LetterCasePermutation {
   public List<String> letterCasePermutation(String S) {
     List<String> result = new ArrayList<>();
     letterCaseBacktrack(S.toCharArray(), result, 0);

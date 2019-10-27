@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_508_MostFrequentSubtreeSum {
   Map<Integer, Integer> count = new HashMap<Integer, Integer>();
   int maxCount = 0;
 

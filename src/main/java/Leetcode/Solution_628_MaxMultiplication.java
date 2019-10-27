@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_628_MaxMultiplication {
     public int maximumProduct(int[] nums) {
         int firstMax = Integer.MIN_VALUE;
         int secondMax = Integer.MIN_VALUE;

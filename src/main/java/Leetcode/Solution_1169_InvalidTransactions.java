@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1169_InvalidTransactions {
   public List<String> invalidTransactions(String[] transactions) {
     List<String> res = new ArrayList<>();
     String inval = "XXXXXXXXXXXX";

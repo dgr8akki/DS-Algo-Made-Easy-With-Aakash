@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_486_PredictTheWinner {
   public boolean PredictTheWinner(int[] nums) {
     return firstPlayerCanWin(0, 0, nums, 0, nums.length - 1);
   }

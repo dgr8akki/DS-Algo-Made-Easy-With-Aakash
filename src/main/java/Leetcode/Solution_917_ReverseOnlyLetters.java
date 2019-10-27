@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_917_ReverseOnlyLetters {
   public String reverseOnlyLetters(String S) {
     Stack stack = new Stack();
     for (char ch : S.toCharArray()) {

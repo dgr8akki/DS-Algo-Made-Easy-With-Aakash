@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.IntStream;
 
-class Solution {
+class Solution_888_FairCandy {
   public static int[] fairCandySwap(int[] A, int[] B) {
     int diff = (IntStream.of(A).sum() - IntStream.of(B).sum()) / 2;
     Set<Integer> S = new HashSet<>();

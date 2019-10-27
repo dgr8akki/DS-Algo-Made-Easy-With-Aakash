@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_697_DegreeArray {
   public int findShortestSubArray(int[] nums) {
     HashMap<Integer, ArrayList<Integer>> map = new HashMap<>();
 

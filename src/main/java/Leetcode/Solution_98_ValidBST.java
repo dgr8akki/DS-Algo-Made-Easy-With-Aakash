@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_98_ValidBST {
   public boolean isValidBST(TreeNode root) {
     return isValidBST(root, Long.MIN_VALUE, Long.MAX_VALUE);
   }

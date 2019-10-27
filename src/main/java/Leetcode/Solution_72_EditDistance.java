@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_72_EditDistance {
   public int minDistance(String word1, String word2) {
     int l1 = word1.length(), l2 = word2.length();
 

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_86_PartitionList {
   public ListNode partition(ListNode head, int x) {
     if (head == null || head.next == null)
       return head;

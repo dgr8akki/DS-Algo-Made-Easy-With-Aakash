@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_203_RemoveFromLinkedList {
   public ListNode removeElements(ListNode head, int val) {
     if (head == null)
       return null;

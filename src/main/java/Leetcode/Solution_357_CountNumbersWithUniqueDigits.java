@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_357_CountNumbersWithUniqueDigits {
   public int countNumbersWithUniqueDigits(int n) {
     if (n == 0)
       return 1;

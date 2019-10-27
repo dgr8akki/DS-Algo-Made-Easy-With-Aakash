@@ -6,7 +6,7 @@ package Leetcode;
  * 
  * @return a random integer in the range 1 to 7
  */
-class Solution extends SolBase {
+class Solution_470_ImplimentRandom10 extends SolBase {
   public int rand10() {
     int result = 40;
     while (result >= 40) {

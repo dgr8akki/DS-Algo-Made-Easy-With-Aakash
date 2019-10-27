@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_78_Subsets {
   public List<List<Integer>> subsets(int[] nums) {
     List<List<Integer>> list = new ArrayList<>();
     subsets(list, new ArrayList<>(), nums, 0);

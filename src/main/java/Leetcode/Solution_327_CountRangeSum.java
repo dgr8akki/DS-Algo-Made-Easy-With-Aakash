@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_327_CountRangeSum {
   int count = 0;
   int lower;
   int upper;

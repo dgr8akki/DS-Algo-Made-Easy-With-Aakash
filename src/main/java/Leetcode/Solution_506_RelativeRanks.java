@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_506_RelativeRanks {
   public String[] findRelativeRanks(int[] nums) {
     String[] medals = { "Gold Medal", "Silver Medal", "Bronze Medal" };
     String[] result = new String[nums.length];

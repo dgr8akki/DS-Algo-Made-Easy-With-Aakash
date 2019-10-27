@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_561_ArrayPartitionI {
   public int arrayPairSum(int[] nums) {
     Arrays.sort(nums);
     int sum = 0;

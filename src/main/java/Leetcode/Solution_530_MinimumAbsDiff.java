@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_530_MinimumAbsDiff {
   int min = Integer.MAX_VALUE;
   int prev = -1;
 

@@ -14,7 +14,7 @@ class Node {
     }
 };
 */
-class Solution {
+class Solution_559_DepthOfNaryTree {
     public int maxDepth(Node root) {
         if(root == null) return 0;
         if(root.children.size() == 0) return 1;

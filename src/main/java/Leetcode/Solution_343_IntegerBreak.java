@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_343_IntegerBreak {
   public int integerBreak(int n) {
     if (n == 2)
       return 1;

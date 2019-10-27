@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_33_RotatedArraySearch {
   public int search(int[] A, int target) {
     if (A.length == 0)
       return -1;

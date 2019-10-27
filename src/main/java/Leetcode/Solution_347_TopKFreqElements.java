@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_347_TopKFreqElements {
   public List<Integer> topKFrequent(int[] nums, int k) {
 
     List<Integer>[] bucket = new List[nums.length + 1];

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_728_SelfDividingNumbers {
   public List<Integer> selfDividingNumbers(int left, int right) {
     List<Integer> list = new ArrayList<>();
     for (int i = left; i <= right; i++)

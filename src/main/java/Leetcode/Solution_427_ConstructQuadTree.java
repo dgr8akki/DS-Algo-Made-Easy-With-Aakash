@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_427_ConstructQuadTree {
   public Node construct(int[][] grid) {
     return construct(grid, 0, 0, grid.length);
   }

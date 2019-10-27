@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_459_RepeatedString {
   public boolean repeatedSubstringPattern(String s) {
     int n = s.length();
     for (int i = n / 2; i >= 1; i--) {

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_29_DivideTwoIntegers {
   public int divide(int A, int B) {
     if (A == 1 << 31 && B == -1)
       return (1 << 31) - 1;

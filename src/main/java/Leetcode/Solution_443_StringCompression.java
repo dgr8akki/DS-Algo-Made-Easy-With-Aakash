@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_443_StringCompression {
   public int compress(char[] chars) {
     int indexAns = 0, index = 0;
     while (index < chars.length) {

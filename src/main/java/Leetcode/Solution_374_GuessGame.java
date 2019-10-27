@@ -3,7 +3,7 @@ package Leetcode;/* The guess API is defined in the parent class GuessGame.
    @return -1 if my number is lower, 1 if my number is higher, otherwise return 0
       int guess(int num); */
 
-public class Solution extends GuessGame {
+public class Solution_374_GuessGame extends GuessGame {
     public int guessNumber(int n) {
         int start = 1;
         int mid = 0;

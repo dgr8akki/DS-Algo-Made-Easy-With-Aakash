@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_275_HIndex {
   public int hIndex(int[] citations) {
     if (citations == null || citations.length == 0)
       return 0;

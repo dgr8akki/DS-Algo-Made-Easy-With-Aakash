@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1033_MovingStones {
   public int[] numMovesStones(int a, int b, int c) {
     int[] in = new int[] { a, b, c };
     Arrays.sort(in);

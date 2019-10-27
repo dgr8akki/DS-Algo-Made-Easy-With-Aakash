@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_207_CourseSchedule {
   public boolean canFinish(int numCourses, int[][] prerequisites) {
     ArrayList[] graph = new ArrayList[numCourses];
     for (int i = 0; i < numCourses; i++)

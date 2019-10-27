@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_836_IsRectangleOverlap {
   private int[] findRangeOverlap(int point1, int length1, int point2, int length2) {
     int[] res = new int[2];
     int highestStartPoint = Math.max(point1, point2);

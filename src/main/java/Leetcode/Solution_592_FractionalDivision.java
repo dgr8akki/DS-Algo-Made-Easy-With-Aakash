@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_592_FractionalDivision {
   public String fractionAddition(String expression) {
     Scanner sc = new Scanner(expression).useDelimiter("/|(?=[-+])");
     int A = 0, B = 1;

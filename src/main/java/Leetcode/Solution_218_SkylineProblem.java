@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_218_SkylineProblem {
   public List<List<Integer>> getSkyline(int[][] buildings) {
     List<List<Integer>> result = new ArrayList<>();
     List<int[]> height = new ArrayList<>();

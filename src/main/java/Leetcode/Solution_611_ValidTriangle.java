@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_611_ValidTriangle {
   public int triangleNumber(int[] nums) {
     Arrays.sort(nums);
     int cnt = 0;

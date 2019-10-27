@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1122_RelativeSort {
   public int[] relativeSortArray(int[] arr1, int[] arr2) {
     int[] count = new int[1001];
     for (int n : arr1)

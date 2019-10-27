@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_648_ReplaceWords {
   public TrieNode root = new TrieNode();
 
   public class TrieNode {

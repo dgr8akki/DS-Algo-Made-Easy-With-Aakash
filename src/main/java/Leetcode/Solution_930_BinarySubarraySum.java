@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_930_BinarySubarraySum {
   public int numSubarraysWithSum(int[] A, int S) {
     int[] dp = new int[A.length + 1];
     for (int i = 0; i < A.length; i++)

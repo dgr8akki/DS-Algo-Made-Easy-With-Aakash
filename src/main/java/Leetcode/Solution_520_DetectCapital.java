@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_520_DetectCapital {
   public boolean detectCapitalUse(String word) {
     int capsCount = 0;
     int n = word.length();

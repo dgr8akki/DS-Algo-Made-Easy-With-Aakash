@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_863_AllNodesDistanceKInTree {
 
   Map<TreeNode, Integer> map = new HashMap<>();
 

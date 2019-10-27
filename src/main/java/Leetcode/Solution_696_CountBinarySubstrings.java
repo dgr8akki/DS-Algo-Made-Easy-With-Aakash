@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_696_CountBinarySubstrings {
   public int countBinarySubstrings(String s) {
     int prevRunLength = 0, curRunLength = 1, res = 0;
     for (int i = 1; i < s.length(); i++) {

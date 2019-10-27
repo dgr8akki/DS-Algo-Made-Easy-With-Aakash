@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_452_MinArrowToBurstBalloon {
   public int findMinArrowShots(int[][] points) {
     if (points == null || points.length == 0)
       return 0;

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1021_RemoveOutermostBracket {
   public String removeOuterParentheses(String S) {
     StringBuilder s = new StringBuilder();
     int opened = 0;

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_71_SimplifyPaths {
   public String simplifyPath(String path) {
     Deque<String> stack = new LinkedList<>();
     Set<String> skip = new HashSet<>(Arrays.asList("..", ".", ""));

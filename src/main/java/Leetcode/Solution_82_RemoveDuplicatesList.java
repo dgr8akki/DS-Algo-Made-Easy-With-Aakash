@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_82_RemoveDuplicatesList {
   public ListNode deleteDuplicates(ListNode head) {
     if (head == null)
       return null;

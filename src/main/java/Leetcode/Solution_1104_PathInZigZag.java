@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1104_PathInZigZag {
   public List<Integer> pathInZigZagTree(int label) {
     LinkedList<Integer> result = new LinkedList<>();
     int parent = label;

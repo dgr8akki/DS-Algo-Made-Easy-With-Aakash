@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_958_CheckCompletenessOfTree {
   public boolean isCompleteTree(TreeNode root) {
     Queue<TreeNode> bfs = new LinkedList<TreeNode>();
     bfs.offer(root);

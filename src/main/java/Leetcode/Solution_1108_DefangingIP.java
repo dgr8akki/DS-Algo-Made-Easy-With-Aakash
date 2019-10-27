@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1108_DefangingIP {
   public String defangIPaddr(String address) {
     StringBuilder builder = new StringBuilder();
     for (char c : address.toCharArray())

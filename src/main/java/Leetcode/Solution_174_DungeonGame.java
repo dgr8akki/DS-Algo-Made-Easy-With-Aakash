@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_174_DungeonGame {
   public int calculateMinimumHP(int[][] dungeon) {
     int m = dungeon.length;
     int n = m == 0 ? 0 : dungeon[0].length;

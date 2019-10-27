@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_598_RangeAddition {
   public int maxCount(int m, int n, int[][] ops) {
     for (int i = 0; i < ops.length; i++) {
       if (ops[i][0] < m)

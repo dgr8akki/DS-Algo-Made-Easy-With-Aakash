@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_419_BattleShipInBoard {
   public int countBattleships(char[][] board) {
     int rows = board.length;
     if (rows == 0)

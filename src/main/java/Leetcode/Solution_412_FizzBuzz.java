@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_412_FizzBuzz {
   public List<String> fizzBuzz(int n) {
     List<String> res = new ArrayList<>();
     for (int i = 1; i <= n; i++) {

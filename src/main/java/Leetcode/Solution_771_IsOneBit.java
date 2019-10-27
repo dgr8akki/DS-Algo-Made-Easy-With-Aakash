@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_771_IsOneBit {
   public boolean isOneBitCharacter(int[] bits) {
     int i = 0;
     for (i = 0; i < bits.length - 1; i++)

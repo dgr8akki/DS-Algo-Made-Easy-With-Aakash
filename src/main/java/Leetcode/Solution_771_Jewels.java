@@ -1,7 +1,7 @@
 package Leetcode;
 
 import java.util.Arrays;
-class Solution {
+class Solution_771_Jewels {
     public int numJewelsInStones(String J, String S) {
         int[] characterSet = new int[128];
         int count = 0;

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_840_MagicSquaresInGrid {
   public int numMagicSquaresInside(int[][] grid) {
     int rows = grid.length, cols = grid[0].length;
     int xor = 1 ^ 2 ^ 3 ^ 4 ^ 5 ^ 6 ^ 7 ^ 8 ^ 9;

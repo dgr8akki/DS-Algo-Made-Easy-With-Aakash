@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_916_WordSubset {
   public List<String> wordSubsets(String[] A, String[] B) {
     int[] uni = new int[26], tmp;
     int i;

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_326_IsPowerOfThree {
     public boolean isPowerOfThree(int n) {
         if(n <= 0) return false;
         // while(n % 3 == 0)

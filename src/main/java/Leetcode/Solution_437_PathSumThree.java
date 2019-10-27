@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_437_PathSumThree {
   public int pathSum(TreeNode root, int sum) {
     if (root == null)
       return 0;

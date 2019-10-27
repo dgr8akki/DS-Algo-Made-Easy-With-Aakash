@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_824_goatLatin {
   public String toGoatLatin(String s) {
     String[] sar = s.split(" ");
     List<Character> vowels = new ArrayList<>();

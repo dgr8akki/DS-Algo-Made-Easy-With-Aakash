@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_312_BurstBaloons {
   public int maxCoins(int[] iNums) {
     int[] nums = new int[iNums.length + 2];
     int n = 1;

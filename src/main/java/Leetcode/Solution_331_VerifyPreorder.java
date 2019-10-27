@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_331_VerifyPreorder {
   public boolean isValidSerialization(String preorder) {
     String[] nodes = preorder.split(",");
     int diff = 1;

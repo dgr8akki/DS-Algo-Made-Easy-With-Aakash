@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_206_ReverseLinkedList {
   public ListNode reverseList(ListNode head) {
     ListNode prev = null, curr = head, next = null;
     while (curr != null) {

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_977_SquareOfSortedArray {
   public int[] sortedSquares(int[] A) {
     int n = A.length;
     int[] res = new int[n];

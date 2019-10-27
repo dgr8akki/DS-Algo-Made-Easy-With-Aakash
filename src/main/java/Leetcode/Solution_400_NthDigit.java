@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_400_NthDigit {
   public int findNthDigit(int n) {
     int len = 1;
     long count = 9;

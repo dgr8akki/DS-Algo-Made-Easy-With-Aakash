@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_788_RotatedDigits {
   public int rotatedDigits(int N) {
     int count = 0;
     for (int i = 1; i <= N; i++)

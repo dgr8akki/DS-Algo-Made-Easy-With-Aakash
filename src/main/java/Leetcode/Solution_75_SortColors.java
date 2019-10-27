@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_75_SortColors {
   public void sortColors(int[] nums) {
     int count0 = 0, count1 = 0, count2 = 0;
     for (int i = 0; i < nums.length; i++) {

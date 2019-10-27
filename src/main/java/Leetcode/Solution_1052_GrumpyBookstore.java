@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1052_GrumpyBookstore {
   public int maxSatisfied(int[] customers, int[] grumpy, int X) {
     int satisfy = 0, max = 0;
     for (int i = 0, win = 0; i < grumpy.length; ++i) {

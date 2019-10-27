@@ -1,11 +1,13 @@
 package Leetcode;
 
-public class Solution {
+import java.util.Random;
 
-  ListNode head;
-  Random random;
+public class Solution_382_RandomNodeLinkedList {
 
-  public Solution(ListNode h) {
+  private ListNode head;
+  private Random random;
+
+  public Solution_382_RandomNodeLinkedList(ListNode h) {
     head = h;
     random = new Random();
   }
@@ -16,8 +18,9 @@ public class Solution {
     int result = current.val;
     for (int i = 1; current.next != null; i++) {
       current = current.next;
-      if (random.nextInt(i + 1) == i)
+      if (random.nextInt(i + 1) == i) {
         result = current.val;
+      }
     }
     return result;
   }

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1017_ConverToBaseNeg2 {
   public String baseNeg2(int N) {
     String ans = "";
     while (N != 0) {

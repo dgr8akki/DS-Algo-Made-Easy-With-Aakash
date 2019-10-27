@@ -1,7 +1,7 @@
 package Leetcode;
 
-public class Solution {
-  public int maxProfit(int[] prices) {
+public class Solution_123_BuySellStock3 {
+  public static int maxProfit(int[] prices) {
     int hold1 = Integer.MIN_VALUE, hold2 = Integer.MIN_VALUE;
     int release1 = 0, release2 = 0;
     for (int i : prices) {

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_997_FindTownJudge {
   public int findJudge(int N, int[][] trust) {
     int[] count = new int[N + 1];
     for (int[] t : trust) {

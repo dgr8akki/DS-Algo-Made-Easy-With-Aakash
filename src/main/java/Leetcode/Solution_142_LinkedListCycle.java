@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_142_LinkedListCycle {
   public ListNode detectCycle(ListNode head) {
     ListNode slowRunner = head;
     ListNode fastRunner = head;

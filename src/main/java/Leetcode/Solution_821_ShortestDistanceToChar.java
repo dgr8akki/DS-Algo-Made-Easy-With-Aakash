@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_821_ShortestDistanceToChar {
   public int[] shortestToChar(String S, char C) {
     int n = S.length();
     int[] res = new int[n];

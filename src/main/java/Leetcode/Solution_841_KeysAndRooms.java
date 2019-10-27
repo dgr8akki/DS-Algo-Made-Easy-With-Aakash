@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_841_KeysAndRooms {
   public boolean canVisitAllRooms(List<List<Integer>> rooms) {
     Stack<Integer> dfs = new Stack<>();
     dfs.add(0);

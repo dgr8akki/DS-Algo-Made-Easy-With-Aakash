@@ -2,7 +2,7 @@ package Leetcode;
 
 import java.math.BigInteger;
 
-class Solution {
+class Solution_306_AdditiveNumbers {
   public boolean isAdditiveNumber(String num) {
     int n = num.length();
     for (int i = 1; i <= n / 2; ++i) {

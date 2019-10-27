@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1046_LastStoneWeight {
   public int lastStoneWeight(int[] stones) {
     PriorityQueue<Integer> heap = new PriorityQueue<Integer>((n1, n2) -> n2 - n1);
     for (int stone : stones) {

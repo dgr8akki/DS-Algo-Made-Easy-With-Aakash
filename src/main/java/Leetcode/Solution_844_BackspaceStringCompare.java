@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_844_BackspaceStringCompare {
     public boolean backspaceCompare(String S, String T) {
         Stack<Character> st1 = new Stack<>();
         Stack<Character> st2 = new Stack<>();

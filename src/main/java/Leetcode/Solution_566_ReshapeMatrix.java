@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_566_ReshapeMatrix {
   public int[][] matrixReshape(int[][] A, int r, int c) {
     int m = A.length, n = A[0].length;
     if (m * n != r * c)

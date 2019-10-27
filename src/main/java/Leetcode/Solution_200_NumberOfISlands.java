@@ -1,6 +1,6 @@
 package Leetcode;
 
-public class Solution {
+public class Solution_200_NumberOfISlands {
 
   private int n;
   private int m;

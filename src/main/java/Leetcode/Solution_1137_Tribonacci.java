@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1137_Tribonacci {
   public int tribonacci(int n) {
     if (n < 2)
       return n;

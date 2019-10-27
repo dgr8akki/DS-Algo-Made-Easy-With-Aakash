@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_148_SortList {
   public ListNode sortList(ListNode head) {
     int length = 0;
     ListNode dummy = head;

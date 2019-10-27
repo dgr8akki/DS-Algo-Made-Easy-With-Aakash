@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_907_SumOfSubarray {
   public int sumSubarrayMins(int[] A) {
     int res = 0, n = A.length, mod = (int) 1e9 + 7;
     int[] left = new int[n], right = new int[n];

@@ -4,7 +4,7 @@ package Leetcode;
  * Definition for a binary tree node. public class TreeNode { int val; TreeNode
  * left; TreeNode right; TreeNode(int x) { val = x; } }
  */
-class Solution {
+class Solution_979_CoinsInBinaryTree {
   int result = 0;
 
   public int distributeCoins(TreeNode root) {

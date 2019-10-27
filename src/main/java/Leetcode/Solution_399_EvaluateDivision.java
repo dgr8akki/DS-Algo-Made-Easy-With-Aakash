@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_399_EvaluateDivision {
   public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {
     Map<String, Map<String, Double>> map = new HashMap<>();
     for (int i = 0; i < values.length; i++) {

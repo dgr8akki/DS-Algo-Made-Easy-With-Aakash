@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_134_GasStation {
   public int canCompleteCircuit(int[] gas, int[] cost) {
     int start = gas.length - 1;
     int end = 0;

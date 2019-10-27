@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1219_PathWithMaxGold {
   public int getMaximumGold(int[][] grid) {
     int max = 0;
 

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1020_NumberOfEnclaves {
   public int numEnclaves(int[][] A) {
     int count = 0;
     for (int i = 0; i < A.length; i++)

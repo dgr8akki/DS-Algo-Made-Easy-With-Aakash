@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_849_MaximumDistance {
   public int maxDistToClosest(int[] seats) {
     int i, j, res = 0, n = seats.length;
     for (i = j = 0; j < n; ++j)

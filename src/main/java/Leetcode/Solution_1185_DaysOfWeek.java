@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1185_DaysOfWeek {
   public String dayOfTheWeek(int day, int month, int year) {
     String[] daysInWeek = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
     int[] DaysByMonthMod7 = { 0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4 };

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_436_FindRightInterval {
   public int[] findRightInterval(int[][] intervals) {
     TreeMap<Integer, Integer> map = new TreeMap();
     for (int i = 0; i < intervals.length; i++)

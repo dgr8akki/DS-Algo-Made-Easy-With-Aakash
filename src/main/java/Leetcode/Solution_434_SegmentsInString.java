@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_434_SegmentsInString {
   public int countSegments(String s) {
     String[] sar = s.split(" ");
     int count = 0;

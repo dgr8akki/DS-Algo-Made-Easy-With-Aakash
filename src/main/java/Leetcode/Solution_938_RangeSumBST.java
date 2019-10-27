@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_938_RangeSumBST {
   public int rangeSumBST(TreeNode root, int L, int R) {
     if (root == null)
       return 0;

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_455_AssignCookies {
   public int findContentChildren(int[] g, int[] s) {
     Arrays.sort(g);
     Arrays.sort(s);

@@ -1,6 +1,6 @@
 package Leetcode;
 
-class Solution {
+class Solution_1010_SongsPair {
   public static int numPairsDivisibleBy60(int[] time) {
     int[] temp = new int[60];
     int count = 0;
