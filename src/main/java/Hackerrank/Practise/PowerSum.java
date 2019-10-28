@@ -18,7 +18,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-class Solution {
+class PowerSum {
     static int totalNumber(int X, int N, int num) {
       if(Math.pow(num,N) < X)
           return totalNumber(X,N,num+1)+totalNumber(X - (int)Math.pow(num,N),N,num+1);

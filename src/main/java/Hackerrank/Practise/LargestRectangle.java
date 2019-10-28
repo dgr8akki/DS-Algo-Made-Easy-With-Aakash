@@ -2,7 +2,7 @@ package Hackerrank.Practise;
 
 import java.util.*;
 
-class Solution {
+class LargestRectangle {
   static long largestRectangle(int[] h) {
     long area = 0;
     Stack<Integer> st = new Stack<>();

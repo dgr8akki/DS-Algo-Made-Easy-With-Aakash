@@ -1,24 +1,18 @@
 package Hackerrank.Practise;
 
-import java.io.*;
-import java.math.*;
-import java.text.*;
-import java.util.*;
-import java.util.regex.*;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
 
-public class Solution {
-
-  // Complete the solve function below.
-  static int solve(int[][] shots, int[][] players) {
-
-  }
+public class MrXAndHisShots {
 
   private static final Scanner scanner = new Scanner(System.in);
 
   public static void main(String[] args) throws IOException {
     BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("random.txt"));
 
-    String[] nm = scanner.nextLine().split(" ");
+    String[] nm = MrXAndHisShots.scanner.nextLine().split(" ");
 
     int n = Integer.parseInt(nm[0]);
 
@@ -27,8 +21,8 @@ public class Solution {
     int[][] shots = new int[n][2];
 
     for (int shotsRowItr = 0; shotsRowItr < n; shotsRowItr++) {
-      String[] shotsRowItems = scanner.nextLine().split(" ");
-      scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+      String[] shotsRowItems = MrXAndHisShots.scanner.nextLine().split(" ");
+      MrXAndHisShots.scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
       for (int shotsColumnItr = 0; shotsColumnItr < 2; shotsColumnItr++) {
         int shotsItem = Integer.parseInt(shotsRowItems[shotsColumnItr]);
@@ -39,8 +33,8 @@ public class Solution {
     int[][] players = new int[m][2];
 
     for (int playersRowItr = 0; playersRowItr < m; playersRowItr++) {
-      String[] playersRowItems = scanner.nextLine().split(" ");
-      scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+      String[] playersRowItems = MrXAndHisShots.scanner.nextLine().split(" ");
+      MrXAndHisShots.scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
       for (int playersColumnItr = 0; playersColumnItr < 2; playersColumnItr++) {
         int playersItem = Integer.parseInt(playersRowItems[playersColumnItr]);
@@ -48,13 +42,13 @@ public class Solution {
       }
     }
 
-    int result = solve(shots, players);
+    int result = 0;
 
     bufferedWriter.write(String.valueOf(result));
     bufferedWriter.newLine();
 
     bufferedWriter.close();
 
-    scanner.close();
+    MrXAndHisShots.scanner.close();
   }
 }

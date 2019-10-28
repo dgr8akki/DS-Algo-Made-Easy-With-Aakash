@@ -8,7 +8,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Solution {
+public class SnakeAndLadder {
   static class Node {
     int vertex;
     int distance;

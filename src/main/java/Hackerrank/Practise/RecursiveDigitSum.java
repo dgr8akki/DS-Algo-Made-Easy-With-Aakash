@@ -8,7 +8,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-class Solution {
+class RecursiveDigitSum {
 
     static int digitSum(String n) {
       if (n.length() == 1) {

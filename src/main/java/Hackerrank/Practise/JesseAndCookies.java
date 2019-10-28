@@ -6,7 +6,7 @@ import java.text.*;
 import java.util.*;
 import java.util.regex.*;
 
-class Solution {
+class JesseAndCookies {
   static int cookies(int k, int[] A) {
     int temp[] = new int[A.length];
     int count = -1;

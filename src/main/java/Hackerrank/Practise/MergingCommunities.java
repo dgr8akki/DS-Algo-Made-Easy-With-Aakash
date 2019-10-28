@@ -2,7 +2,7 @@ package Hackerrank.Practise;
 
 import java.util.*;
 
-class Solution {
+class MergingCommunities {
 
   class Node {
     int value;
@@ -61,7 +61,7 @@ class Solution {
     int n = sc.nextInt();
     int q = sc.nextInt();
 
-    Solution solution = new Solution();
+    MergingCommunities solution = new MergingCommunities();
 
     for (int index = 1; index <= n; index++)
       solution.makeSet(index);
