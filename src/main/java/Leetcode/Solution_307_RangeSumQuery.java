@@ -1,18 +1,21 @@
 package Leetcode;
 
-class NumArray {
-  int[] arr;
-  private int[] tree;
+import java.util.Arrays;
 
-  public NumArray(int[] arr) {
+class Solution_307_RangeSumQuery {
+  private final int[] arr;
+  private final int[] tree;
+
+  public Solution_307_RangeSumQuery(int[] arr) {
     this.arr = arr;
-    this.tree = new int[4 * this.arr.length];
-    this.buildTree(0, arr.length - 1, 1);
+    tree = new int[4 * this.arr.length];
+    buildTree(0, arr.length - 1, 1);
   }
 
   private void buildTree(int start, int end, int treeNode) {
-    if (end == -1)
+    if (end == -1) {
       return;
+    }
     if (start == end) {
       tree[treeNode] = arr[start];
       return;
@@ -24,24 +27,26 @@ class NumArray {
   }
 
   public void print() {
-    System.out.println(Arrays.toString(this.tree));
+    System.out.println(Arrays.toString(tree));
   }
 
   public void update(int index, int newValue) {
-    update(0, this.arr.length - 1, 1, index, newValue);
+    update(0, arr.length - 1, 1, index, newValue);
   }
 
   public int sumRange(int startingIndex, int endIndex) {
-    return query(0, this.arr.length - 1, 1, startingIndex, endIndex);
+    return query(0, arr.length - 1, 1, startingIndex, endIndex);
   }
 
   private int query(int start, int end, int treeNode, int startingIndex, int endIndex) {
     // Fully outside
-    if (startingIndex > end || endIndex < start)
+    if (startingIndex > end || endIndex < start) {
       return 0;
+    }
     // Fully overlap
-    if (startingIndex <= start && endIndex >= end)
+    if (startingIndex <= start && endIndex >= end) {
       return tree[treeNode];
+    }
     // Partially overlap
     int mid = (start + end) / 2;
     return query(start, mid, 2 * treeNode, startingIndex, endIndex)
@@ -55,16 +60,11 @@ class NumArray {
       return;
     }
     int mid = (start + end) / 2;
-    if (index > mid)
+    if (index > mid) {
       update(mid + 1, end, (2 * treeNode) + 1, index, newValue);
-    else
+    } else {
       update(start, mid, 2 * treeNode, index, newValue);
+    }
     tree[treeNode] = tree[2 * treeNode] + tree[(2 * treeNode) + 1];
   }
-
 }
-
-/**
- * Your NumArray object will be instantiated and called as such: NumArray obj =
- * new NumArray(nums); obj.update(i,val); int param_2 = obj.sumRange(i,j);
- */

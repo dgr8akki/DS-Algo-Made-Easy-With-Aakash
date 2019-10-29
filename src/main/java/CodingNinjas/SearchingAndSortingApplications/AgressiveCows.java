@@ -3,7 +3,7 @@ package CodingNinjas.SearchingAndSortingApplications;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+class AgressiveCows {
   public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
     int t = in.nextInt();
@@ -16,21 +16,21 @@ public class Main {
         stalls[j] = in.nextLong();
       }
 
-      System.out.println(solve(stalls, n, c));
+      System.out.println(AgressiveCows.solve(stalls, n, c));
     }
     in.close();
   }
 
   private static long solve(long[] stalls, int n, int c) {
     Arrays.sort(stalls);
-    return solve(stalls, n, c, 0, stalls[n - 1] - stalls[0]);
+    return AgressiveCows.solve(stalls, n, c, 0, stalls[n - 1] - stalls[0]);
   }
 
   private static long solve(long[] arr, int n, int c, long min, long max) {
     long maxValidDistance = -1;
     while (min <= max) {
       long mid = min + (max - min) / 2;
-      if (isSolvable(arr, n, mid, c)) {
+      if (AgressiveCows.isSolvable(arr, n, mid, c)) {
         maxValidDistance = mid;
         min = mid + 1;
       } else {

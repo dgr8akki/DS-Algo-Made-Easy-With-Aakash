@@ -2,7 +2,7 @@ package CodingNinjas.SearchingAndSortingApplications;
 
 import java.util.Scanner;
 
-public class Main {
+public class Murder {
 
   public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
@@ -13,21 +13,21 @@ public class Main {
       for (int i = 0; i < n; i++) {
         arr[i] = in.nextInt();
       }
-      System.out.println(solve(arr, n));
+      System.out.println(Murder.solve(arr, n));
     }
   }
 
   private static long solve(int[] A, int n) {
-    return mergeSortInversion(A, 0, n - 1);
+    return Murder.mergeSortInversion(A, 0, n - 1);
   }
 
   private static long mergeSortInversion(int[] A, int start, int end) {
     long count = 0;
     if (start < end) {
       int mid = (start + end) / 2;
-      long leftCount = mergeSortInversion(A, start, mid);
-      long rightCount = mergeSortInversion(A, mid + 1, end);
-      long mergeCount = mergeInversion(A, start, mid, end);
+      long leftCount = Murder.mergeSortInversion(A, start, mid);
+      long rightCount = Murder.mergeSortInversion(A, mid + 1, end);
+      long mergeCount = Murder.mergeInversion(A, start, mid, end);
       return leftCount + rightCount + mergeCount;
     }
     return count;

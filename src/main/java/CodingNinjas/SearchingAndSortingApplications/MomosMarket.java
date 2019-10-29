@@ -19,7 +19,7 @@ public class MomosMarket {
     int totalDays = in.nextInt();
     while (totalDays-- > 0) {
       int money = in.nextInt();
-      long[] result = solve(prices, money);
+      long[] result = MomosMarket.solve(prices, money);
       System.out.println(result[0] + " " + result[1]);
     }
 

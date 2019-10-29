@@ -18,7 +18,7 @@ public class TajMahalEntry {
       }
     }
 
-    System.out.println(solve(windows, n));
+    System.out.println(TajMahalEntry.solve(windows, n));
     in.close();
   }
 

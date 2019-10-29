@@ -1,19 +1,7 @@
 package Leetcode;
 
 class Solution_258_AddDigits {
-  public int addDigits(int num) {
-    if (num < 10)
-      return num;
-    int sum = 0;
-    int temp = num;
-    while (temp > 0) {
-      sum += (temp % 10);
-      temp /= 10;
-    }
-    return addDigits(sum);
-  }
-
-  public int addDigits(int num) {
+  static int addDigits2(int num) {
     if (num == 0) {
       return 0;
     }
@@ -24,4 +12,16 @@ class Solution_258_AddDigits {
     }
   }
 
+  private static int addDigits(int num) {
+    if (num < 10) {
+      return num;
+    }
+    int sum = 0;
+    int temp = num;
+    while (temp > 0) {
+      sum += (temp % 10);
+      temp /= 10;
+    }
+    return Solution_258_AddDigits.addDigits(sum);
+  }
 }

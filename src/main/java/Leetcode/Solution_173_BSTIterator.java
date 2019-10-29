@@ -1,9 +1,11 @@
 package Leetcode;
 
-public class BSTIterator {
-  private Stack<TreeNode> stack = new Stack<TreeNode>();
+import java.util.Stack;
 
-  public BSTIterator(TreeNode root) {
+class Solution_173_BSTIterator {
+  private final Stack<TreeNode> stack = new Stack<>();
+
+  public Solution_173_BSTIterator(TreeNode root) {
     pushAll(root);
   }
 
@@ -18,7 +20,6 @@ public class BSTIterator {
   }
 
   private void pushAll(TreeNode node) {
-    for (; node != null; stack.push(node), node = node.left)
-      ;
+    for (; node != null; stack.push(node), node = node.left) {}
   }
 }

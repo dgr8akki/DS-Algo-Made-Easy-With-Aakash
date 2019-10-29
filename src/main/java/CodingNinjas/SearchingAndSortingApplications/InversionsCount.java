@@ -1,24 +1,8 @@
 package CodingNinjas.SearchingAndSortingApplications;
 
-public class solution {
+class InversionsCount {
 
-  long solve(int[] A, int n) {
-    return mergeSortInversion(A, 0, n - 1);
-  }
-
-  private long mergeSortInversion(int[] A, int start, int end) {
-    long count = 0;
-    if (start < end) {
-      int mid = (start + end) / 2;
-      long leftCount = mergeSortInversion(A, start, mid);
-      long rightCount = mergeSortInversion(A, mid + 1, end);
-      long mergeCount = mergeInversion(A, start, mid, end);
-      return leftCount + rightCount + mergeCount;
-    }
-    return count;
-  }
-
-  private long mergeInversion(int[] A, int start, int mid, int end) {
+  private static long mergeInversion(int[] A, int start, int mid, int end) {
 
     int[] temp = new int[(end - start) + 1];
     long inversions = 0;
@@ -51,5 +35,21 @@ public class solution {
     }
 
     return inversions;
+  }
+
+  private static long mergeSortInversion(int[] A, int start, int end) {
+    long count = 0;
+    if (start < end) {
+      int mid = (start + end) / 2;
+      long leftCount = InversionsCount.mergeSortInversion(A, start, mid);
+      long rightCount = InversionsCount.mergeSortInversion(A, mid + 1, end);
+      long mergeCount = InversionsCount.mergeInversion(A, start, mid, end);
+      return leftCount + rightCount + mergeCount;
+    }
+    return count;
+  }
+
+  static long solve(int[] A, int n) {
+    return InversionsCount.mergeSortInversion(A, 0, n - 1);
   }
 }
