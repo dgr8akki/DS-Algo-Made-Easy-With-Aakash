@@ -1,39 +1,45 @@
 package DataStructures;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.List;
 
-class Graph {
+class GraphWithNodes {
 
-  class Node {
-    int value;
-    List<Node> adjacentNodes[];
+  private final int totalNumberOfNodes;
+  private final LinkedList[] adjacentNodes = new LinkedList[0];
 
-    Node(int val) {
-      this.value = val;
-      adjacentNodes = new LinkedList<>();
-    }
-  }
-
-  int totalNumberOfNodes;
-
-  Graph(int totalNumberOfNodes) {
+  private GraphWithNodes(int totalNumberOfNodes) {
 
     this.totalNumberOfNodes = totalNumberOfNodes;
 
-    for(int i = 0; i < totalNumberOfNodes; i++)
+    for (int i = 0; i < totalNumberOfNodes; i++) {
       adjacentNodes[i] = new LinkedList<>();
+    }
   }
 
-  public void addEdge(Graph graph, int source, int dest) {
+  public static void main(String[] args) {
+    GraphWithNodes graph = new GraphWithNodes(5);
+
+    GraphWithNodes.addEdge(graph, 0, 1);
+    GraphWithNodes.addEdge(graph, 0, 4);
+    GraphWithNodes.addEdge(graph, 1, 2);
+    GraphWithNodes.addEdge(graph, 1, 3);
+    GraphWithNodes.addEdge(graph, 1, 4);
+    GraphWithNodes.addEdge(graph, 2, 3);
+    GraphWithNodes.addEdge(graph, 3, 4);
+    GraphWithNodes.printGraph(graph);
+  }
+
+  public static void addEdge(GraphWithNodes graph, int source, int dest) {
     graph.adjacentNodes[source].add(dest);
     graph.adjacentNodes[dest].add(source);
   }
 
-  public void printGraph(Graph graph) {
+  private static void printGraph(GraphWithNodes graph) {
     for (int node = 0; node < graph.totalNumberOfNodes; node++) {
       System.out.println("Adjacency list of vertex " + node);
       System.out.print("head");
-      for (Integer pCrawl : graph.adjacentNodes[node]) {
+      for (Object pCrawl : graph.adjacentNodes[node]) {
         System.out.print(" -> " + pCrawl);
       }
       System.out.println("\n");
@@ -41,23 +47,19 @@ class Graph {
   }
 
   public void BreadFirstTraversal(int sourceNode) {
-    boolean visited[] = new boolean[totalNumberOfNodes];
+    boolean[] visited = new boolean[totalNumberOfNodes];
 
-    LinkedList<Integer> queue = new LinkedList<Integer>();
+    LinkedList<Integer> queue = new LinkedList<>();
 
-    visited[s] = true;
+    visited[sourceNode] = true;
   }
 
-  public static void main(String[] args) {
-    Graph graph = new Graph(5);
+  class Node {
+    int value;
+    List<Integer> adjacentNodes[];
 
-    graph.addEdge(graph, 0, 1);
-    graph.addEdge(graph, 0, 4);
-    graph.addEdge(graph, 1, 2);
-    graph.addEdge(graph, 1, 3);
-    graph.addEdge(graph, 1, 4);
-    graph.addEdge(graph, 2, 3);
-    graph.addEdge(graph, 3, 4);
-    graph.printGraph(graph);
+    Node(int val) {
+      value = val;
+    }
   }
 }
