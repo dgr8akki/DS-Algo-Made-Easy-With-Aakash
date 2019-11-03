@@ -12,7 +12,7 @@ class Solution_916_WordSubset {
     return count;
   }
 
-  public List<String> wordSubsets(String[] A, String[] B) {
+  public static List<String> wordSubsets(String[] A, String[] B) {
     int[] uni = new int[26];
     int[] tmp;
     int i;
