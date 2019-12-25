@@ -1,4 +1,4 @@
-class Solution {
+class Solution_1248_NiceSubarray {
   public int numberOfSubarrays(int[] A, int k) {
     return atMost(A, k) - atMost(A, k - 1);
   }

@@ -1,5 +1,3 @@
-package AdvanceDataStructures;
-
 import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JFrame;
@@ -29,7 +27,7 @@ public class FractalTree extends JFrame {
     @Override
     public void paint(Graphics g) {
         g.setColor(Color.BLACK);
-        drawTree(g, 500, 700, -90, 11);
+        drawTree(g, 500, 700, -90, 10);
     }
 
     public static void main(String[] args) {
