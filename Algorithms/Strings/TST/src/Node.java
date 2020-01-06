@@ -1,3 +1,5 @@
+package Algorithms.Strings.TST.src;
+
 public class Node {
   private char character;
   private Node leftChild;

@@ -1,3 +1,5 @@
+package Algorithms.Graphs.BellmanFord.src;
+
 import java.util.List;
 
 public class BellmanFord {

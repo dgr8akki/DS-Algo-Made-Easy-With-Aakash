@@ -1,3 +1,5 @@
+package CodingNinjas.FenwickTree;
+
 import java.util.Scanner;
 
 /**

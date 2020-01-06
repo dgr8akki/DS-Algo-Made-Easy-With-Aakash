@@ -1,3 +1,5 @@
+package Random;
+
 public class GCD {
 
   public int calculateRecursive(int first, int second) {

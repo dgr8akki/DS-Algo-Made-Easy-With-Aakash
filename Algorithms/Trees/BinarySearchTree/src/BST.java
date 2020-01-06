@@ -1,3 +1,5 @@
+package Algorithms.Trees.BinarySearchTree.src;
+
 class BST<T extends Comparable<T>> {
   private Node<T> root;
 

@@ -1,3 +1,5 @@
+package Algorithms.Graphs.KosarajuSCC.src;
+
 public class Kosaraju {
   private int[] id;
   private boolean[] marked;

@@ -1,3 +1,5 @@
+package CodingNinjas.BasicsOfRecurssion;
+
 class Solution {
   public static int firstIndex(int input[], int x) {
     return firstIndex(input, x, 0);

@@ -1,3 +1,5 @@
+package Algorithms.Graphs.BipartiteMatching.src;
+
 public class Edge {
 
 	private final Vertex fromVertex;

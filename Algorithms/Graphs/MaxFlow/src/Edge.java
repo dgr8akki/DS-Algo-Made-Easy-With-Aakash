@@ -1,3 +1,5 @@
+package Algorithms.Graphs.MaxFlow.src;
+
 public class Edge {
 
 	private Vertex fromVertex;

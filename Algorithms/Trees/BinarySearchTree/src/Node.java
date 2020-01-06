@@ -1,3 +1,5 @@
+package Algorithms.Trees.BinarySearchTree.src;
+
 public class Node<T> {
   private T data;
   private Node<T> leftChild;

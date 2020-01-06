@@ -1,9 +1,12 @@
-import java.util.*;
+package Hackerrank.Practise;
 
-class Solution {
-  static void addAtFront(int arr[], int start, int end) {
+import java.util.Arrays;
+import java.util.Scanner;
+
+class ArrayAndQueries {
+  private static void addAtFront(int[] arr, int start, int end) {
     int[] temp;
-    if( start == end) {
+    if (start == end) {
       temp = new int[1];
       temp[0] = arr[start - 1];
     } else {
@@ -12,42 +15,45 @@ class Solution {
     }
     int i = start - 2;
     int j = end - 1;
-    while(i >= 0) {
+    while (i >= 0) {
       arr[j] = arr[i];
-      i--; j--;
+      i--;
+      j--;
     }
-    for(int index = 0; index < temp.length; index++) {
-      arr[i+1] = temp[index];
+    for (int index = 0; index < temp.length; index++) {
+      arr[i + 1] = temp[index];
       i++;
     }
   }
-  static void addAtEnd(int arr[], int start, int end) {
+
+  private static void addAtEnd(int[] arr, int start, int end) {
     int[] temp;
-    if( start == end) {
+    if (start == end) {
       temp = new int[1];
       temp[0] = arr[start - 1];
     } else {
       temp = new int[end - start - 1];
-      temp = Arrays.copyOfRange(arr,start - 1,end);
+      temp = Arrays.copyOfRange(arr, start - 1, end);
     }
-  int i = start - 1;
+    int i = start - 1;
     int j = end;
-    while(j < arr.length) {
+    while (j < arr.length) {
       arr[i] = arr[j];
-      i++; j++;
+      i++;
+      j++;
     }
-    for(int index = 0; index < temp.length; index++) {
+    for (int index = 0; index < temp.length; index++) {
       arr[i] = temp[index];
       i++;
     }
   }
 
-  static void solveIt(int[] arr, int queryType, int start, int end) {
-      if (queryType == 1) {
-        addAtFront(arr, start, end);
-      } else {
-        addAtEnd(arr, start, end);
-      }
+  private static void solveIt(int[] arr, int queryType, int start, int end) {
+    if (queryType == 1) {
+      ArrayAndQueries.addAtFront(arr, start, end);
+    } else {
+      ArrayAndQueries.addAtEnd(arr, start, end);
+    }
   }
 
   public static void main(String[] args) {
@@ -55,17 +61,17 @@ class Solution {
     int n = sc.nextInt();
     int q = sc.nextInt();
 
-    int arr[] = new int[n];
+    int[] arr = new int[n];
 
-    for(int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {
       arr[i] = sc.nextInt();
     }
 
-    for(int j = 1; j <= q; j++) {
+    for (int j = 1; j <= q; j++) {
       int queryType = sc.nextInt();
       int start = sc.nextInt();
       int end = sc.nextInt();
-      solveIt(arr, queryType, start, end);
+      ArrayAndQueries.solveIt(arr, queryType, start, end);
     }
     System.out.println(Math.abs(arr[0] - arr[n - 1]));
     for (int el : arr) {

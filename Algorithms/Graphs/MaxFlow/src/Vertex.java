@@ -1,3 +1,5 @@
+package Algorithms.Graphs.MaxFlow.src;
+
 public class Vertex {
 
 	private int id;

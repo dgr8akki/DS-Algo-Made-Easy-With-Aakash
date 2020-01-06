@@ -1,3 +1,5 @@
+package Algorithms.HashTable.ChainingHashTable.src;
+
 public class HashItem {
 
   private int key;

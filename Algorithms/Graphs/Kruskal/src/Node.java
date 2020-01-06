@@ -1,3 +1,5 @@
+package Algorithms.Graphs.Kruskal.src;
+
 public class Node {
   private Vertex vertex;
   private Node parent;

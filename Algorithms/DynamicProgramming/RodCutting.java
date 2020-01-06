@@ -1,3 +1,5 @@
+package Algorithms.DynamicProgramming;
+
 public class RodCutting {
   private int[] values;
   private int totalValues;

@@ -1,3 +1,5 @@
+package Algorithms.Graphs.Dijkstra.src;
+
 public class Edge {
   private Vertex sourceVertex;
   private Vertex destinationVertex;

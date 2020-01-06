@@ -1,3 +1,5 @@
+package CodingNinjas.AdvanceRecurssion;
+
 public class RemoveDuplicatesRecursively {
   /**
    * Given a string S, remove consecutive duplicates from it recursively.

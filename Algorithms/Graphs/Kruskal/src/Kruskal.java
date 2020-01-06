@@ -1,3 +1,5 @@
+package Algorithms.Graphs.Kruskal.src;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

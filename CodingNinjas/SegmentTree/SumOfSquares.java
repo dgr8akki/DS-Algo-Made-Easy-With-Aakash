@@ -1,3 +1,5 @@
+package CodingNinjas.SegmentTree;
+
 import java.util.Scanner;
 
 /**

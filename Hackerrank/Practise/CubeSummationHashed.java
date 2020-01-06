@@ -1,7 +1,9 @@
+package Hackerrank.Practise;
+
 import java.io.*;
 import java.util.*;
 
-class Solution {
+class CubeSummationHashed {
 
   static void query (Map<Integer, Integer> map, int x1, int y1, int z1, int x2, int y2, int z2) {
     long sum = 0;

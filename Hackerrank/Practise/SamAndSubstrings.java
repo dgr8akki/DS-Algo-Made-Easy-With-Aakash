@@ -1,3 +1,5 @@
+package Hackerrank.Practise;
+
 public class SamAndSubstrings {
   final static int MOD = 1_000_000_000 + 7;
 

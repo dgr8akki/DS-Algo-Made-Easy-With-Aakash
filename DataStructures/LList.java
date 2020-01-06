@@ -1,3 +1,5 @@
+package DataStructures;
+
 public class LList {
   class Node {
     public int data;

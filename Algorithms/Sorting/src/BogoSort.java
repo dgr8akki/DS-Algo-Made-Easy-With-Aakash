@@ -1,3 +1,5 @@
+package Algorithms.Sorting.src;
+
 import java.util.Random;
 
 public class BogoSort extends Sorter {

@@ -1,3 +1,5 @@
+package Algorithms.Strings.Trie.src;
+
 class Constant {
   private Constant(){}
 

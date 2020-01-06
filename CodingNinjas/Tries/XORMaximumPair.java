@@ -1,3 +1,5 @@
+package CodingNinjas.Tries;
+
 /**
  * XORMaximumPair
  */

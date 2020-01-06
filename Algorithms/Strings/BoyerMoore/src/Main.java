@@ -1,3 +1,5 @@
+package Algorithms.Strings.BoyerMoore.src;
+
 public class Main {
   public static void main(String[] args) {
     String text = "The quick brown fox, jumps over the little lazy dog.";

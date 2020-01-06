@@ -1,3 +1,5 @@
+package Algorithms.Sorting.src;
+
 public class InsertionSort extends Sorter {
   InsertionSort(int[] arr) {
     super(arr);

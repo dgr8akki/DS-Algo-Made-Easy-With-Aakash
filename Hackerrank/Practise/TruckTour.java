@@ -1,10 +1,12 @@
+package Hackerrank.Practise;
+
 import java.io.*;
 import java.math.*;
 import java.text.*;
 import java.util.*;
 import java.util.regex.*;
 
-class Solution {
+class TruckTour {
 
   private static class GasStation {
     int gas;

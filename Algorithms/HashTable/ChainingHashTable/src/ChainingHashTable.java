@@ -1,3 +1,5 @@
+package Algorithms.HashTable.ChainingHashTable.src;
+
 class ChainingHashTable {
   private HashItem[] map;
 

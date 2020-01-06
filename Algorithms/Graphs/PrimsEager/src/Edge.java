@@ -1,3 +1,5 @@
+package Algorithms.Graphs.PrimsEager.src;
+
 public class Edge implements Comparable<Edge> {
   private Vertex sourceVertex;
   private Vertex destinationVertex;

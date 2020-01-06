@@ -1,3 +1,5 @@
+package Algorithms.DynamicProgramming;
+
 public class Knapsack {
   private int[] weights;
   private int[] values;

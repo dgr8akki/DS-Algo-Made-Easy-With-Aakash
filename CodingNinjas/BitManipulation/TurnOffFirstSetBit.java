@@ -1,3 +1,5 @@
+package CodingNinjas.BitManipulation;
+
 import java.util.Scanner;
 
 public class TurnOffFirstSetBit {

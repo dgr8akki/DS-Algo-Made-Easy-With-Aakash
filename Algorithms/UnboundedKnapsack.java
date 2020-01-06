@@ -1,3 +1,5 @@
+package Algorithms;
+
 public class UnboundedKnapsack {
   public static int solve(int[] weights, int[] values, int capacity) {
     int[] result = new int[capacity + 1];

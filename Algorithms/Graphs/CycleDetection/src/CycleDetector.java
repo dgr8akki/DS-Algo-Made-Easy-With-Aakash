@@ -1,3 +1,5 @@
+package Algorithms.Graphs.CycleDetection.src;
+
 import java.util.List;
 
 class CycleDetector {

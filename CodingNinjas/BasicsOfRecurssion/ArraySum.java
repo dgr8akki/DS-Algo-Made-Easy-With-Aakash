@@ -1,3 +1,5 @@
+package CodingNinjas.BasicsOfRecurssion;
+
 class Solution {
   public static int sum(int input[]) {
     return sum(input, input.length - 1);

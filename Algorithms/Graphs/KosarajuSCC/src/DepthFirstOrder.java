@@ -1,3 +1,5 @@
+package Algorithms.Graphs.KosarajuSCC.src;
+
 import java.util.Stack;
 
 public class DepthFirstOrder {

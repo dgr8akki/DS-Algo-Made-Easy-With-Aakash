@@ -1,3 +1,5 @@
+package Random;
+
 public class MedianOfTwoSortedArray {
 
   public double getMedian(int[] array1, int[] array2) {

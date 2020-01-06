@@ -1,3 +1,5 @@
+package Algorithms.Sorting.src;
+
 public class QuickSort extends Sorter {
   QuickSort(int[] arr) {
     super(arr);

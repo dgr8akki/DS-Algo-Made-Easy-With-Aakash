@@ -1,3 +1,5 @@
+package Algorithms.Strings.Trie.src;
+
 public class Node {
   private String character;
   private boolean visited;

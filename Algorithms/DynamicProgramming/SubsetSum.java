@@ -1,3 +1,5 @@
+package Algorithms.DynamicProgramming;
+
 public class SubsetSum {
   private int[] setOfNumbers;
   private int setSize;

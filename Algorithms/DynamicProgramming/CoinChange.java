@@ -1,3 +1,5 @@
+package Algorithms.DynamicProgramming;
+
 import java.util.Arrays;
 
 public class CoinChange {

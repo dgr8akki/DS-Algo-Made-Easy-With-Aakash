@@ -1,3 +1,5 @@
+package Algorithms.DataCompression.RunLengthEncoding.src;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

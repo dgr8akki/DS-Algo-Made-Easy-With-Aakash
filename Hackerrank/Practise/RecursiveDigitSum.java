@@ -1,3 +1,5 @@
+package Hackerrank.Practise;
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -6,7 +8,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-class Solution {
+class RecursiveDigitSum {
 
     static int digitSum(String n) {
       if (n.length() == 1) {

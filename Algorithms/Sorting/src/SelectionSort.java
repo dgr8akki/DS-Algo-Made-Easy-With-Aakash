@@ -1,3 +1,5 @@
+package Algorithms.Sorting.src;
+
 public class SelectionSort extends Sorter {
   SelectionSort(int[] arr) {
     super(arr);

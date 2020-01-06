@@ -1,3 +1,5 @@
+package CodingNinjas.GreedyAlgorithms;
+
 import java.util.Scanner;
 import java.util.*;
 

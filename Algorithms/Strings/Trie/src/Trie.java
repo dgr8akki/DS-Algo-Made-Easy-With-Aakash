@@ -1,3 +1,5 @@
+package Algorithms.Strings.Trie.src;
+
 import java.util.ArrayList;
 import java.util.List;
 

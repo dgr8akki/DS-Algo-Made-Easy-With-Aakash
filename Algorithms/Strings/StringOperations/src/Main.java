@@ -1,3 +1,5 @@
+package Algorithms.Strings.StringOperations.src;
+
 public class Main {
   public static void main(String[] args) {
     StringOperations operations = new StringOperations();

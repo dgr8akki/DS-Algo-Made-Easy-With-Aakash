@@ -1,3 +1,5 @@
+package CodingNinjas.BasicsOfRecurssion;
+
 class Solution {
   public static boolean checkNumber(int input[], int x) {
     if (input.length == 0)

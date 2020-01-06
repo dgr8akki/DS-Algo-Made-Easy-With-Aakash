@@ -1,3 +1,5 @@
+package Algorithms.Graphs.BellmanFord.src;
+
 public class Edge {
   private Vertex sourceVertex;
   private Vertex destinationVertex;

@@ -1,14 +1,16 @@
+package Algorithms.DataCompression.HuffmanEncoding.src;
+
 public class HuffmanNode extends HuffmanTree {
   private HuffmanTree leftTree;
   private HuffmanTree rightTree;
 
-  public HuffmanNode(HuffmanTree leftTree, HuffmanTree rightTree) {
+  HuffmanNode(HuffmanTree leftTree, HuffmanTree rightTree) {
     super(leftTree.getFrequency() + rightTree.getFrequency());
     this.leftTree = leftTree;
     this.rightTree = rightTree;
   }
 
-  public HuffmanTree getLeftTree() {
+  HuffmanTree getLeftTree() {
     return leftTree;
   }
 
@@ -16,7 +18,7 @@ public class HuffmanNode extends HuffmanTree {
     this.leftTree = leftTree;
   }
 
-  public HuffmanTree getRightTree() {
+  HuffmanTree getRightTree() {
     return rightTree;
   }
 

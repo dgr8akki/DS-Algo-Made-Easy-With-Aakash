@@ -1,3 +1,5 @@
+package Random;
+
 public class NthFibonacci {
 
   public static double find(int n) {

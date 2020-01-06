@@ -1,3 +1,5 @@
+package Algorithms.Strings.TST.src;
+
 public class TST {
   private Node root;
 

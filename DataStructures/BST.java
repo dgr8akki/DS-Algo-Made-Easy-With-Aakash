@@ -1,3 +1,5 @@
+package DataStructures;
+
 import java.util.*;
 
 public class BST {
@@ -81,7 +83,7 @@ public class BST {
     if (head == null)
       return;
     Stack<Node> stack = new Stack<Node>();
-    java.util.Map<Node, Boolean> isVisited = new HashMap<>();
+    Map<Node, Boolean> isVisited = new HashMap<>();
     stack.push(head);
     while (!stack.isEmpty()) {
       Node currentNode = stack.pop();
@@ -103,7 +105,7 @@ public class BST {
     if (head == null)
       return;
     Queue<Node> queue = new LinkedList<Node>();
-    java.util.Map<Node, Boolean> isVisited = new HashMap<>();
+    Map<Node, Boolean> isVisited = new HashMap<>();
     queue.add(head);
     while (!queue.isEmpty()) {
       Node currentNode = queue.poll();

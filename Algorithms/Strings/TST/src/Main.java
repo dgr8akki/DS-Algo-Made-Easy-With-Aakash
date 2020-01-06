@@ -1,3 +1,5 @@
+package Algorithms.Strings.TST.src;
+
 public class Main {
   public static void main(String[] args) {
     TST tst = new TST();

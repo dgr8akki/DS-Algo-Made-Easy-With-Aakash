@@ -1,3 +1,5 @@
+package Algorithms.Sorting.src;
+
 import java.util.Arrays;
 
 public class MergeSort extends Sorter {

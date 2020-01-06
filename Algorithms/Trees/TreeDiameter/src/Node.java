@@ -1,3 +1,5 @@
+package Algorithms.Trees.TreeDiameter.src;
+
 class Node {
 
   private int data;

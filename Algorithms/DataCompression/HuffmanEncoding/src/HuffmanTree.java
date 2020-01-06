@@ -1,20 +1,22 @@
+package Algorithms.DataCompression.HuffmanEncoding.src;
+
 public class HuffmanTree implements Comparable<HuffmanTree> {
   private int frequency;
 
   HuffmanTree(int frequency) {
-    this.setFrequency(frequency);
+    setFrequency(frequency);
   }
 
   int getFrequency() {
     return frequency;
   }
 
-  void setFrequency(int frequency) {
+  private void setFrequency(int frequency) {
     this.frequency = frequency;
   }
 
   @Override
   public int compareTo(HuffmanTree anotherTree) {
-    return Integer.compare(this.getFrequency(), anotherTree.getFrequency());
+    return Integer.compare(getFrequency(), anotherTree.getFrequency());
   }
 }

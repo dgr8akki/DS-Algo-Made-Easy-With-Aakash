@@ -1,3 +1,5 @@
+package CodingNinjas.TimeAndSpaceComplexityAnalysis;
+
 import java.util.Arrays;
 
 public class Kadene {

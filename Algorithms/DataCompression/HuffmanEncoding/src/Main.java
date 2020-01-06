@@ -1,3 +1,5 @@
+package Algorithms.DataCompression.HuffmanEncoding.src;
+
 public class Main {
   public static void main(String[] args) {
 
@@ -5,14 +7,14 @@ public class Main {
 
     int[] charFrequencies = new int[256];
 
-    for (char c : text.toCharArray())
+    for (char c : text.toCharArray()) {
       ++charFrequencies[c];
+    }
 
     HuffmanCode huffmanCode = new HuffmanCode();
 
-    HuffmanTree huffmanTree = huffmanCode.buildTree(charFrequencies);
+    HuffmanTree huffmanTree = HuffmanCode.buildTree(charFrequencies);
 
-    huffmanCode.printCodes(huffmanTree, new StringBuilder());
-
+    HuffmanCode.printCodes(huffmanTree, new StringBuilder());
   }
 }

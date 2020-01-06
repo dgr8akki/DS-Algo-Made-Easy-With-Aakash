@@ -1,3 +1,5 @@
+package Random;
+
 public class EggDropping {
   public int calculateAttempts(int totalEggs, int totalFloors) {
     int[][] attempts = new int[totalEggs + 1][totalFloors + 1];

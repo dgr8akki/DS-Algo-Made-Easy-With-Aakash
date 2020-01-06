@@ -1,3 +1,5 @@
+package Algorithms.HashTable.LinearProbingHashTable.src;
+
 public class Main {
 
   public static void main(String[] args) {

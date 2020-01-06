@@ -1,3 +1,5 @@
+package Algorithms;
+
 import java.util.Arrays;
 
 public class QuickSort {

@@ -1,3 +1,5 @@
+package Algorithms.HashTable.LinearProbingHashTable.src;
+
 class LinearProbingHashTable {
   private HashItem[] map;
 

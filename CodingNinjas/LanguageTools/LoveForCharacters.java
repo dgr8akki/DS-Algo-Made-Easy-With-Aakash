@@ -1,3 +1,5 @@
+package CodingNinjas.LanguageTools;
+
 import java.util.*;
 
 class Main {

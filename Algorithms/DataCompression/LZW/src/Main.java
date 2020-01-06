@@ -1,3 +1,5 @@
+package Algorithms.DataCompression.LZW.src;
+
 import java.util.List;
 
 public class Main {

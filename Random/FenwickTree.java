@@ -1,3 +1,5 @@
+package Random;
+
 public class FenwickTree {
   public void updateTree(int BITree[], int valueToBeUpdated, int index) {
     while (index < BITree.length) {

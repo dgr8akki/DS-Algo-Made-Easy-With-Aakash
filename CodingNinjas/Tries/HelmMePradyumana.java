@@ -1,3 +1,5 @@
+package CodingNinjas.Tries;
+
 import java.util.*;
 import java.io.*;
 
@@ -48,7 +50,6 @@ public class HelmMePradyumana {
       }
       currentNode = currentNode.children[index];
       currentNode.wordsUnderThisCharacter++;
-
     }
     currentNode.isEndOfWord = true;
   }
@@ -100,10 +101,12 @@ public class HelmMePradyumana {
 
     int q = in.nextInt();
     while (q-- > 0) {
-      List<String> res = find(in.next());
-      if (res == null || res.size() == 0)
+      String s = in.next();
+      List<String> res = find(s);
+      if (res == null || res.size() == 0) {
         System.out.println("No suggestions");
-      else {
+        insert(s);
+      } else {
         for (String r : res)
           System.out.println(r);
       }

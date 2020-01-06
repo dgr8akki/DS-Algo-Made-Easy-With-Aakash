@@ -1,3 +1,5 @@
+package CodingNinjas.Prerequisites;
+
 import java.util.Scanner;
 
 public class ChakriPrice {

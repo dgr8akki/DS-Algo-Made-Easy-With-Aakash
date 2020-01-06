@@ -1,3 +1,5 @@
+package Algorithms.Strings.Trie.src;
+
 import java.util.Collections;
 
 public class Main {

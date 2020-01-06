@@ -1,7 +1,9 @@
+package Hackerrank.Practise;
+
 import java.io.*;
 import java.util.*;
 
-class Solution {
+class CubeSummationBruteForce {
 
   static void query (int[][][] mat, int x1, int y1, int z1, int x2, int y2, int z2) {
     int sum = 0;

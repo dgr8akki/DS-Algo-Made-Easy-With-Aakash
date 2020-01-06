@@ -1,3 +1,5 @@
+package Algorithms.Graphs.Dijkstra.src;
+
 import java.util.*;
 
 public class Dijkstra {

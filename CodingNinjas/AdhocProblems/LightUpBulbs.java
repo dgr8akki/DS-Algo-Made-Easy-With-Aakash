@@ -1,3 +1,5 @@
+package CodingNinjas.AdhocProblems;
+
 import java.util.Scanner;
 
 public class LightUpBulbs {

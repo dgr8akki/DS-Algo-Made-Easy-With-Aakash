@@ -1,3 +1,5 @@
+package Algorithms.Sorting.src;
+
 public class BubbleSort extends Sorter {
   BubbleSort(int[] arr) {
     super(arr);

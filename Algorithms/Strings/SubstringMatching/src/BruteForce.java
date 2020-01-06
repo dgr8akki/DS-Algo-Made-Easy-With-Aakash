@@ -1,3 +1,5 @@
+package Algorithms.Strings.SubstringMatching.src;
+
 public class BruteForce {
   public int contains(String actual, String pattern) {
     int actualStringSize = actual.length();
