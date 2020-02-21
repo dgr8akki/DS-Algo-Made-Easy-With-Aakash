@@ -7,9 +7,8 @@ class Solution_485_MaxConsecutiveOne {
       if (n == 1) {
         count++;
         max = Math.max(max, count);
-      } else {
+      } else
         count = 0;
-      }
     }
     return max;
   }
