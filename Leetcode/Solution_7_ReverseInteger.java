@@ -17,7 +17,7 @@ class Solution_7_ReverseInteger {
       return 0;
 
     int number = 0;
-    for (int i = 0; x > 0; i++) {
+    for (; x > 0;) {
       number += ((x % 10) * (int) Math.pow(10, --digits));
       x = x / 10;
       System.out.println(number + " , " + x);
