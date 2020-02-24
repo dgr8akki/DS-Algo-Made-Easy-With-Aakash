@@ -14,7 +14,6 @@ class Solution_819_MostCommonWords {
       }
     }
 
-    // Make a set for banned words
     Set<String> bans = new HashSet<String>();
     for (String s : banned) {
       bans.add(s);
