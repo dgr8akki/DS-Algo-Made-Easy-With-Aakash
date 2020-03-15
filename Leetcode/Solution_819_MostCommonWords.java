@@ -2,7 +2,6 @@ package Leetcode;
 
 class Solution_819_MostCommonWords {
   public static String mostCommonWord(String paragraph, String[] banned) {
-    // Reconstruct paragraph
     paragraph = paragraph.toLowerCase();
     StringBuffer removePunctuation = new StringBuffer();
     for (int i = 0; i < paragraph.length(); i++) {
