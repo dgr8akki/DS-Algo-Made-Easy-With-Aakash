@@ -3,9 +3,9 @@ package Leetcode;
 class Solution_1054_DistanceBarcode {
   public int[] rearrangeBarcodes(int[] barcodes) {
     Map<Integer, Integer> m = new HashMap<>();
-    for (int c : barcodes) {
+    for (int c : barcodes)
       m.put(c, 1 + m.getOrDefault(c, 0));
-    }
+
     PriorityQueue<Integer> pq = new PriorityQueue<>((i, j) -> m.get(j) - m.get(i));
     pq.addAll(m.keySet());
     int[] ans = new int[barcodes.length];
