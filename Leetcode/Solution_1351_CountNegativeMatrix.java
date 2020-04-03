@@ -1,9 +1,9 @@
 class Solution {
   public int countNegatives(int[][] grid) {
     int res = 0;
-    for (int[] row : grid) {
+    for (int[] row : grid)
       res += bs(row);
-    }
+    
     return res;
   }
 
