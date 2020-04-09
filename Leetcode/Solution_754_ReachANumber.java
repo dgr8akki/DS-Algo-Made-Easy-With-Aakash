@@ -1,10 +1,8 @@
 package Leetcode;
 
 class Solution_754_ReachANumber {
-  public int reachNumber(int target) {
-    target = Math.abs(target);
-    int step = 0;
-    int sum = 0;
+  public int reachNumber(int tar) {
+    int target = Math.abs(target), step = 0, sum = 0;
     while (sum < target) {
       step++;
       sum += step;
