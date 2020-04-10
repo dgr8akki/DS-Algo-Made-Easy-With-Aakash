@@ -5,7 +5,6 @@ class Solution {
     // Degree covered by minute hand (Each minute = 6 degree)
     double m = minutes * 6;
 
-    // Absolute angle between them
     double angle = Math.abs(m - h);
 
     if (angle > 180)
