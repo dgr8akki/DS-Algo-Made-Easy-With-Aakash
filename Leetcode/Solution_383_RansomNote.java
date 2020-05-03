@@ -2,17 +2,20 @@ package Leetcode;
 
 class Solution_383_RansomNote {
   public boolean canConstruct(String ransomNote, String magazine) {
-      Map<Character, Integer> map = new HashMap<>();
-      for(int i = 0; i < magazine.length(); i++) {
-        char c = magazine.charAt(i);
-        map.put(c, map.getOrDefault(c, 0) + 1);
-      }
-      for(int i = 0; i < ransomNote.length(); i++) {
-        char c = ransomNote.charAt(i);
-        if(!map.containsKey(c) || map.get(c) <= 0) return false;
-        map.put(c, map.getOrDefault(c, 0) - 1);
-      }
-    
+    if (ransomNote == null && magazine == null)
+      return true;
+    if (ransomNote == null || magazine == null)
+      return false;
+    if (magazine.length() < ransomNote.length())
+      return false;
+    char[] dict = new char[26];
+    for (char c : magazine.toCharArray())
+      dict[c - 97]++;
+    for (char c : ransomNote.toCharArray()) {
+      if (dict[c - 97] <= 0)
+        return false;
+      dict[c - 97]--;
+    }
     return true;
   }
 }
