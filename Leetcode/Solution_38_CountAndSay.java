@@ -9,9 +9,9 @@ class Solution_38_CountAndSay {
       char c = s.charAt(0);
       s.append("a");
       for (int j = 1; j < s.length(); ++j) {
-        if (s.charAt(j) == c) {
+        if (s.charAt(j) == c)
           count++;
-        } else {
+        else {
           sb.append("" + count + c);
           count = 1;
           c = s.charAt(j);
