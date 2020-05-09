@@ -3,9 +3,7 @@ package Leetcode;
 class Solution_84_MaxAreaInHistogram {
   public int largestRectangleArea(int[] input) {
     Deque<Integer> stack = new LinkedList<Integer>();
-    int maxArea = 0;
-    int area = 0;
-    int i;
+    int maxArea = 0, area = 0, i;
     for (i = 0; i < input.length;) {
       if (stack.isEmpty() || input[stack.peekFirst()] <= input[i])
         stack.offerFirst(i++);
