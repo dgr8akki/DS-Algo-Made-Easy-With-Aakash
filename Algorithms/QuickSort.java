@@ -8,7 +8,7 @@ public class QuickSort {
   }
 
   public void sort(int[] input, int start, int end) {
-    if(start < end) {
+    if (start < end) {
       int pivotIndex = partition(input, start, end);
       sort(input, start, pivotIndex - 1);
       sort(input, pivotIndex + 1, end);
@@ -20,11 +20,15 @@ public class QuickSort {
     int leftRunner = start - 1, rightRunner = end;
 
     while (true) {
-      while (leftRunner < input.length && input[++leftRunner] < pivot);
-      while (rightRunner > 0 && input[--rightRunner] > pivot);
+      while (leftRunner < input.length && input[++leftRunner] < pivot)
+        ;
+      while (rightRunner > 0 && input[--rightRunner] > pivot)
+        ;
 
-      if(leftRunner >= rightRunner) break;
-      else swapInArray(input, leftRunner, rightRunner);
+      if (leftRunner >= rightRunner)
+        break;
+      else
+        swapInArray(input, leftRunner, rightRunner);
     }
     swapInArray(input, leftRunner, end);
     return leftRunner;
@@ -37,7 +41,7 @@ public class QuickSort {
   }
 
   public static void main(String[] args) {
-    int[] ar = {-5,4,3,2,1,-1,-2,-3};
+    int[] ar = { -5, 4, 3, 2, 1, -1, -2, -3 };
     QuickSort qs = new QuickSort();
     qs.sort(ar);
     System.out.println(Arrays.toString(ar));
