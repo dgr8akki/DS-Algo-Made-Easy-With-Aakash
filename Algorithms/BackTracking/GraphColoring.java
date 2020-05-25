@@ -12,7 +12,7 @@ class Graph {
   }
 
   public static void main(String[] args) {
-    int[][] graphMatrix = {{0, 1, 1, 1}, {1, 0, 1, 0}, {1, 1, 0, 1}, {1, 0, 1, 0}};
+    int[][] graphMatrix = { { 0, 1, 1, 1 }, { 1, 0, 1, 0 }, { 1, 1, 0, 1 }, { 1, 0, 1, 0 } };
     int colorsCount = 3;
 
     Graph graph = new Graph(4);
@@ -48,8 +48,7 @@ class Graph {
     return false;
   }
 
-  private boolean isSafeToAllotColor(
-    int[][] graph, int[] colors, int currentColor, int currentVertex) {
+  private boolean isSafeToAllotColor(int[][] graph, int[] colors, int currentColor, int currentVertex) {
     for (int i = 0; i < totalVertices; i++) {
       if (graph[currentVertex][i] == 1 && colors[i] == currentColor) {
         return false;
