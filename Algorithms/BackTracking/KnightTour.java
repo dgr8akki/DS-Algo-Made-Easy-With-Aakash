@@ -3,8 +3,8 @@ package Algorithms.BackTracking;
 public class KnightTour {
   private final int boardSize;
   private final int[][] chessBoard;
-  private final int[] xOffset = {2, 1, -1, -2, -2, -1, 1, 2};
-  private final int[] yOffset = {1, 2, 2, 1, -1, -2, -2, -1};
+  private final int[] xOffset = { 2, 1, -1, -2, -2, -1, 1, 2 };
+  private final int[] yOffset = { 1, 2, 2, 1, -1, -2, -2, -1 };
 
   private KnightTour(int size) {
     boardSize = size;
