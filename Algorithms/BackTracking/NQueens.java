@@ -42,7 +42,8 @@ public class NQueens {
   }
 
   private boolean isValidPlace(int currentRow, int currentCol) {
-    // Position is valid if and only if there is no queen in that column and upper side diagonals.
+    // Position is valid if and only if there is no queen in that column and upper
+    // side diagonals.
 
     // Check for same column.
     for (int i = 0; i < currentCol; i++) {
