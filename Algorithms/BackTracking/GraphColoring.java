@@ -31,9 +31,8 @@ class Graph {
   }
 
   private boolean graphColoringUtils(int[][] graph, int numberOfColors, int[] colors, int currentVertex) {
-    if (currentVertex == totalVertices) {
+    if (currentVertex == totalVertices)
       return true;
-    }
 
     for (int color = 1; color <= numberOfColors; color++) {
       if (isSafeToAllotColor(graph, colors, color, currentVertex)) {
