@@ -23,7 +23,6 @@ public class HamiltonianCycle {
 
   public void solve(int source) {
     hamiltonianPath[0] = source;
-    // hamiltonianPath[totalVertex] = 0;
 
     if (containsFeasibleSolutionFrom(1)) {
       printSolution();
