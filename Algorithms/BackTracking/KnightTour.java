@@ -9,11 +9,10 @@ public class KnightTour {
   private KnightTour(int size) {
     boardSize = size;
     chessBoard = new int[size][size];
-    for (int i = 0; i < boardSize; i++) {
-      for (int j = 0; j < boardSize; j++) {
+    for (int i = 0; i < boardSize; i++)
+      for (int j = 0; j < boardSize; j++)
         chessBoard[i][j] = -1;
-      }
-    }
+
     chessBoard[0][0] = 1;
   }
 
