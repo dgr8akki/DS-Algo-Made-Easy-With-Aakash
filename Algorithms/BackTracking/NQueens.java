@@ -15,11 +15,10 @@ public class NQueens {
   }
 
   public void solve() {
-    if (setQueens(0)) {
+    if (setQueens(0))
       printSolution();
-    } else {
+    else
       System.out.println("There is no solution exists");
-    }
   }
 
   private boolean setQueens(int currentRow) {
