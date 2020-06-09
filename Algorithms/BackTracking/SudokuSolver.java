@@ -18,11 +18,10 @@ public class SudokuSolver {
   }
 
   public void solve() {
-    if (isSolvable(0, 0)) {
+    if (isSolvable(0, 0))
       printResult();
-    } else {
+    else
       System.out.println("Not Solvable");
-    }
   }
 
   private boolean isSolvable(int row, int col) {
