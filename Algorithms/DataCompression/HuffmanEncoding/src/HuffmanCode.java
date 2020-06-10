@@ -5,12 +5,9 @@ import java.util.PriorityQueue;
 class HuffmanCode {
   static HuffmanTree buildTree(int[] charSequence) {
     PriorityQueue<HuffmanTree> queue = new PriorityQueue<>();
-    for (int currentCharacterIndex = 0;
-        currentCharacterIndex < charSequence.length;
-        currentCharacterIndex++) {
+    for (int currentCharacterIndex = 0; currentCharacterIndex < charSequence.length; currentCharacterIndex++) {
       if (charSequence[currentCharacterIndex] > 0) {
-        queue.add(
-          new HuffmanLeaf((char) currentCharacterIndex, charSequence[currentCharacterIndex]));
+        queue.add(new HuffmanLeaf((char) currentCharacterIndex, charSequence[currentCharacterIndex]));
       }
     }
 
