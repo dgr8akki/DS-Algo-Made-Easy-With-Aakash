@@ -27,12 +27,6 @@ public class SubsetSum {
 
     System.out.println(solution[setSize][sum] ? "Solution exists" : "Solution not exists");
 
-    // for(int i = 0; i < setSize + 1; i++) {
-    // for(int j = 0; j < sum + 1; j++)
-    // System.out.print(solution[i][j] ? "T " : "F ");
-    // System.out.println();
-    // }
-
     System.out.println();
     System.out.print("[  ");
 
