@@ -19,11 +19,11 @@ public class BellmanFord {
     for (Vertex vertex : vertexList) {
       for (Edge edge : edgeList) {
 
-        if ( edge.getSourceVertex().getDistance() == Integer.MAX_VALUE ) {
+        if (edge.getSourceVertex().getDistance() == Integer.MAX_VALUE) {
           continue;
         }
 
-        int newDistance = (int)(edge.getSourceVertex().getDistance() + edge.getWeight());
+        int newDistance = (int) (edge.getSourceVertex().getDistance() + edge.getWeight());
 
         if (newDistance < edge.getDestinationVertex().getDistance()) {
           edge.getDestinationVertex().setDistance(newDistance);
@@ -34,7 +34,7 @@ public class BellmanFord {
 
     for (Edge edge : edgeList) {
       if (edge.getSourceVertex().getDistance() != Integer.MAX_VALUE) {
-        if ( hasCycle(edge) ) {
+        if (hasCycle(edge)) {
           System.out.println("Negative edge weight cycles detected!");
           return;
         }
@@ -45,9 +45,9 @@ public class BellmanFord {
       System.out.println("There is a shortest path from sourco to target, with cost: " + targetVertex.getDistance());
 
       Vertex actualVertex = targetVertex;
-      while( actualVertex.getPredecessor() != null ){
-        System.out.print(actualVertex+"-");
-        actualVertex=actualVertex.getPredecessor();
+      while (actualVertex.getPredecessor() != null) {
+        System.out.print(actualVertex + "-");
+        actualVertex = actualVertex.getPredecessor();
       }
 
     } else {
@@ -55,7 +55,7 @@ public class BellmanFord {
     }
   }
 
-  private boolean hasCycle(Edge edge){
+  private boolean hasCycle(Edge edge) {
     return edge.getDestinationVertex().getDistance() > edge.getSourceVertex().getDistance() + edge.getWeight();
   }
 }
