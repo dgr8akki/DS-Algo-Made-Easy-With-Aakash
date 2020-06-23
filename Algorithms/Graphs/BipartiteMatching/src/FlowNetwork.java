@@ -5,39 +5,38 @@ import java.util.List;
 
 public class FlowNetwork {
 
-	 private final int numOfVertices;
-	    private int numOfEdges;
-	    private List<List<Edge>> adjacenciesList;
-	    
-	    public FlowNetwork(int numOfVertices) {
-	        this.numOfVertices = numOfVertices;
-	        this.numOfEdges = 0;
-	        this.adjacenciesList = new ArrayList<>(numOfVertices);
-	        
-	        for(int i=0;i<numOfVertices;i++){
-	        	List<Edge> edgeList = new ArrayList<>();
-	        	adjacenciesList.add(edgeList);
-	        }     
-	    }
+  private final int numOfVertices;
+  private int numOfEdges;
+  private List<List<Edge>> adjacenciesList;
 
-	    public int getNumOfVertices() {
-	        return this.numOfVertices;
-	    }
+  public FlowNetwork(int numOfVertices) {
+    this.numOfVertices = numOfVertices;
+    this.numOfEdges = 0;
+    this.adjacenciesList = new ArrayList<>(numOfVertices);
 
-	    public int getNumOfEdges() {
-	        return this.numOfEdges;
-	    }
+    for (int i = 0; i < numOfVertices; i++) {
+      List<Edge> edgeList = new ArrayList<>();
+      adjacenciesList.add(edgeList);
+    }
+  }
 
-	    public void addEdge(Edge e) {
-	        Vertex v = e.getFromVertex();
-	        Vertex w = e.getTargetVertex();     
-	        adjacenciesList.get(v.getId()).add(e);
-	        adjacenciesList.get(w.getId()).add(e);      
-	        numOfEdges++;
-	    }
+  public int getNumOfVertices() {
+    return this.numOfVertices;
+  }
 
-	    
-	    public List<Edge> getAdjacencies(Vertex v){
-	    	return adjacenciesList.get(v.getId());
-	    }
+  public int getNumOfEdges() {
+    return this.numOfEdges;
+  }
+
+  public void addEdge(Edge e) {
+    Vertex v = e.getFromVertex();
+    Vertex w = e.getTargetVertex();
+    adjacenciesList.get(v.getId()).add(e);
+    adjacenciesList.get(w.getId()).add(e);
+    numOfEdges++;
+  }
+
+  public List<Edge> getAdjacencies(Vertex v) {
+    return adjacenciesList.get(v.getId());
+  }
 }
