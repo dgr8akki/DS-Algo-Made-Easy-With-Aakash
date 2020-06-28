@@ -2,29 +2,29 @@ package Algorithms.Graphs.BipartiteMatching.src;
 
 public class Vertex {
 
-	private int id;
-	private String name;
-	private boolean visited;
-	
-	public Vertex(int id, String name){
-		this.id = id;
-		this.name = name;
-	}
+  private int id;
+  private String name;
+  private boolean visited;
 
-	public int getId(){
-		return this.id;
-	}
+  public Vertex(int id, String name) {
+    this.id = id;
+    this.name = name;
+  }
 
-	public boolean isVisited() {
-		return visited;
-	}
+  public int getId() {
+    return this.id;
+  }
 
-	public void setVisited(boolean visited) {
-		this.visited = visited;
-	}
+  public boolean isVisited() {
+    return visited;
+  }
 
-	@Override
-	public String toString() {
-		return this.name+"-"+this.id;
-	}
+  public void setVisited(boolean visited) {
+    this.visited = visited;
+  }
+
+  @Override
+  public String toString() {
+    return this.name + "-" + this.id;
+  }
 }
