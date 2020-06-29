@@ -5,8 +5,7 @@ import java.util.List;
 class CycleDetector {
 
   void detect(List<Vertex> graph) {
-    for (Vertex v :
-      graph) {
+    for (Vertex v : graph) {
       if (!v.isVisited())
         dfs(v);
     }
