@@ -17,16 +17,16 @@ public class DepthFirstOrder {
   public DepthFirstOrder(Graph graph) {
     stack = new Stack<>();
 
-    for(Vertex vertex: graph.getVertexList()) {
-      if(!vertex.isVisited())
+    for (Vertex vertex : graph.getVertexList()) {
+      if (!vertex.isVisited())
         dfs(vertex);
     }
   }
 
   private void dfs(Vertex vertex) {
     vertex.setVisited(true);
-    for (Vertex neighbour: vertex.getAdjacencyList()) {
-      if(!neighbour.isVisited())
+    for (Vertex neighbour : vertex.getAdjacencyList()) {
+      if (!neighbour.isVisited())
         dfs(neighbour);
     }
 
