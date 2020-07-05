@@ -11,8 +11,7 @@ public class Vertex {
   private Vertex predecessor;
   private boolean isVisited;
 
-
-  Vertex(int  id, String data) {
+  Vertex(int id, String data) {
     this.id = id;
     this.data = data;
     this.adjacencyList = new ArrayList<>();
