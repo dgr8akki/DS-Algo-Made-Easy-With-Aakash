@@ -2,40 +2,40 @@ package Algorithms.Graphs.MaxFlow.src;
 
 public class Vertex {
 
-	private int id;
-	private String name;
-	private boolean visited;
+  private int id;
+  private String name;
+  private boolean visited;
 
-	Vertex(int id, String name) {
-		this.id = id;
-		this.name = name;
-	}
+  Vertex(int id, String name) {
+    this.id = id;
+    this.name = name;
+  }
 
-	int getId() {
-		return id;
-	}
+  int getId() {
+    return id;
+  }
 
-	public void setId(int id) {
-		this.id = id;
-	}
+  public void setId(int id) {
+    this.id = id;
+  }
 
-	public String getName() {
-		return name;
-	}
+  public String getName() {
+    return name;
+  }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+  public void setName(String name) {
+    this.name = name;
+  }
 
-	public boolean isVisited() {
-		return visited;
-	}
+  public boolean isVisited() {
+    return visited;
+  }
 
-	public void setVisited(boolean visited) {
-		this.visited = visited;
-	}
+  public void setVisited(boolean visited) {
+    this.visited = visited;
+  }
 
-	public String toString() {
-		return this.id + "-" + this.name;
-	};
+  public String toString() {
+    return this.id + "-" + this.name;
+  };
 }
