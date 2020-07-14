@@ -8,7 +8,7 @@ public class DisjointSet {
   private Map<Vertex, Node> map = new HashMap<>();
 
   public DisjointSet(List<Vertex> vertexList) {
-    for(Vertex vertex: vertexList)
+    for (Vertex vertex : vertexList)
       makeSet(vertex);
   }
 
@@ -22,22 +22,23 @@ public class DisjointSet {
   }
 
   private Node find(Node currentNode) {
-    if(currentNode.getParent() == currentNode)
+    if (currentNode.getParent() == currentNode)
       return currentNode;
     currentNode.setParent(find(currentNode.getParent()));
-    return  currentNode.getParent();
+    return currentNode.getParent();
   }
 
   public void union(Vertex firstVertex, Vertex secondVertex) {
-//    Node firstEdgeNode = map.get(firstEdge);
-//    Node secondEdgeNode = map.get(secondEdge);
+    // Node firstEdgeNode = map.get(firstEdge);
+    // Node secondEdgeNode = map.get(secondEdge);
     Node firstEdgeNodeParent = find(firstVertex);
     Node secondEdgeNodeParent = find(secondVertex);
-    if(firstEdgeNodeParent == secondEdgeNodeParent) return;
-    if(firstEdgeNodeParent.getRank() == secondEdgeNodeParent.getRank()) {
+    if (firstEdgeNodeParent == secondEdgeNodeParent)
+      return;
+    if (firstEdgeNodeParent.getRank() == secondEdgeNodeParent.getRank()) {
       firstEdgeNodeParent.setRank(firstEdgeNodeParent.getRank() + 1);
       secondEdgeNodeParent.setParent(firstEdgeNodeParent);
-    } else if(firstEdgeNodeParent.getRank() > secondEdgeNodeParent.getRank()) {
+    } else if (firstEdgeNodeParent.getRank() > secondEdgeNodeParent.getRank()) {
       secondEdgeNodeParent.setParent(firstEdgeNodeParent);
     } else
       firstEdgeNodeParent.setParent(secondEdgeNodeParent);
