@@ -32,8 +32,8 @@ class PrimsLazy {
       this.unvisitedVertexList.remove(vertex);
     }
 
-    for(Edge edge : solutionTree){
-      System.out.print(""+edge.getSourceVertex()+""+edge.getDestinationVertex()+"-");
+    for (Edge edge : solutionTree) {
+      System.out.print("" + edge.getSourceVertex() + "" + edge.getDestinationVertex() + "-");
     }
   }
 }
