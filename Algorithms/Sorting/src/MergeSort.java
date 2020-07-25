@@ -14,7 +14,8 @@ public class MergeSort extends Sorter {
   }
 
   private void mergeSort(int[] arr, int low, int high) {
-    if(low >= high) return;
+    if (low >= high)
+      return;
     int mid = (low + high) / 2;
     mergeSort(arr, low, mid);
     mergeSort(arr, mid + 1, high);
@@ -25,7 +26,7 @@ public class MergeSort extends Sorter {
     int[] temp = Arrays.copyOf(arr, arr.length);
     int leftArrayIndex = low, rightArrayIndex = mid + 1, mergedArrayIndex = low;
     while (leftArrayIndex <= mid && rightArrayIndex <= high) {
-      if(temp[leftArrayIndex] < temp[rightArrayIndex]) {
+      if (temp[leftArrayIndex] < temp[rightArrayIndex]) {
         arr[mergedArrayIndex] = temp[leftArrayIndex];
         leftArrayIndex++;
       } else {
