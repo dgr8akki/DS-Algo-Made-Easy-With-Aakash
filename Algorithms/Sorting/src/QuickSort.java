@@ -12,7 +12,8 @@ public class QuickSort extends Sorter {
   }
 
   private void sort(int[] arr, int low, int high) {
-    if(low >= high) return;
+    if (low >= high)
+      return;
     int pivot = partition(arr, low, high);
     sort(arr, low, pivot - 1);
     sort(arr, pivot + 1, high);
@@ -22,7 +23,7 @@ public class QuickSort extends Sorter {
     swap(arr, (low + high) / 2, high);
     int i = low;
     for (int j = low; j < high; j++) {
-      if(arr[j] <= arr[high]) {
+      if (arr[j] <= arr[high]) {
         swap(arr, j, i);
         i++;
       }
