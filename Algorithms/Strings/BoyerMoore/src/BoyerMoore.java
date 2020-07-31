@@ -27,12 +27,13 @@ class BoyerMoore {
         char textCurrentCharacter = text.charAt(textIndex + patternIndex);
         if (pattern.charAt(patternIndex) != textCurrentCharacter) {
           numberOfSkips = this.mismatchShiftTable.containsKey(textCurrentCharacter)
-            ? mismatchShiftTable.get(textCurrentCharacter)
-            : PATTERN_SIZE;
+              ? mismatchShiftTable.get(textCurrentCharacter)
+              : PATTERN_SIZE;
           break;
         }
       }
-      if (numberOfSkips == 0) return textIndex;
+      if (numberOfSkips == 0)
+        return textIndex;
     }
     return -1;
   }
