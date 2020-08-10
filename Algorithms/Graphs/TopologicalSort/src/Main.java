@@ -37,9 +37,9 @@ public class Main {
     Stack<Vertex> stack;
     stack = topologicalOrdering.getStack();
 
-    for(int i=0;i<graph.size();i++){
+    for (int i = 0; i < graph.size(); i++) {
       var vertex = stack.pop();
-      System.out.print(vertex+"->");
+      System.out.print(vertex + "->");
     }
   }
 }
