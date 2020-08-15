@@ -47,16 +47,14 @@ public class Bits {
 
   private void bitwiseLeftShift(int number, int numberOfShifts) {
     printInBinary(number);
-    System.out.println(
-        "Bitwise Left Shifting of " + number + " by " + numberOfShifts + " bits, results in:");
+    System.out.println("Bitwise Left Shifting of " + number + " by " + numberOfShifts + " bits, results in:");
     printInBinary(number << numberOfShifts);
     System.out.println("--------------------------------------");
   }
 
   private void bitwiseRightShift(int number, int numberOfShifts) {
     printInBinary(number);
-    System.out.println(
-        "Bitwise Right Shifting of " + number + " by " + numberOfShifts + " bits, results in:");
+    System.out.println("Bitwise Right Shifting of " + number + " by " + numberOfShifts + " bits, results in:");
     printInBinary(number >> numberOfShifts);
     System.out.println("--------------------------------------");
   }
@@ -94,9 +92,12 @@ public class Bits {
   /**
    * Checking is Kth Bit set
    *
-   * <p>Algorithm: Step 1. Left shift 1 by k-1 bits Step 2. AND the above result by original number.
+   * <p>
+   * Algorithm: Step 1. Left shift 1 by k-1 bits Step 2. AND the above result by
+   * original number.
    *
-   * <p>Pseudo code: number & (1 << k - 1)
+   * <p>
+   * Pseudo code: number & (1 << k - 1)
    */
   private void isKthBitSet(int number, int k) {
     printInBinary(number);
@@ -109,9 +110,12 @@ public class Bits {
   /**
    * Setting Kth Bit of number
    *
-   * <p>Algorithm: Step 1. Left shift 1 by k-1 bits Step 2. OR the above result by original number.
+   * <p>
+   * Algorithm: Step 1. Left shift 1 by k-1 bits Step 2. OR the above result by
+   * original number.
    *
-   * <p>Pseudo code: number & (1 << k - 1)
+   * <p>
+   * Pseudo code: number & (1 << k - 1)
    */
   private void setKthBit(int number, int k) {
     printInBinary(number);
@@ -123,10 +127,12 @@ public class Bits {
   /**
    * Clearing Kth Bit of number
    *
-   * <p>Algorithm: Step 1. Left shift 1 by k-1 bits Step 2. Negate or compliment the above result.
-   * Step 3. AND the above result by original number.
+   * <p>
+   * Algorithm: Step 1. Left shift 1 by k-1 bits Step 2. Negate or compliment the
+   * above result. Step 3. AND the above result by original number.
    *
-   * <p>Pseudo code: number & ~(1 << k - 1)
+   * <p>
+   * Pseudo code: number & ~(1 << k - 1)
    */
   private void clearKthBit(int number, int k) {
     printInBinary(number);
@@ -138,9 +144,12 @@ public class Bits {
   /**
    * Toggling Kth Bit of number
    *
-   * <p>Algorithm: Step 1. Left shift 1 by k-1 bits Step 2. XOR the above result by original number.
+   * <p>
+   * Algorithm: Step 1. Left shift 1 by k-1 bits Step 2. XOR the above result by
+   * original number.
    *
-   * <p>Pseudo code: number ^ (1 << k - 1)
+   * <p>
+   * Pseudo code: number ^ (1 << k - 1)
    */
   private void toggleKthBit(int number, int k) {
     printInBinary(number);
@@ -150,12 +159,14 @@ public class Bits {
   }
 
   /**
-   * Toggling Rightmost one Bit of number It will toggle the first 1 from right most eg. 1111100 =>
-   * 1111000 (Rightmost 1 is at 3rd bit from last)
+   * Toggling Rightmost one Bit of number It will toggle the first 1 from right
+   * most eg. 1111100 => 1111000 (Rightmost 1 is at 3rd bit from last)
    *
-   * <p>Algorithm: Step 1. AND actual number with one less of the same number
+   * <p>
+   * Algorithm: Step 1. AND actual number with one less of the same number
    *
-   * <p>Pseudo code: number & (number - 1)
+   * <p>
+   * Pseudo code: number & (number - 1)
    */
   private void toggleRightmostOneBit(int number) {
     printInBinary(number);
@@ -165,13 +176,15 @@ public class Bits {
   }
 
   /**
-   * Isolating Rightmost one Bit of number It will isolate the first 1 from right most means it will
-   * preserve last 1 from right and clear all bits.
+   * Isolating Rightmost one Bit of number It will isolate the first 1 from right
+   * most means it will preserve last 1 from right and clear all bits.
    *
-   * <p>Algorithm: Step 1. Negate or two's compliment the original number Step 2. AND above result
-   * original number
+   * <p>
+   * Algorithm: Step 1. Negate or two's compliment the original number Step 2. AND
+   * above result original number
    *
-   * <p>Pseudo code: (number) & (~number + 1)
+   * <p>
+   * Pseudo code: (number) & (~number + 1)
    */
   private void isolateRightmostOneBit(int number) {
     printInBinary(number);
@@ -181,13 +194,15 @@ public class Bits {
   }
 
   /**
-   * Isolating Rightmost Zero Bit of number It will isolate the first 0 from right most means it
-   * will preserve last 0 from right and clear all bits after it.
+   * Isolating Rightmost Zero Bit of number It will isolate the first 0 from right
+   * most means it will preserve last 0 from right and clear all bits after it.
    *
-   * <p>Algorithm: Step 1. Negate or two's compliment the original number Step 2. AND above result
-   * with actual number plus one
+   * <p>
+   * Algorithm: Step 1. Negate or two's compliment the original number Step 2. AND
+   * above result with actual number plus one
    *
-   * <p>Pseudo code: (number + 1) & (~number + 1)
+   * <p>
+   * Pseudo code: (number + 1) & (~number + 1)
    */
   private void isolateRightmostZeroBit(int number) {
     printInBinary(number);
@@ -199,10 +214,12 @@ public class Bits {
   /**
    * Checking number is a power of 2
    *
-   * <p>Algorithm: Step 1. AND actual number with actual number minus one Step 2. Check whether the
-   * result is 0
+   * <p>
+   * Algorithm: Step 1. AND actual number with actual number minus one Step 2.
+   * Check whether the result is 0
    *
-   * <p>Pseudo code: number & (number - 1) == 0
+   * <p>
+   * Pseudo code: number & (number - 1) == 0
    */
   private void isNumberAPowerOf2(int number) {
     printInBinary(number);
@@ -216,9 +233,11 @@ public class Bits {
   /**
    * Multiplying a number with 2, k times
    *
-   * <p>Algorithm: Step 1. Left shift the number k times
+   * <p>
+   * Algorithm: Step 1. Left shift the number k times
    *
-   * <p>Pseudo code: number << k
+   * <p>
+   * Pseudo code: number << k
    */
   private void multiplyNumberByPowerOf2(int number, int k) {
     printInBinary(number);
@@ -230,9 +249,11 @@ public class Bits {
   /**
    * Dividing a number with 2, k times
    *
-   * <p>Algorithm: Step 1. Right shift the number k times
+   * <p>
+   * Algorithm: Step 1. Right shift the number k times
    *
-   * <p>Pseudo code: number >> k
+   * <p>
+   * Pseudo code: number >> k
    */
   private void divideANumberByPowerOf2(int number, int k) {
     printInBinary(number);
@@ -244,9 +265,11 @@ public class Bits {
   /**
    * Modulo a number k given that k is an exact power of 2
    *
-   * <p>Algorithm: Step 1. AND the number with (k - 1)
+   * <p>
+   * Algorithm: Step 1. AND the number with (k - 1)
    *
-   * <p>Pseudo code : number & (k-1)
+   * <p>
+   * Pseudo code : number & (k-1)
    */
   private void moduloWhenSmallerNumberIsExactPowerOf2(int number, int k) {
     printInBinary(number);
@@ -259,9 +282,11 @@ public class Bits {
   /**
    * Reversing bits of a number
    *
-   * <p>Algorithm: Step 1. AND the number with (k - 1)
+   * <p>
+   * Algorithm: Step 1. AND the number with (k - 1)
    *
-   * <p>Pseudo code : number & (k-1)
+   * <p>
+   * Pseudo code : number & (k-1)
    */
   public void reverse(int number) {
     printInBinary(number);
