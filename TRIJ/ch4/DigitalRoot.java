@@ -5,7 +5,7 @@ public class DigitalRoot {
 
   public int digitalRoot(int number) {
     int sum = digitSum.solve(number);
-    if(sum > 10)
+    if (sum > 10)
       return digitalRoot(sum);
     return sum;
   }
