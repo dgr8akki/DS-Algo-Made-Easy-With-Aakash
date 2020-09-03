@@ -2,7 +2,7 @@ package com.trijs.ch6;
 
 public class PermutationsOfAString {
   private int list(String prefix, String s, int count) {
-    if(s.length() == 0) {
+    if (s.length() == 0) {
       System.out.println(prefix);
       return count + 1;
     }
