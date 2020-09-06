@@ -7,7 +7,8 @@ public class DigitSum {
   }
 
   private int solve(int n, int sum) {
-    if(n <= 0) return 0;
+    if (n <= 0)
+      return 0;
     return sum + (n % 10) + solve(n / 10, sum);
   }
 
