@@ -27,9 +27,10 @@ public class LRUCache {
   public String getValue(int key) {
     Node node = map.get(key);
 
-    if(node == null) return null;
+    if (node == null)
+      return null;
 
-    if(node != head) {
+    if (node != head) {
       removeNodeFromLList(node);
       insertAtBegining(node);
     }
@@ -41,15 +42,20 @@ public class LRUCache {
   }
 
   private void removeNodeFromLList(Node node) {
-    if(node == null) return;
-    if(node.prev != null) node.prev.next = node.next;
-    if(node.next != null) node.next.prev = node.prev;
-    if(node == tail) tail = node.prev;
-    if(node == head) head = node.next;
+    if (node == null)
+      return;
+    if (node.prev != null)
+      node.prev.next = node.next;
+    if (node.next != null)
+      node.next.prev = node.prev;
+    if (node == tail)
+      tail = node.prev;
+    if (node == head)
+      head = node.next;
   }
 
   private void insertAtBegining(Node node) {
-    if(head == null) {
+    if (head == null) {
       head = node;
       tail = node;
     } else {
