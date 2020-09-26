@@ -45,11 +45,8 @@ class ComponentsInAGraph {
 
     int[] result = ComponentsInAGraph.componentsInGraph(solution);
 
-    System.out.print(
-        "Min connected components are: "
-            + result[0]
-            + " and Maximum connected componentsa are: "
-            + result[1]);
+    System.out
+        .print("Min connected components are: " + result[0] + " and Maximum connected componentsa are: " + result[1]);
   }
 
   private void makeSet(int val) {
