@@ -12,14 +12,8 @@ public class HamiltonianCycle {
   }
 
   public static void main(String[] args) {
-    int[][] graph = {
-      {0, 1, 1, 1, 0, 0},
-      {1, 0, 1, 0, 1, 0},
-      {1, 1, 1, 1, 0, 1},
-      {1, 0, 1, 0, 0, 1},
-      {0, 1, 0, 0, 0, 1},
-      {0, 1, 1, 1, 1, 1}
-    };
+    int[][] graph = { { 0, 1, 1, 1, 0, 0 }, { 1, 0, 1, 0, 1, 0 }, { 1, 1, 1, 1, 0, 1 }, { 1, 0, 1, 0, 0, 1 },
+        { 0, 1, 0, 0, 0, 1 }, { 0, 1, 1, 1, 1, 1 } };
     HamiltonianCycle cycle = new HamiltonianCycle(graph);
 
     cycle.solve(0);
@@ -29,13 +23,11 @@ public class HamiltonianCycle {
 
   public void solve(int source) {
     hamiltonianPath[0] = source;
-    // hamiltonianPath[totalVertex] = 0;
 
     if (containsFeasibleSolutionFrom(1)) {
       printSolution();
     } else {
-      System.out.println(
-          "Given graph contains no Hamiltonian cycle from source vertex as: " + source);
+      System.out.println("Given graph contains no Hamiltonian cycle from source vertex as: " + source);
     }
   }
 

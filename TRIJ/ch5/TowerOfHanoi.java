@@ -2,6 +2,7 @@ package com.trijs.ch5;
 
 public class TowerOfHanoi {
   private int moves = 0;
+
   void solve(int numberOfRings, String from, String to, String aux) {
     if (numberOfRings == 1) {
       System.out.println("Move disk " + numberOfRings + " from " + from + " to " + to);

@@ -12,7 +12,7 @@ public class FileIO {
     List<String> results = new ArrayList<>();
     try {
       Scanner sc = new Scanner(file);
-      while(sc.hasNextLine()) {
+      while (sc.hasNextLine()) {
         String word = sc.nextLine();
         results.add(word);
       }

@@ -64,9 +64,10 @@ class Solution_952_LargestComponentSize {
   }
 }
 /*
- * class Solution_952_LargestComponentSize { public int largestComponentSize(int[] A) { int n = A.length;
- * List<List<Integer>> adjacencyList = new ArrayList<>(); for(int i = 0; i < n;
- * i++) adjacencyList.add(new ArrayList<>());
+ * class Solution_952_LargestComponentSize { public int
+ * largestComponentSize(int[] A) { int n = A.length; List<List<Integer>>
+ * adjacencyList = new ArrayList<>(); for(int i = 0; i < n; i++)
+ * adjacencyList.add(new ArrayList<>());
  * 
  * for(int i = 0; i < n; i++) for(int j = i + 1; j < n; j++) if(hasEdge(A[j],
  * A[i])) { // System.out.println("True for: " + A[j] + " & " + A[i]);

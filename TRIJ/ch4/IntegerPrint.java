@@ -2,7 +2,7 @@ package com.trijs.ch4;
 
 public class IntegerPrint {
   public void printInteger(int number) {
-    if(number < 0)
+    if (number < 0)
       number = Math.abs(number);
     for (int i = 1; i <= nDigits(number); i++)
       print(ithDigit(number, i));

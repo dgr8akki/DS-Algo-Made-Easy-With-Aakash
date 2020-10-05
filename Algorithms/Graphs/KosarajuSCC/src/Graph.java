@@ -31,14 +31,9 @@ public class Graph {
   public Graph getTransposedGraph() {
     List<Vertex> transposedVertexList = new ArrayList<>(vertexList);
 
-    for (Edge edge: edgeList)
-      transposedVertexList
-        .get(transposedVertexList
-              .indexOf(edge
-                        .getDestinationVertex()
-                      )
-            )
-        .addNeighbour(edge.getSourceVertex());
+    for (Edge edge : edgeList)
+      transposedVertexList.get(transposedVertexList.indexOf(edge.getDestinationVertex()))
+          .addNeighbour(edge.getSourceVertex());
     return new Graph(edgeList, transposedVertexList);
   }
 }

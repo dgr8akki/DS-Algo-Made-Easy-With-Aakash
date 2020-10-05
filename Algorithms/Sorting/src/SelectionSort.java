@@ -7,9 +7,10 @@ public class SelectionSort extends Sorter {
 
   @Override
   public void sort() {
-    for(int i = 0; i < this.getArr().length; i++) {
+    for (int i = 0; i < this.getArr().length; i++) {
       int currentIndex = getMinimumElementIndex(this.getArr(), i);
-      if(i != currentIndex) swap(this.getArr(), i, currentIndex);
+      if (i != currentIndex)
+        swap(this.getArr(), i, currentIndex);
     }
 
     printResult();

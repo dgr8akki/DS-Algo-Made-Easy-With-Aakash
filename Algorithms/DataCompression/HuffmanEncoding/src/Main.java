@@ -7,9 +7,8 @@ public class Main {
 
     int[] charFrequencies = new int[256];
 
-    for (char c : text.toCharArray()) {
+    for (char c : text.toCharArray())
       ++charFrequencies[c];
-    }
 
     HuffmanCode huffmanCode = new HuffmanCode();
 

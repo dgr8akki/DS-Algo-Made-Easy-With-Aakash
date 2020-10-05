@@ -27,12 +27,6 @@ public class TwoDimensionalArrays {
   }
 
   private static int getHourGlassSum(int i, int j) {
-    return A[i - 1][j - 1]
-        + A[i - 1][j]
-        + A[i - 1][j + 1]
-        + A[i][j]
-        + A[i + 1][j - 1]
-        + A[i + 1][j]
-        + A[i + 1][j + 1];
+    return A[i - 1][j - 1] + A[i - 1][j] + A[i - 1][j + 1] + A[i][j] + A[i + 1][j - 1] + A[i + 1][j] + A[i + 1][j + 1];
   }
 }

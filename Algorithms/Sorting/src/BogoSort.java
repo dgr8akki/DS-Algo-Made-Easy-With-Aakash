@@ -25,7 +25,8 @@ public class BogoSort extends Sorter {
     for (int element : arr)
       if (element > lastElement) {
         lastElement = element;
-      } else return false;
+      } else
+        return false;
     return true;
   }
 
@@ -36,10 +37,11 @@ public class BogoSort extends Sorter {
   }
 
   private void shuffle(int[] theArray) {
-    if(theArray.length <= 1) return;
-    for(int indexWeAreLookingFor = 0; indexWeAreLookingFor <= theArray.length - 1; indexWeAreLookingFor++) {
+    if (theArray.length <= 1)
+      return;
+    for (int indexWeAreLookingFor = 0; indexWeAreLookingFor <= theArray.length - 1; indexWeAreLookingFor++) {
       int randomIndex = getRandom(indexWeAreLookingFor, theArray.length - 1);
-      if(randomIndex != indexWeAreLookingFor) {
+      if (randomIndex != indexWeAreLookingFor) {
         swap(theArray, randomIndex, indexWeAreLookingFor);
       }
     }

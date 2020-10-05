@@ -3,17 +3,16 @@ package Algorithms.BackTracking;
 public class KnightTour {
   private final int boardSize;
   private final int[][] chessBoard;
-  private final int[] xOffset = {2, 1, -1, -2, -2, -1, 1, 2};
-  private final int[] yOffset = {1, 2, 2, 1, -1, -2, -2, -1};
+  private final int[] xOffset = { 2, 1, -1, -2, -2, -1, 1, 2 };
+  private final int[] yOffset = { 1, 2, 2, 1, -1, -2, -2, -1 };
 
   private KnightTour(int size) {
     boardSize = size;
     chessBoard = new int[size][size];
-    for (int i = 0; i < boardSize; i++) {
-      for (int j = 0; j < boardSize; j++) {
+    for (int i = 0; i < boardSize; i++)
+      for (int j = 0; j < boardSize; j++)
         chessBoard[i][j] = -1;
-      }
-    }
+
     chessBoard[0][0] = 1;
   }
 

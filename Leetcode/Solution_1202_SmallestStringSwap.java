@@ -6,9 +6,8 @@ class Solution_1202_SmallestStringSwap {
       return null;
     }
     parent = new int[s.length()];
-    for (int i = 0; i < parent.length; i++) {
+    for (int i = 0; i < parent.length; i++)
       parent[i] = i;
-    }
 
     for (List<Integer> pair : pairs) {
       union(pair.get(0), pair.get(1));

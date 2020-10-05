@@ -12,7 +12,7 @@ public class FenwickTree {
     index = index + 1;
     int sum = 0;
 
-    while(index > 0) {
+    while (index > 0) {
       sum += BITree[index];
       index = getParentIndex(index);
     }
@@ -21,25 +21,25 @@ public class FenwickTree {
   }
 
   public int getSumBetweenGivenRange(int BITree[], int startingIndex, int endIndex) {
-    if(startingIndex == 0) return getSumFromZeroToIndex(BITree, endIndex);
-    return getSumFromZeroToIndex(BITree, endIndex)
-        - getSumFromZeroToIndex(BITree, startingIndex - 1);
+    if (startingIndex == 0)
+      return getSumFromZeroToIndex(BITree, endIndex);
+    return getSumFromZeroToIndex(BITree, endIndex) - getSumFromZeroToIndex(BITree, startingIndex - 1);
   }
 
-  public int[] createFenwickTree (int arr[]) {
+  public int[] createFenwickTree(int arr[]) {
     int BITree[] = new int[arr.length + 1];
 
-    for(int i = 1; i <= arr.length; i++)
+    for (int i = 1; i <= arr.length; i++)
       updateTree(BITree, arr[i - 1], i);
 
     return BITree;
   }
 
-  private int getNextIndex (int currentIndex) {
+  private int getNextIndex(int currentIndex) {
     return currentIndex + (currentIndex & -currentIndex);
   }
 
-  private int getParentIndex (int currentIndex) {
+  private int getParentIndex(int currentIndex) {
     return currentIndex - (currentIndex & -currentIndex);
   }
 

@@ -23,7 +23,6 @@ public class Main {
     vertex2.addNeighbour(new Edge(vertex2, vertex0, 1));
     vertex2.addNeighbour(new Edge(vertex2, vertex1, 10));
 
-
     PrimsLazy primsLazy = new PrimsLazy(vertexList);
 
     primsLazy.createMST(vertex2);

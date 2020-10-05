@@ -9,28 +9,19 @@ public class SudokuSolver {
   }
 
   public static void main(String[] args) {
-    int[][] board =
-        new int[][] {
-          {1, 3, 0, 0, 0, 6, 0, 0, 0},
-          {0, 0, 0, 0, 0, 7, 0, 6, 2},
-          {7, 6, 0, 1, 9, 0, 0, 0, 0},
-          {0, 2, 7, 0, 8, 0, 0, 0, 3},
-          {9, 1, 0, 0, 0, 0, 0, 0, 0},
-          {0, 8, 3, 9, 7, 0, 2, 5, 4},
-          {8, 7, 0, 0, 0, 0, 0, 4, 0},
-          {0, 0, 0, 0, 0, 0, 7, 0, 0},
-          {0, 0, 6, 0, 3, 4, 0, 0, 0}
-        };
+    int[][] board = new int[][] { { 1, 3, 0, 0, 0, 6, 0, 0, 0 }, { 0, 0, 0, 0, 0, 7, 0, 6, 2 },
+        { 7, 6, 0, 1, 9, 0, 0, 0, 0 }, { 0, 2, 7, 0, 8, 0, 0, 0, 3 }, { 9, 1, 0, 0, 0, 0, 0, 0, 0 },
+        { 0, 8, 3, 9, 7, 0, 2, 5, 4 }, { 8, 7, 0, 0, 0, 0, 0, 4, 0 }, { 0, 0, 0, 0, 0, 0, 7, 0, 0 },
+        { 0, 0, 6, 0, 3, 4, 0, 0, 0 } };
     SudokuSolver solver = new SudokuSolver(board);
     solver.solve();
   }
 
   public void solve() {
-    if (isSolvable(0, 0)) {
+    if (isSolvable(0, 0))
       printResult();
-    } else {
+    else
       System.out.println("Not Solvable");
-    }
   }
 
   private boolean isSolvable(int row, int col) {

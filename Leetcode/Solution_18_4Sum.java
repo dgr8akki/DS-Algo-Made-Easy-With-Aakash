@@ -33,7 +33,7 @@ class Solution_18_4Sum {
             res.add(Arrays.asList(num[m1], num[Math.min(m2, m3)], num[Math.max(m2, m3)], num[m4]));
           }
         }
-        twoSumMap.computeIfAbsent(num[i] + num[j], key -> new ArrayList<>()).add(new int[] {i, j});
+        twoSumMap.computeIfAbsent(num[i] + num[j], key -> new ArrayList<>()).add(new int[] { i, j });
       }
     }
 

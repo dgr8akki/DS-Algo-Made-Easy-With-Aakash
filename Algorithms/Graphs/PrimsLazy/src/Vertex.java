@@ -13,7 +13,7 @@ public class Vertex {
   Vertex(String data) {
     this.data = data;
     this.adjacencyList = new ArrayList<>();
-    this.distance = Double.MAX_VALUE;;
+    this.distance = Double.MAX_VALUE;
   }
 
   Vertex getPredecessor() {

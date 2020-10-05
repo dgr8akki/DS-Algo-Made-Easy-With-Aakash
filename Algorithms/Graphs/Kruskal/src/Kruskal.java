@@ -12,19 +12,19 @@ class Kruskal {
     DisjointSet set = new DisjointSet(vertexList);
     Collections.sort(edgeList);
 
-    for(Edge currentEdge: edgeList) {
+    for (Edge currentEdge : edgeList) {
 
       Vertex startingVertex = currentEdge.getSourceVertex();
       Vertex endingVertex = currentEdge.getDestinationVertex();
 
-      if(set.find(startingVertex) != set.find(endingVertex)) {
+      if (set.find(startingVertex) != set.find(endingVertex)) {
         solutionTree.add(currentEdge);
         set.union(startingVertex, endingVertex);
       }
     }
 
-    for(Edge edge : solutionTree){
-      System.out.print(""+edge.getSourceVertex()+""+edge.getDestinationVertex()+"-");
+    for (Edge edge : solutionTree) {
+      System.out.print("" + edge.getSourceVertex() + "" + edge.getDestinationVertex() + "-");
     }
   }
 }

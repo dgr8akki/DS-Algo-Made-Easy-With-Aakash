@@ -15,11 +15,10 @@ public class NQueens {
   }
 
   public void solve() {
-    if (setQueens(0)) {
+    if (setQueens(0))
       printSolution();
-    } else {
+    else
       System.out.println("There is no solution exists");
-    }
   }
 
   private boolean setQueens(int currentRow) {
@@ -42,7 +41,8 @@ public class NQueens {
   }
 
   private boolean isValidPlace(int currentRow, int currentCol) {
-    // Position is valid if and only if there is no queen in that column and upper side diagonals.
+    // Position is valid if and only if there is no queen in that column and upper
+    // side diagonals.
 
     // Check for same column.
     for (int i = 0; i < currentCol; i++) {

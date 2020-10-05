@@ -3,9 +3,9 @@ package AdvanceDataStructures;
 public class NextPowerOfTwo {
 
   static int nextPowerOf2(int num) {
-    if (num == 0) {
+    if (num == 0)
       return 1;
-    }
+
     if (num > 0 && (num & (num - 1)) == 0) {
       return num;
     }

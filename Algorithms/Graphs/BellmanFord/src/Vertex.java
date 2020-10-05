@@ -13,7 +13,7 @@ public class Vertex {
   Vertex(int data) {
     this.data = data;
     this.adjacencyList = new ArrayList<>();
-    this.distance = Double.MAX_VALUE;;
+    this.distance = Double.MAX_VALUE;
   }
 
   Vertex getPredecessor() {
@@ -31,7 +31,6 @@ public class Vertex {
   public void setVisited(boolean visited) {
     isVisited = visited;
   }
-
 
   void addNeighbour(Edge edge) {
     this.adjacencyList.add(edge);

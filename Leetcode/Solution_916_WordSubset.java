@@ -6,9 +6,9 @@ import java.util.List;
 class Solution_916_WordSubset {
   private static int[] counter(String word) {
     int[] count = new int[26];
-    for (char c : word.toCharArray()) {
+    for (char c : word.toCharArray())
       count[c - 'a']++;
-    }
+
     return count;
   }
 

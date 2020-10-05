@@ -13,12 +13,12 @@ public class Dijkstra {
     while (!queue.isEmpty()) {
       Vertex actualVertex = queue.poll();
 
-      for(Edge currentEgde : actualVertex.getAdjacencyList()) {
+      for (Edge currentEgde : actualVertex.getAdjacencyList()) {
         Vertex currentVertex = currentEgde.getDestinationVertex();
 
         double newDistance = actualVertex.getDistance() + currentEgde.getWeight();
 
-        if(newDistance < currentVertex.getDistance()) {
+        if (newDistance < currentVertex.getDistance()) {
           queue.remove(currentVertex);
           currentVertex.setDistance(newDistance);
           currentVertex.setPredecessor(actualVertex);

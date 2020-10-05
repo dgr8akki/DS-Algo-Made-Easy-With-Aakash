@@ -27,8 +27,7 @@ public class Main {
     vertexList.add(vertex3);
     vertexList.add(vertex4);
     vertexList.add(vertex5);
-    //vertexList.add(vertex6);
-
+    // vertexList.add(vertex6);
 
     CycleDetector cycleDetection = new CycleDetector();
     cycleDetection.detect(vertexList);

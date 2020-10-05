@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class DisjointSet {
   private Map<Integer, Node> store;
+
   class Node {
     int data;
     int rank;
@@ -32,8 +33,9 @@ public class DisjointSet {
     Node parent1 = findSet(node1);
     Node parent2 = findSet(node2);
 
-    if(parent1.data == parent2.data) return;
-    if(parent1.rank >= parent2.rank) {
+    if (parent1.data == parent2.data)
+      return;
+    if (parent1.rank >= parent2.rank) {
       parent1.rank = (parent1.rank == parent2.rank) ? parent1.rank + 1 : parent1.rank;
       parent2.parent = parent1;
     } else {
@@ -47,7 +49,8 @@ public class DisjointSet {
 
   public Node findSet(Node dataNode) {
     Node parent = dataNode.parent;
-    if(parent == dataNode) return parent;
+    if (parent == dataNode)
+      return parent;
     dataNode.parent = findSet(dataNode.parent);
     return dataNode.parent;
   }

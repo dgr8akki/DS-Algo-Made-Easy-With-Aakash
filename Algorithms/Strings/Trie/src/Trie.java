@@ -13,9 +13,9 @@ public class Trie {
 
   public void insert(String word) {
     Node temp = root;
-    for(char currentCharacterOfGivenWord : word.toLowerCase().toCharArray()) {
+    for (char currentCharacterOfGivenWord : word.toLowerCase().toCharArray()) {
       int asciiIndex = currentCharacterOfGivenWord - 'a';
-      if(temp.getChild(asciiIndex) == null) {
+      if (temp.getChild(asciiIndex) == null) {
         Node node = new Node(String.valueOf(currentCharacterOfGivenWord));
         temp.addChild(asciiIndex, node);
         temp = node;
@@ -28,9 +28,9 @@ public class Trie {
 
   public boolean search(String word) {
     Node temp = root;
-    for(char currentCharacterOfGivenWord : word.toLowerCase().toCharArray()) {
+    for (char currentCharacterOfGivenWord : word.toLowerCase().toCharArray()) {
       int asciiIndex = currentCharacterOfGivenWord - 'a';
-      if(temp.getChild(asciiIndex) == null) {
+      if (temp.getChild(asciiIndex) == null) {
         return false;
       } else
         temp = temp.getChild(asciiIndex);
@@ -41,7 +41,7 @@ public class Trie {
   public List<String> allWordsWithPrefix(String prefix) {
     List<String> wordList = new ArrayList<>();
     Node temp = root;
-    for(char currentCharacterOfGivenPrefix : prefix.toLowerCase().toCharArray())
+    for (char currentCharacterOfGivenPrefix : prefix.toLowerCase().toCharArray())
       temp = temp.getChild(currentCharacterOfGivenPrefix - 'a');
 
     collectWords(temp, prefix, wordList);
@@ -60,7 +60,7 @@ public class Trie {
 
   private int getChildrenCount(Node node) {
     int count = 0;
-    for(int index = 0; index < node.getChildren().length; index++)
+    for (int index = 0; index < node.getChildren().length; index++)
       if (node.getChild(index) != null) {
         count++;
         indexOfSingleChild = index;
@@ -69,13 +69,15 @@ public class Trie {
   }
 
   private void collectWords(Node node, String prefix, List<String> wordList) {
-    if (node == null) return;
+    if (node == null)
+      return;
 
     if (node.isLeaf())
       wordList.add(prefix);
 
-    for(Node child: node.getChildren()) {
-      if(child == null) continue;
+    for (Node child : node.getChildren()) {
+      if (child == null)
+        continue;
       collectWords(child, prefix + child.getCharacter(), wordList);
     }
   }

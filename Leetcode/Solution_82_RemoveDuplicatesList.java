@@ -10,9 +10,9 @@ class Solution_82_RemoveDuplicatesList {
     ListNode previous = head;
     boolean wasDup = false;
     for (ListNode cursor = head.next; cursor != null; previous = cursor, cursor = cursor.next) {
-      if (cursor.val == previous.val) {
+      if (cursor.val == previous.val)
         wasDup = true;
-      } else {
+      else {
         if (!wasDup) {
           comitted.next = previous;
           comitted = previous;

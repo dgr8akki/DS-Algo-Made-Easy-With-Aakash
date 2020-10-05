@@ -72,8 +72,8 @@ public class TopologicalSort {
 
   public void dfs(Vertex currentVertex) {
     currentVertex.setVisited(true);
-    for(Vertex adjacentVertex: currentVertex.getNeighbours())
-      if(!adjacentVertex.isVisited())
+    for (Vertex adjacentVertex : currentVertex.getNeighbours())
+      if (!adjacentVertex.isVisited())
         dfs(adjacentVertex);
   }
 }
