@@ -24,7 +24,6 @@ class Solution_4_MedianOfSortedArray {
 
     if (aMid < bMid)
       return getkth(A, aStart + k / 2, B, bStart, k - k / 2);
-    else
-      return getkth(A, aStart, B, bStart + k / 2, k - k / 2);
+    return getkth(A, aStart, B, bStart + k / 2, k - k / 2);
   }
 }
