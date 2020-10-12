@@ -19,7 +19,6 @@ class Solution_17_LetterCombinationsOfPhone {
     map[9] = "wxyz";
 
     keypad(Integer.parseInt(digits), map, result);
-
     return result;
   }
 
