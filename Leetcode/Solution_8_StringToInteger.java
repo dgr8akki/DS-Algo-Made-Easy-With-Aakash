@@ -20,7 +20,6 @@ public class Solution_8_StringToInteger {
       } else {
         break;
       }
-
     }
     if (result > Integer.MAX_VALUE) {
       if (boundry == 1)
