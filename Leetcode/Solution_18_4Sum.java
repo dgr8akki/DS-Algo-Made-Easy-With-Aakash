@@ -10,9 +10,8 @@ class Solution_18_4Sum {
     Set<List<Integer>> res = new HashSet<>();
 
     for (int i = 0; i < num.length; i++) {
-      if (i > 1 && num[i] == num[i - 2]) {
+      if (i > 1 && num[i] == num[i - 2])
         continue;
-      }
 
       for (int j = i + 1; j < num.length; j++) {
         if (j > i + 2 && num[j] == num[j - 2]) {
