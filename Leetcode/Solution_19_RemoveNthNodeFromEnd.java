@@ -7,6 +7,7 @@ class Solution_19_RemoveNthNodeFromEnd {
     slowRunner.next = head;
     for (int i = 0; i <= n; i++)
       fastRunner = fastRunner.next;
+
     while (fastRunner != null) {
       fastRunner = fastRunner.next;
       slowRunner = slowRunner.next;
