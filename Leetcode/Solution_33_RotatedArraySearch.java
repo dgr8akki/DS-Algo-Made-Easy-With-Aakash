@@ -12,11 +12,10 @@ public class Solution_33_RotatedArraySearch {
         return mid;
 
       if (A[start] <= A[mid]) {
-        if (target >= A[start] && target < A[mid]) {
+        if (target >= A[start] && target < A[mid])
           end = mid - 1;
-        } else {
+        else
           start = mid + 1;
-        }
       } else {
         if (target > A[mid] && target <= A[end]) {
           start = mid + 1;
