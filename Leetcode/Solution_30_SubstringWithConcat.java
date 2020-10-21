@@ -8,9 +8,9 @@ import java.util.Map;
 class Solution_30_SubstringWithConcat {
   public static List<Integer> findSubstring(String S, String[] L) {
     List<Integer> res = new ArrayList<>();
-    if (S == null || L == null || L.length == 0) {
+    if (S == null || L == null || L.length == 0)
       return res;
-    }
+
     int len = L[0].length();
 
     Map<String, Integer> map = new HashMap<>();
