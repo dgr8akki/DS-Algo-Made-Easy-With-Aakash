@@ -10,10 +10,9 @@ public class Solution_23_MergeKSortedList {
       public int compare(ListNode o1, ListNode o2) {
         if (o1.val < o2.val)
           return -1;
-        else if (o1.val == o2.val)
+        if (o1.val == o2.val)
           return 0;
-        else
-          return 1;
+        return 1;
       }
     });
 
