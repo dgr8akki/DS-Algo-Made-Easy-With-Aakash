@@ -16,6 +16,7 @@ class Solution_22_GenerateParenthesis {
 
     if (open < max)
       backtrack(list, str + "(", open + 1, close, max);
+
     if (close < open)
       backtrack(list, str + ")", open, close + 1, max);
   }
