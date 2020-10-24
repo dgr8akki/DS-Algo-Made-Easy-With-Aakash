@@ -5,15 +5,14 @@ import java.util.Arrays;
 import java.util.List;
 
 class Solution_47_Permutations2 {
-  private static void backtrack(
-    List<List<Integer>> list, List<Integer> tempList, int[] nums, boolean[] used) {
-    if (tempList.size() == nums.length) {
+  private static void backtrack(List<List<Integer>> list, List<Integer> tempList, int[] nums, boolean[] used) {
+    if (tempList.size() == nums.length)
       list.add(new ArrayList<>(tempList));
-    } else {
+    else {
       for (int i = 0; i < nums.length; i++) {
-        if (used[i] || i > 0 && nums[i] == nums[i - 1] && !used[i - 1]) {
+        if (used[i] || i > 0 && nums[i] == nums[i - 1] && !used[i - 1])
           continue;
-        }
+
         used[i] = true;
         tempList.add(nums[i]);
         Solution_47_Permutations2.backtrack(list, tempList, nums, used);
