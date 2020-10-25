@@ -9,11 +9,9 @@ class Solution_61_RotateList {
     ListNode fast = temp, slow = temp;
 
     int i;
-    // Get the total length in i
     for (i = 0; fast.next != null; i++)
       fast = fast.next;
 
-    // Get the i - k % i th node
     for (int j = i - k % i; j > 0; j--)
       slow = slow.next;
 
