@@ -11,9 +11,8 @@ class Solution_52_NQueens2 {
   }
 
   private static int solve(int row, int n, int[][] chess) {
-    if (row == n) {
+    if (row == n)
       return 1;
-    }
 
     int count = 0;
 
